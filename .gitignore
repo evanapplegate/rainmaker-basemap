@@ -1,0 +1,8 @@
+# Publish only what Pages needs. Everything else stays local.
+/*
+!/glyphs/
+!/styles/
+!/licenses/
+!/README.md
+!/.nojekyll
+!/.gitignore

@@ -1,0 +1,8257 @@
+{
+ "version": 8,
+ "name": "Rainmaker Labels",
+ "metadata": {
+  "source": "Rebuilt from Mapbox Studio style 'cali terrain v4-copy-copy-copy-copy' on Esri World Basemap v2"
+ },
+ "sources": {
+  "esri": {
+   "type": "vector",
+   "url": "https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer"
+  },
+  "contours": {
+   "type": "vector",
+   "url": "https://basemaps.arcgis.com/arcgis/rest/services/World_Contours_v2/VectorTileServer"
+  }
+ },
+ "sprite": "https://cdn.arcgis.com/sharing/rest/content/items/659e7c1b1e374f6c8a89eefe17b23380/resources/sprites/sprite",
+ "glyphs": "https://evanapplegate.github.io/rainmaker-basemap/glyphs/{fontstack}/{range}.pbf",
+ "layers": [
+  {
+   "id": "Contours/Contour_11_main_text",
+   "type": "symbol",
+   "source": "contours",
+   "source-layer": "Contour",
+   "filter": [
+    "all",
+    [
+     "==",
+     "Index3",
+     1
+    ],
+    [
+     "==",
+     "Index5",
+     1
+    ],
+    [
+     "!in",
+     "Contour",
+     0
+    ]
+   ],
+   "minzoom": 11,
+   "maxzoom": 12,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 700,
+    "text-field": "{Contour} {Unit}",
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       15,
+       11
+      ],
+      [
+       20,
+       13
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-letter-spacing": {
+     "stops": [
+      [
+       6,
+       0
+      ],
+      [
+       8,
+       0.05
+      ]
+     ]
+    },
+    "text-line-height": 1,
+    "text-max-width": 9
+   },
+   "paint": {
+    "text-color": "#6b6b47",
+    "text-opacity": 0.9,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 1,
+    "text-halo-blur": 0.3
+   }
+  },
+  {
+   "id": "Contours/Contour_12_main_text",
+   "type": "symbol",
+   "source": "contours",
+   "source-layer": "Contour",
+   "filter": [
+    "all",
+    [
+     "==",
+     "Index2",
+     1
+    ],
+    [
+     "==",
+     "Index4",
+     1
+    ],
+    [
+     "!in",
+     "Contour",
+     0
+    ]
+   ],
+   "minzoom": 12,
+   "maxzoom": 14,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 700,
+    "text-field": "{Contour} {Unit}",
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       15,
+       11
+      ],
+      [
+       20,
+       13
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-letter-spacing": {
+     "stops": [
+      [
+       6,
+       0
+      ],
+      [
+       8,
+       0.05
+      ]
+     ]
+    },
+    "text-line-height": 1,
+    "text-max-width": 9
+   },
+   "paint": {
+    "text-color": "#6b6b47",
+    "text-opacity": 0.9,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 1,
+    "text-halo-blur": 0.3
+   }
+  },
+  {
+   "id": "Contours/Contour_13_main_text",
+   "type": "symbol",
+   "source": "contours",
+   "source-layer": "Contour",
+   "filter": [
+    "all",
+    [
+     "==",
+     "Index1",
+     1
+    ],
+    [
+     "==",
+     "Index3",
+     1
+    ],
+    [
+     "!in",
+     "Contour",
+     0
+    ]
+   ],
+   "minzoom": 14,
+   "maxzoom": 16,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 700,
+    "text-field": "{Contour} {Unit}",
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       15,
+       11
+      ],
+      [
+       20,
+       13
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-letter-spacing": {
+     "stops": [
+      [
+       6,
+       0
+      ],
+      [
+       8,
+       0.05
+      ]
+     ]
+    },
+    "text-line-height": 1,
+    "text-max-width": 9
+   },
+   "paint": {
+    "text-color": "#6b6b47",
+    "text-opacity": 0.9,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 1,
+    "text-halo-blur": 0.3
+   }
+  },
+  {
+   "id": "Contours/Contour_14_main_text",
+   "type": "symbol",
+   "source": "contours",
+   "source-layer": "Contour",
+   "filter": [
+    "all",
+    [
+     "==",
+     "Index2",
+     1
+    ],
+    [
+     "!in",
+     "Contour",
+     0
+    ]
+   ],
+   "minzoom": 16,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 700,
+    "text-field": "{Contour} {Unit}",
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       15,
+       11
+      ],
+      [
+       20,
+       13
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-letter-spacing": {
+     "stops": [
+      [
+       6,
+       0
+      ],
+      [
+       8,
+       0.05
+      ]
+     ]
+    },
+    "text-line-height": 1,
+    "text-max-width": 9
+   },
+   "paint": {
+    "text-color": "#6b6b47",
+    "text-opacity": 0.9,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 1,
+    "text-halo-blur": 0.3
+   }
+  },
+  {
+   "id": "Water point/Sea or ocean",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Water point",
+   "filter": [
+    "==",
+    "_label_class",
+    0
+   ],
+   "minzoom": 9,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-anchor": "center",
+    "text-line-height": 1.6,
+    "text-max-width": 4,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       3,
+       14
+      ],
+      [
+       5,
+       18
+      ],
+      [
+       6,
+       22
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#1d588b",
+    "text-halo-width": {
+     "stops": [
+      [
+       6,
+       0.65
+      ],
+      [
+       12,
+       1
+      ]
+     ]
+    },
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.3,
+    "text-opacity": {
+     "stops": [
+      [
+       5,
+       0.5
+      ],
+      [
+       12,
+       0.75
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Water point/Island",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Water point",
+   "filter": [
+    "==",
+    "_label_class",
+    7
+   ],
+   "minzoom": 9,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-anchor": "center",
+    "text-max-width": 8,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       8,
+       11
+      ],
+      [
+       12,
+       14
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": {
+     "stops": [
+      [
+       6,
+       0.05
+      ],
+      [
+       8,
+       0.15
+      ]
+     ]
+    },
+    "text-line-height": 1
+   },
+   "paint": {
+    "text-color": "rgba(8, 43, 15, 0.4)",
+    "text-halo-width": 1,
+    "text-halo-color": {
+     "stops": [
+      [
+       0,
+       "rgba(240, 242, 245, 0.85)"
+      ],
+      [
+       22,
+       "#bfc8d4"
+      ]
+     ]
+    },
+    "text-halo-blur": 0.2
+   }
+  },
+  {
+   "id": "Water point/Dam or weir",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Water point",
+   "filter": [
+    "==",
+    "_label_class",
+    5
+   ],
+   "minzoom": 9,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-anchor": "center",
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       7,
+       10
+      ],
+      [
+       10,
+       12
+      ],
+      [
+       16,
+       18
+      ]
+     ]
+    },
+    "text-transform": "lowercase"
+   },
+   "paint": {
+    "text-color": "#1d588b",
+    "text-halo-width": 1,
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "Water point/Playa",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Water point",
+   "filter": [
+    "==",
+    "_label_class",
+    6
+   ],
+   "minzoom": 9,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-anchor": "center",
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       7,
+       10
+      ],
+      [
+       10,
+       12
+      ],
+      [
+       16,
+       18
+      ]
+     ]
+    },
+    "text-transform": "lowercase"
+   },
+   "paint": {
+    "text-color": "#1d588b",
+    "text-halo-width": 1,
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "Water point/Canal or ditch",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Water point",
+   "filter": [
+    "==",
+    "_label_class",
+    4
+   ],
+   "minzoom": 9,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-anchor": "center",
+    "text-max-width": 4,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       13,
+       12
+      ],
+      [
+       16,
+       18
+      ]
+     ]
+    },
+    "text-transform": "uppercase"
+   },
+   "paint": {
+    "text-color": "rgba(37, 87, 131, 0.83)",
+    "text-halo-width": 1,
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "Water point/Stream or river",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Water point",
+   "filter": [
+    "==",
+    "_label_class",
+    3
+   ],
+   "minzoom": 9,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-anchor": "center",
+    "text-max-width": 4,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       13,
+       12
+      ],
+      [
+       16,
+       18
+      ]
+     ]
+    },
+    "text-transform": "uppercase"
+   },
+   "paint": {
+    "text-color": "rgba(37, 87, 131, 0.83)",
+    "text-halo-width": 1,
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "Water point/Lake or reservoir",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Water point",
+   "filter": [
+    "==",
+    "_label_class",
+    2
+   ],
+   "minzoom": 9,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-anchor": "center",
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       7,
+       10
+      ],
+      [
+       10,
+       12
+      ],
+      [
+       16,
+       18
+      ]
+     ]
+    },
+    "text-transform": "lowercase"
+   },
+   "paint": {
+    "text-color": "#1d588b",
+    "text-halo-width": 1,
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "Water point/Bay or inlet",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Water point",
+   "filter": [
+    "==",
+    "_label_class",
+    1
+   ],
+   "minzoom": 9,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-anchor": "center",
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       7,
+       10
+      ],
+      [
+       10,
+       12
+      ],
+      [
+       16,
+       18
+      ]
+     ]
+    },
+    "text-transform": "lowercase"
+   },
+   "paint": {
+    "text-color": "#1d588b",
+    "text-halo-width": 1,
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "Water line/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Water line/label",
+   "minzoom": 11,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-max-angle": 18,
+    "text-field": "{_name_global}",
+    "text-padding": 1,
+    "text-offset": [
+     0,
+     -0.5
+    ],
+    "symbol-spacing": 800,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       13,
+       12
+      ],
+      [
+       16,
+       18
+      ]
+     ]
+    },
+    "text-transform": "uppercase"
+   },
+   "paint": {
+    "text-color": "rgba(37, 87, 131, 0.83)",
+    "text-halo-width": 1,
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "Marine park/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Marine park/label",
+   "minzoom": 16,
+   "layout": {
+    "text-max-width": 8.5,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       8,
+       11
+      ],
+      [
+       12,
+       13
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-letter-spacing": {
+     "stops": [
+      [
+       6,
+       0
+      ],
+      [
+       8,
+       0.05
+      ]
+     ]
+    },
+    "text-line-height": 1
+   },
+   "paint": {
+    "text-color": "#618141",
+    "text-opacity": 0.9,
+    "text-halo-color": "#f0f4ec",
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Water area/label/Dam or weir",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Water area/label",
+   "filter": [
+    "==",
+    "_label_class",
+    8
+   ],
+   "minzoom": 11,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       7,
+       10
+      ],
+      [
+       10,
+       12
+      ],
+      [
+       16,
+       18
+      ]
+     ]
+    },
+    "text-transform": "lowercase"
+   },
+   "paint": {
+    "text-color": "#1d588b",
+    "text-halo-width": 1,
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "Water area/label/Playa",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Water area/label",
+   "filter": [
+    "==",
+    "_label_class",
+    9
+   ],
+   "minzoom": 11,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       7,
+       10
+      ],
+      [
+       10,
+       12
+      ],
+      [
+       16,
+       18
+      ]
+     ]
+    },
+    "text-transform": "lowercase"
+   },
+   "paint": {
+    "text-color": "#1d588b",
+    "text-halo-width": 1,
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "Water area/label/Canal or ditch",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Water area/label",
+   "filter": [
+    "==",
+    "_label_class",
+    2
+   ],
+   "minzoom": 11,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 1000,
+    "text-field": "{_name_global}",
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-allow-overlap": false,
+    "text-max-width": 5,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       13,
+       12
+      ],
+      [
+       16,
+       18
+      ]
+     ]
+    },
+    "text-transform": "uppercase"
+   },
+   "paint": {
+    "text-color": "rgba(37, 87, 131, 0.83)",
+    "text-halo-width": 1,
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "Water area/label/Small river",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Water area/label",
+   "filter": [
+    "==",
+    "_label_class",
+    7
+   ],
+   "minzoom": 11,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 1000,
+    "text-field": "{_name_global}",
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-allow-overlap": false,
+    "text-max-width": 8,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       13,
+       12
+      ],
+      [
+       16,
+       18
+      ]
+     ]
+    },
+    "text-transform": "uppercase"
+   },
+   "paint": {
+    "text-color": "rgba(37, 87, 131, 0.83)",
+    "text-halo-width": 1,
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "Water area/label/Large river",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Water area/label",
+   "filter": [
+    "==",
+    "_label_class",
+    4
+   ],
+   "minzoom": 11,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 1000,
+    "text-field": "{_name_global}",
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-allow-overlap": false,
+    "text-max-width": 8,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       13,
+       12
+      ],
+      [
+       16,
+       18
+      ]
+     ]
+    },
+    "text-transform": "uppercase"
+   },
+   "paint": {
+    "text-color": "rgba(37, 87, 131, 0.83)",
+    "text-halo-width": 1,
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "Water area/label/Small lake or reservoir",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Water area/label",
+   "filter": [
+    "==",
+    "_label_class",
+    6
+   ],
+   "minzoom": 11,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       7,
+       10
+      ],
+      [
+       10,
+       12
+      ],
+      [
+       16,
+       18
+      ]
+     ]
+    },
+    "text-transform": "lowercase"
+   },
+   "paint": {
+    "text-color": "#1d588b",
+    "text-halo-width": 1,
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "Water area/label/Large lake or reservoir",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Water area/label",
+   "filter": [
+    "==",
+    "_label_class",
+    3
+   ],
+   "minzoom": 11,
+   "layout": {
+    "text-line-height": 1.15,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       7,
+       10
+      ],
+      [
+       10,
+       12
+      ],
+      [
+       16,
+       18
+      ]
+     ]
+    },
+    "text-transform": "lowercase"
+   },
+   "paint": {
+    "text-color": "#1d588b",
+    "text-halo-width": 1,
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "Water area/label/Bay or inlet",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Water area/label",
+   "filter": [
+    "==",
+    "_label_class",
+    1
+   ],
+   "minzoom": 11,
+   "layout": {
+    "text-line-height": 1.15,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       7,
+       10
+      ],
+      [
+       10,
+       12
+      ],
+      [
+       16,
+       18
+      ]
+     ]
+    },
+    "text-transform": "lowercase"
+   },
+   "paint": {
+    "text-color": "#1d588b",
+    "text-halo-width": 1,
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "Water area/label/Small island",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Water area/label",
+   "filter": [
+    "==",
+    "_label_class",
+    0
+   ],
+   "minzoom": 11,
+   "layout": {
+    "text-max-width": 8,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       8,
+       11
+      ],
+      [
+       12,
+       14
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": {
+     "stops": [
+      [
+       6,
+       0.05
+      ],
+      [
+       8,
+       0.15
+      ]
+     ]
+    },
+    "text-line-height": 1
+   },
+   "paint": {
+    "text-color": "rgba(8, 43, 15, 0.4)",
+    "text-halo-width": 1,
+    "text-halo-color": {
+     "stops": [
+      [
+       0,
+       "rgba(240, 242, 245, 0.85)"
+      ],
+      [
+       22,
+       "#bfc8d4"
+      ]
+     ]
+    },
+    "text-halo-blur": 0.2
+   }
+  },
+  {
+   "id": "Water area/label/Large island",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Water area/label",
+   "filter": [
+    "==",
+    "_label_class",
+    5
+   ],
+   "minzoom": 11,
+   "layout": {
+    "text-max-width": 8,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       8,
+       11
+      ],
+      [
+       12,
+       14
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": {
+     "stops": [
+      [
+       6,
+       0.05
+      ],
+      [
+       8,
+       0.15
+      ]
+     ]
+    },
+    "text-line-height": 1
+   },
+   "paint": {
+    "text-color": "rgba(8, 43, 15, 0.4)",
+    "text-halo-width": 1,
+    "text-halo-color": {
+     "stops": [
+      [
+       0,
+       "rgba(240, 242, 245, 0.85)"
+      ],
+      [
+       22,
+       "#bfc8d4"
+      ]
+     ]
+    },
+    "text-halo-blur": 0.2
+   }
+  },
+  {
+   "id": "Water area large scale/label/River",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Water area large scale/label",
+   "filter": [
+    "==",
+    "_label_class",
+    1
+   ],
+   "minzoom": 7,
+   "maxzoom": 11,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 1000,
+    "text-field": "{_name}",
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-allow-overlap": false,
+    "text-max-width": 4,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       13,
+       12
+      ],
+      [
+       16,
+       18
+      ]
+     ]
+    },
+    "text-transform": "uppercase"
+   },
+   "paint": {
+    "text-color": "rgba(37, 87, 131, 0.83)",
+    "text-halo-width": 1,
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "Water area large scale/label/Lake or lake intermittent",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Water area large scale/label",
+   "filter": [
+    "==",
+    "_label_class",
+    0
+   ],
+   "minzoom": 7,
+   "maxzoom": 11,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       7,
+       10
+      ],
+      [
+       10,
+       12
+      ],
+      [
+       16,
+       18
+      ]
+     ]
+    },
+    "text-transform": "lowercase"
+   },
+   "paint": {
+    "text-color": "#1d588b",
+    "text-halo-width": 1,
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "Water area medium scale/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Water area medium scale/label",
+   "minzoom": 5,
+   "maxzoom": 7,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       7,
+       10
+      ],
+      [
+       10,
+       12
+      ],
+      [
+       16,
+       18
+      ]
+     ]
+    },
+    "text-transform": "lowercase"
+   },
+   "paint": {
+    "text-color": "#1d588b",
+    "text-halo-width": 1,
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "Water area small scale/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Water area small scale/label",
+   "minzoom": 1,
+   "maxzoom": 5,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       7,
+       10
+      ],
+      [
+       10,
+       12
+      ],
+      [
+       16,
+       18
+      ]
+     ]
+    },
+    "text-transform": "lowercase"
+   },
+   "paint": {
+    "text-color": "#1d588b",
+    "text-halo-width": 1,
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "Marine area/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Marine area/label",
+   "minzoom": 11,
+   "layout": {
+    "text-max-width": 4,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       2,
+       10
+      ],
+      [
+       4,
+       14
+      ],
+      [
+       8,
+       20
+      ]
+     ],
+     "base": 1.2
+    }
+   },
+   "paint": {
+    "text-color": "#1d588b",
+    "text-halo-width": {
+     "stops": [
+      [
+       6,
+       0.65
+      ],
+      [
+       12,
+       1
+      ]
+     ]
+    },
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.3,
+    "text-opacity": {
+     "stops": [
+      [
+       5,
+       0.5
+      ],
+      [
+       12,
+       0.75
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Marine waterbody/label/small",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Marine waterbody/label",
+   "filter": [
+    "==",
+    "_label_class",
+    4
+   ],
+   "minzoom": 4,
+   "maxzoom": 10,
+   "layout": {
+    "text-line-height": 1.2,
+    "text-max-width": 4,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       2,
+       10
+      ],
+      [
+       4,
+       14
+      ],
+      [
+       8,
+       20
+      ]
+     ],
+     "base": 1.2
+    }
+   },
+   "paint": {
+    "text-color": "#1d588b",
+    "text-halo-width": {
+     "stops": [
+      [
+       6,
+       0.65
+      ],
+      [
+       12,
+       1
+      ]
+     ]
+    },
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.3,
+    "text-opacity": {
+     "stops": [
+      [
+       5,
+       0.5
+      ],
+      [
+       12,
+       0.75
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Marine waterbody/label/medium",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Marine waterbody/label",
+   "filter": [
+    "==",
+    "_label_class",
+    3
+   ],
+   "minzoom": 4,
+   "maxzoom": 10,
+   "layout": {
+    "text-line-height": 1.2,
+    "text-max-width": 4,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       2,
+       10
+      ],
+      [
+       4,
+       14
+      ],
+      [
+       8,
+       20
+      ]
+     ],
+     "base": 1.2
+    }
+   },
+   "paint": {
+    "text-color": "#1d588b",
+    "text-halo-width": {
+     "stops": [
+      [
+       6,
+       0.65
+      ],
+      [
+       12,
+       1
+      ]
+     ]
+    },
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.3,
+    "text-opacity": {
+     "stops": [
+      [
+       5,
+       0.5
+      ],
+      [
+       12,
+       0.75
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Marine waterbody/label/large",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Marine waterbody/label",
+   "filter": [
+    "==",
+    "_label_class",
+    2
+   ],
+   "minzoom": 4,
+   "maxzoom": 10,
+   "layout": {
+    "text-line-height": 1.5,
+    "text-max-width": 4,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       2,
+       10
+      ],
+      [
+       4,
+       14
+      ],
+      [
+       8,
+       20
+      ]
+     ],
+     "base": 1.2
+    }
+   },
+   "paint": {
+    "text-color": "#1d588b",
+    "text-halo-width": {
+     "stops": [
+      [
+       6,
+       0.65
+      ],
+      [
+       12,
+       1
+      ]
+     ]
+    },
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.3,
+    "text-opacity": {
+     "stops": [
+      [
+       5,
+       0.5
+      ],
+      [
+       12,
+       0.75
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Marine waterbody/label/x large",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Marine waterbody/label",
+   "filter": [
+    "==",
+    "_label_class",
+    1
+   ],
+   "minzoom": 3,
+   "maxzoom": 10,
+   "layout": {
+    "text-line-height": 1.5,
+    "text-max-width": 4,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       3,
+       14
+      ],
+      [
+       5,
+       18
+      ],
+      [
+       6,
+       22
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#1d588b",
+    "text-halo-width": {
+     "stops": [
+      [
+       6,
+       0.65
+      ],
+      [
+       12,
+       1
+      ]
+     ]
+    },
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.3,
+    "text-opacity": {
+     "stops": [
+      [
+       5,
+       0.5
+      ],
+      [
+       12,
+       0.75
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Marine waterbody/label/2x large",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Marine waterbody/label",
+   "filter": [
+    "==",
+    "_label_class",
+    0
+   ],
+   "minzoom": 2,
+   "maxzoom": 10,
+   "layout": {
+    "text-line-height": 1.6,
+    "text-max-width": 4,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       3,
+       14
+      ],
+      [
+       5,
+       18
+      ],
+      [
+       6,
+       22
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#1d588b",
+    "text-halo-width": {
+     "stops": [
+      [
+       6,
+       0.65
+      ],
+      [
+       12,
+       1
+      ]
+     ]
+    },
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.3,
+    "text-opacity": {
+     "stops": [
+      [
+       5,
+       0.5
+      ],
+      [
+       12,
+       0.75
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Ferry/label/Rail ferry",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Ferry/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     1
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 16,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-padding": 5,
+    "text-offset": [
+     0,
+     -0.6
+    ],
+    "symbol-spacing": 1000,
+    "text-font": [
+     "Founders Grotesk Text Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       15,
+       9
+      ],
+      [
+       20,
+       11
+      ]
+     ]
+    },
+    "text-letter-spacing": 0.01
+   },
+   "paint": {
+    "text-color": "#808080",
+    "text-halo-color": "rgba(255, 255, 255, 0.75)",
+    "text-halo-width": 1,
+    "text-halo-blur": 1
+   }
+  },
+  {
+   "id": "Railroad/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Railroad/label",
+   "minzoom": 16,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-padding": 5,
+    "text-offset": [
+     0,
+     -0.6
+    ],
+    "symbol-spacing": 1000,
+    "text-font": [
+     "Founders Grotesk Text Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       15,
+       9
+      ],
+      [
+       20,
+       11
+      ]
+     ]
+    },
+    "text-letter-spacing": 0.01
+   },
+   "paint": {
+    "text-color": "#808080",
+    "text-halo-color": "rgba(255, 255, 255, 0.75)",
+    "text-halo-width": 1,
+    "text-halo-blur": 1
+   }
+  },
+  {
+   "id": "Road tunnel/label/Pedestrian",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road tunnel/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     6
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 15,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-avoid-edges": true,
+    "symbol-spacing": 400,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-padding": 5,
+    "text-font": [
+     "Founders Grotesk Text Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       15,
+       9
+      ],
+      [
+       20,
+       11
+      ]
+     ]
+    },
+    "text-letter-spacing": 0.01
+   },
+   "paint": {
+    "text-color": "#808080",
+    "text-halo-color": "rgba(255, 255, 255, 0.75)",
+    "text-halo-width": 1,
+    "text-halo-blur": 1
+   }
+  },
+  {
+   "id": "Road tunnel/label/Local, service, 4WD",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road tunnel/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     5
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 15,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-avoid-edges": true,
+    "symbol-spacing": 400,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-padding": 5,
+    "text-font": [
+     "Founders Grotesk Text Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       15,
+       9
+      ],
+      [
+       20,
+       11
+      ]
+     ]
+    },
+    "text-letter-spacing": 0.01
+   },
+   "paint": {
+    "text-color": "#808080",
+    "text-halo-color": "rgba(255, 255, 255, 0.75)",
+    "text-halo-width": 1,
+    "text-halo-blur": 1
+   }
+  },
+  {
+   "id": "Road tunnel/label/Minor",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road tunnel/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     4
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 14,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-avoid-edges": true,
+    "symbol-spacing": 400,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-padding": 5,
+    "text-font": [
+     "Founders Grotesk Text Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       11,
+       9
+      ],
+      [
+       20,
+       12
+      ]
+     ]
+    },
+    "text-letter-spacing": 0.01
+   },
+   "paint": {
+    "text-color": "#808080",
+    "text-halo-color": "rgba(255, 255, 255, 0.75)",
+    "text-halo-width": 1,
+    "text-halo-blur": 1
+   }
+  },
+  {
+   "id": "Road tunnel/label/Major, alt name",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road tunnel/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     3
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 14,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-avoid-edges": true,
+    "symbol-spacing": 400,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-padding": 5,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       9,
+       9
+      ],
+      [
+       20,
+       14
+      ]
+     ]
+    },
+    "text-letter-spacing": 0.01
+   },
+   "paint": {
+    "text-color": "#595959",
+    "text-halo-color": "rgba(255, 255, 255, 0.75)",
+    "text-halo-width": 1,
+    "text-halo-blur": 1
+   }
+  },
+  {
+   "id": "Road tunnel/label/Major",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road tunnel/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     2
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 14,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-avoid-edges": true,
+    "symbol-spacing": 400,
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-padding": 5,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       9,
+       9
+      ],
+      [
+       20,
+       14
+      ]
+     ]
+    },
+    "text-letter-spacing": 0.01
+   },
+   "paint": {
+    "text-color": "#595959",
+    "text-halo-color": "rgba(255, 255, 255, 0.75)",
+    "text-halo-width": 1,
+    "text-halo-blur": 1
+   }
+  },
+  {
+   "id": "Road tunnel/label/Highway",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road tunnel/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     7
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 13,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-avoid-edges": true,
+    "symbol-spacing": 400,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-padding": 5,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       9,
+       9
+      ],
+      [
+       20,
+       14
+      ]
+     ]
+    },
+    "text-letter-spacing": 0.01
+   },
+   "paint": {
+    "text-color": "#595959",
+    "text-halo-color": "rgba(255, 255, 255, 0.75)",
+    "text-halo-width": 1,
+    "text-halo-blur": 1
+   }
+  },
+  {
+   "id": "Road tunnel/label/Freeway Motorway, alt name",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road tunnel/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     1
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 13,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-avoid-edges": true,
+    "symbol-spacing": 400,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-padding": 5,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       9,
+       9
+      ],
+      [
+       20,
+       14
+      ]
+     ]
+    },
+    "text-letter-spacing": 0.01
+   },
+   "paint": {
+    "text-color": "#595959",
+    "text-halo-color": "rgba(255, 255, 255, 0.75)",
+    "text-halo-width": 1,
+    "text-halo-blur": 1
+   }
+  },
+  {
+   "id": "Road tunnel/label/Freeway Motorway",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road tunnel/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     0
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 13,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-avoid-edges": true,
+    "symbol-spacing": 400,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-padding": 5,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       9,
+       9
+      ],
+      [
+       20,
+       14
+      ]
+     ]
+    },
+    "text-letter-spacing": 0.01
+   },
+   "paint": {
+    "text-color": "#595959",
+    "text-halo-color": "rgba(255, 255, 255, 0.75)",
+    "text-halo-width": 1,
+    "text-halo-blur": 1
+   }
+  },
+  {
+   "id": "Building/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Building/label",
+   "minzoom": 17,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       9
+      ],
+      [
+       8,
+       10
+      ],
+      [
+       12,
+       11
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-line-height": 0.9
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": {
+     "stops": [
+      [
+       14,
+       "rgba(226, 227, 222, 0.88)"
+      ],
+      [
+       18,
+       "rgba(255, 255, 255, 0.88)"
+      ]
+     ]
+    },
+    "text-halo-blur": 0.25,
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       22,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Trail or path/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Trail or path/label",
+   "minzoom": 15,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-avoid-edges": true,
+    "symbol-spacing": 400,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-padding": 5,
+    "text-font": [
+     "Founders Grotesk Text Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       15,
+       9
+      ],
+      [
+       20,
+       11
+      ]
+     ]
+    },
+    "text-letter-spacing": 0.01
+   },
+   "paint": {
+    "text-color": "#808080",
+    "text-halo-color": "rgba(255, 255, 255, 0.75)",
+    "text-halo-width": 1,
+    "text-halo-blur": 1
+   }
+  },
+  {
+   "id": "Road/label/Pedestrian",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     6
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 15,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-avoid-edges": true,
+    "symbol-spacing": 400,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-padding": 5,
+    "text-font": [
+     "Founders Grotesk Text Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       15,
+       9
+      ],
+      [
+       20,
+       11
+      ]
+     ]
+    },
+    "text-letter-spacing": 0.01
+   },
+   "paint": {
+    "text-color": "#808080",
+    "text-halo-color": "rgba(255, 255, 255, 0.75)",
+    "text-halo-width": 1,
+    "text-halo-blur": 1
+   }
+  },
+  {
+   "id": "Road/label/Local",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     5
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 15,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-avoid-edges": true,
+    "symbol-spacing": 400,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-padding": 5,
+    "text-font": [
+     "Founders Grotesk Text Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       15,
+       9
+      ],
+      [
+       20,
+       11
+      ]
+     ]
+    },
+    "text-letter-spacing": 0.01
+   },
+   "paint": {
+    "text-color": "#808080",
+    "text-halo-color": "rgba(255, 255, 255, 0.75)",
+    "text-halo-width": 1,
+    "text-halo-blur": 1
+   }
+  },
+  {
+   "id": "Road/label/Minor",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     4
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 14,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-avoid-edges": true,
+    "symbol-spacing": 400,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-padding": 2,
+    "text-font": [
+     "Founders Grotesk Text Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       11,
+       9
+      ],
+      [
+       20,
+       12
+      ]
+     ]
+    },
+    "text-letter-spacing": 0.01
+   },
+   "paint": {
+    "text-color": "#808080",
+    "text-halo-color": "rgba(255, 255, 255, 0.75)",
+    "text-halo-width": 1,
+    "text-halo-blur": 1
+   }
+  },
+  {
+   "id": "Road/label/Major, alt name",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     3
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 14,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-avoid-edges": true,
+    "symbol-spacing": 400,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-padding": 2,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       9,
+       9
+      ],
+      [
+       20,
+       14
+      ]
+     ]
+    },
+    "text-letter-spacing": 0.01
+   },
+   "paint": {
+    "text-color": "#595959",
+    "text-halo-color": "rgba(255, 255, 255, 0.75)",
+    "text-halo-width": 1,
+    "text-halo-blur": 1
+   }
+  },
+  {
+   "id": "Road/label/Major",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     2
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 14,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-avoid-edges": true,
+    "symbol-spacing": 400,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-padding": 2,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       9,
+       9
+      ],
+      [
+       20,
+       14
+      ]
+     ]
+    },
+    "text-letter-spacing": 0.01
+   },
+   "paint": {
+    "text-color": "#595959",
+    "text-halo-color": "rgba(255, 255, 255, 0.75)",
+    "text-halo-width": 1,
+    "text-halo-blur": 1
+   }
+  },
+  {
+   "id": "Road/label/Highway",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     75
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 13,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       9,
+       9
+      ],
+      [
+       20,
+       14
+      ]
+     ]
+    },
+    "text-letter-spacing": 0.01
+   },
+   "paint": {
+    "text-color": "#595959",
+    "text-halo-color": "rgba(255, 255, 255, 0.75)",
+    "text-halo-width": 1,
+    "text-halo-blur": 1
+   }
+  },
+  {
+   "id": "Road/label/Freeway Motorway, alt name",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     1
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 13,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-avoid-edges": true,
+    "symbol-spacing": 400,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-padding": 2,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       9,
+       9
+      ],
+      [
+       20,
+       14
+      ]
+     ]
+    },
+    "text-letter-spacing": 0.01
+   },
+   "paint": {
+    "text-color": "#595959",
+    "text-halo-color": "rgba(255, 255, 255, 0.75)",
+    "text-halo-width": 1,
+    "text-halo-blur": 1
+   }
+  },
+  {
+   "id": "Road/label/Freeway Motorway",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     0
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 13,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-avoid-edges": true,
+    "symbol-spacing": 400,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-padding": 2,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       9,
+       9
+      ],
+      [
+       20,
+       14
+      ]
+     ]
+    },
+    "text-letter-spacing": 0.01
+   },
+   "paint": {
+    "text-color": "#595959",
+    "text-halo-color": "rgba(255, 255, 255, 0.75)",
+    "text-halo-width": 1,
+    "text-halo-blur": 1
+   }
+  },
+  {
+   "id": "Road/label/Rectangle white black (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "in",
+     "_label_class",
+     8,
+     10,
+     12,
+     14,
+     16,
+     18,
+     20,
+     22,
+     24,
+     26,
+     28,
+     30,
+     32,
+     34,
+     36,
+     38,
+     40,
+     42,
+     44,
+     46,
+     48,
+     50,
+     52,
+     54,
+     56,
+     58,
+     60,
+     62,
+     64,
+     66,
+     68,
+     70,
+     72,
+     74
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 14,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "text-max-angle": 25,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 10,
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "icon-image": "Road/Rectangle white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0.2
+    ],
+    "text-padding": 30
+   },
+   "paint": {
+    "text-color": "#a3a3a1",
+    "text-halo-color": "#404040",
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Road/label/Rectangle white black",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "in",
+     "_label_class",
+     7,
+     9,
+     11,
+     13,
+     15,
+     17,
+     19,
+     21,
+     23,
+     25,
+     27,
+     29,
+     31,
+     33,
+     35,
+     37,
+     39,
+     41,
+     43,
+     45,
+     47,
+     49,
+     51,
+     53,
+     55,
+     57,
+     59,
+     61,
+     63,
+     65,
+     67,
+     69,
+     71,
+     73
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 14,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "text-max-angle": 25,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 10,
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "icon-image": "Road/Rectangle white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0.2
+    ],
+    "text-padding": 30
+   },
+   "paint": {
+    "text-color": "#a3a3a1",
+    "text-halo-color": "#404040",
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Cemetery/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Cemetery/label",
+   "minzoom": 16,
+   "layout": {
+    "text-max-width": 8.5,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       8,
+       11
+      ],
+      [
+       12,
+       13
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-letter-spacing": {
+     "stops": [
+      [
+       6,
+       0
+      ],
+      [
+       8,
+       0.05
+      ]
+     ]
+    },
+    "text-line-height": 1
+   },
+   "paint": {
+    "text-color": "#618141",
+    "text-opacity": 0.9,
+    "text-halo-color": "#f0f4ec",
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Freight/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Freight/label",
+   "minzoom": 17,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       9
+      ],
+      [
+       8,
+       10
+      ],
+      [
+       12,
+       11
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-line-height": 0.9
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": {
+     "stops": [
+      [
+       14,
+       "rgba(226, 227, 222, 0.88)"
+      ],
+      [
+       18,
+       "rgba(255, 255, 255, 0.88)"
+      ]
+     ]
+    },
+    "text-halo-blur": 0.25,
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       22,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Water and wastewater/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Water and wastewater/label",
+   "minzoom": 17,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       9
+      ],
+      [
+       8,
+       10
+      ],
+      [
+       12,
+       11
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-line-height": 0.9
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": {
+     "stops": [
+      [
+       14,
+       "rgba(226, 227, 222, 0.88)"
+      ],
+      [
+       18,
+       "rgba(255, 255, 255, 0.88)"
+      ]
+     ]
+    },
+    "text-halo-blur": 0.25,
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       22,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Port/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Port/label",
+   "minzoom": 17,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       9
+      ],
+      [
+       8,
+       10
+      ],
+      [
+       12,
+       11
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-line-height": 0.9
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": {
+     "stops": [
+      [
+       14,
+       "rgba(226, 227, 222, 0.88)"
+      ],
+      [
+       18,
+       "rgba(255, 255, 255, 0.88)"
+      ]
+     ]
+    },
+    "text-halo-blur": 0.25,
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       22,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Industry/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Industry/label",
+   "minzoom": 17,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       9
+      ],
+      [
+       8,
+       10
+      ],
+      [
+       12,
+       11
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-line-height": 0.9
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": {
+     "stops": [
+      [
+       14,
+       "rgba(226, 227, 222, 0.88)"
+      ],
+      [
+       18,
+       "rgba(255, 255, 255, 0.88)"
+      ]
+     ]
+    },
+    "text-halo-blur": 0.25,
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       22,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Government/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Government/label",
+   "minzoom": 17,
+   "layout": {
+    "symbol-avoid-edges": false,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       9
+      ],
+      [
+       8,
+       10
+      ],
+      [
+       12,
+       11
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-line-height": 0.9
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": {
+     "stops": [
+      [
+       14,
+       "rgba(226, 227, 222, 0.88)"
+      ],
+      [
+       18,
+       "rgba(255, 255, 255, 0.88)"
+      ]
+     ]
+    },
+    "text-halo-blur": 0.25,
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       22,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Finance/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Finance/label",
+   "minzoom": 17,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       9
+      ],
+      [
+       8,
+       10
+      ],
+      [
+       12,
+       11
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-line-height": 0.9
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": {
+     "stops": [
+      [
+       14,
+       "rgba(226, 227, 222, 0.88)"
+      ],
+      [
+       18,
+       "rgba(255, 255, 255, 0.88)"
+      ]
+     ]
+    },
+    "text-halo-blur": 0.25,
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       22,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Emergency/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Emergency/label",
+   "minzoom": 17,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       9
+      ],
+      [
+       8,
+       10
+      ],
+      [
+       12,
+       11
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-line-height": 0.9
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": {
+     "stops": [
+      [
+       14,
+       "rgba(226, 227, 222, 0.88)"
+      ],
+      [
+       18,
+       "rgba(255, 255, 255, 0.88)"
+      ]
+     ]
+    },
+    "text-halo-blur": 0.25,
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       22,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Indigenous/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Indigenous/label",
+   "minzoom": 17,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       9
+      ],
+      [
+       8,
+       10
+      ],
+      [
+       12,
+       11
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-line-height": 0.9
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": {
+     "stops": [
+      [
+       14,
+       "rgba(226, 227, 222, 0.88)"
+      ],
+      [
+       18,
+       "rgba(255, 255, 255, 0.88)"
+      ]
+     ]
+    },
+    "text-halo-blur": 0.25,
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       22,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Military/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Military/label",
+   "minzoom": 17,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 25,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       9
+      ],
+      [
+       8,
+       10
+      ],
+      [
+       12,
+       11
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-line-height": 0.9
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": {
+     "stops": [
+      [
+       14,
+       "rgba(226, 227, 222, 0.88)"
+      ],
+      [
+       18,
+       "rgba(255, 255, 255, 0.88)"
+      ]
+     ]
+    },
+    "text-halo-blur": 0.25,
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       22,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Transportation/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Transportation/label",
+   "minzoom": 17,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       9
+      ],
+      [
+       8,
+       10
+      ],
+      [
+       12,
+       11
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-line-height": 0.9
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": {
+     "stops": [
+      [
+       14,
+       "rgba(226, 227, 222, 0.88)"
+      ],
+      [
+       18,
+       "rgba(255, 255, 255, 0.88)"
+      ]
+     ]
+    },
+    "text-halo-blur": 0.25,
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       22,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Pedestrian/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Pedestrian/label",
+   "minzoom": 17,
+   "layout": {
+    "symbol-avoid-edges": false,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       9
+      ],
+      [
+       8,
+       10
+      ],
+      [
+       12,
+       11
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-line-height": 0.9
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": {
+     "stops": [
+      [
+       14,
+       "rgba(226, 227, 222, 0.88)"
+      ],
+      [
+       18,
+       "rgba(255, 255, 255, 0.88)"
+      ]
+     ]
+    },
+    "text-halo-blur": 0.25,
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       22,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Beach/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Beach/label",
+   "minzoom": 17,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       9
+      ],
+      [
+       8,
+       10
+      ],
+      [
+       12,
+       11
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-line-height": 0.9
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": {
+     "stops": [
+      [
+       14,
+       "rgba(226, 227, 222, 0.88)"
+      ],
+      [
+       18,
+       "rgba(255, 255, 255, 0.88)"
+      ]
+     ]
+    },
+    "text-halo-blur": 0.25,
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       22,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Golf course/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Golf course/label",
+   "minzoom": 17,
+   "layout": {
+    "text-max-width": 8.5,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       8,
+       11
+      ],
+      [
+       12,
+       13
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-letter-spacing": {
+     "stops": [
+      [
+       6,
+       0
+      ],
+      [
+       8,
+       0.05
+      ]
+     ]
+    },
+    "text-line-height": 1
+   },
+   "paint": {
+    "text-color": "#618141",
+    "text-opacity": 0.9,
+    "text-halo-color": "#f0f4ec",
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Zoo/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Zoo/label",
+   "minzoom": 15,
+   "layout": {
+    "text-max-width": 8.5,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       8,
+       11
+      ],
+      [
+       12,
+       13
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-letter-spacing": {
+     "stops": [
+      [
+       6,
+       0
+      ],
+      [
+       8,
+       0.05
+      ]
+     ]
+    },
+    "text-line-height": 1
+   },
+   "paint": {
+    "text-color": "#618141",
+    "text-opacity": 0.9,
+    "text-halo-color": "#f0f4ec",
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Retail/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Retail/label",
+   "minzoom": 17,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       9
+      ],
+      [
+       8,
+       10
+      ],
+      [
+       12,
+       11
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-line-height": 0.9
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": {
+     "stops": [
+      [
+       14,
+       "rgba(226, 227, 222, 0.88)"
+      ],
+      [
+       18,
+       "rgba(255, 255, 255, 0.88)"
+      ]
+     ]
+    },
+    "text-halo-blur": 0.25,
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       22,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Landmark/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Landmark/label",
+   "minzoom": 17,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       9
+      ],
+      [
+       8,
+       10
+      ],
+      [
+       12,
+       11
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-line-height": 0.9
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": {
+     "stops": [
+      [
+       14,
+       "rgba(226, 227, 222, 0.88)"
+      ],
+      [
+       18,
+       "rgba(255, 255, 255, 0.88)"
+      ]
+     ]
+    },
+    "text-halo-blur": 0.25,
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       22,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Openspace or forest/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Openspace or forest/label",
+   "minzoom": 14,
+   "layout": {
+    "symbol-avoid-edges": false,
+    "text-max-width": 8.5,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 25,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       8,
+       11
+      ],
+      [
+       12,
+       13
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-letter-spacing": {
+     "stops": [
+      [
+       6,
+       0
+      ],
+      [
+       8,
+       0.05
+      ]
+     ]
+    },
+    "text-line-height": 1
+   },
+   "paint": {
+    "text-color": "#618141",
+    "text-opacity": 0.9,
+    "text-halo-color": "#f0f4ec",
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Park or farming/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Park or farming/label",
+   "minzoom": 14,
+   "layout": {
+    "symbol-avoid-edges": false,
+    "text-max-width": 8.5,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 25,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       8,
+       11
+      ],
+      [
+       12,
+       13
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-letter-spacing": {
+     "stops": [
+      [
+       6,
+       0
+      ],
+      [
+       8,
+       0.05
+      ]
+     ]
+    },
+    "text-line-height": 1
+   },
+   "paint": {
+    "text-color": "#618141",
+    "text-opacity": 0.9,
+    "text-halo-color": "#f0f4ec",
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Point of interest/Park",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Point of interest",
+   "filter": [
+    "==",
+    "_label_class",
+    1
+   ],
+   "minzoom": 14,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 8.5,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       8,
+       11
+      ],
+      [
+       12,
+       13
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-letter-spacing": {
+     "stops": [
+      [
+       6,
+       0
+      ],
+      [
+       8,
+       0.05
+      ]
+     ]
+    },
+    "text-line-height": 1
+   },
+   "paint": {
+    "text-color": "#618141",
+    "text-opacity": 0.9,
+    "text-halo-color": "#f0f4ec",
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Education/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Education/label",
+   "minzoom": 17,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       9
+      ],
+      [
+       8,
+       10
+      ],
+      [
+       12,
+       11
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-line-height": 0.9
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": {
+     "stops": [
+      [
+       14,
+       "rgba(226, 227, 222, 0.88)"
+      ],
+      [
+       18,
+       "rgba(255, 255, 255, 0.88)"
+      ]
+     ]
+    },
+    "text-halo-blur": 0.25,
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       22,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Medical/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Medical/label",
+   "minzoom": 17,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       9
+      ],
+      [
+       8,
+       10
+      ],
+      [
+       12,
+       11
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-line-height": 0.9
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": {
+     "stops": [
+      [
+       14,
+       "rgba(226, 227, 222, 0.88)"
+      ],
+      [
+       18,
+       "rgba(255, 255, 255, 0.88)"
+      ]
+     ]
+    },
+    "text-halo-blur": 0.25,
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       22,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Admin1 forest or park/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Admin1 forest or park/label",
+   "minzoom": 9,
+   "layout": {
+    "symbol-avoid-edges": false,
+    "text-max-width": 8.5,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 25,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       8,
+       11
+      ],
+      [
+       12,
+       13
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-letter-spacing": {
+     "stops": [
+      [
+       6,
+       0
+      ],
+      [
+       8,
+       0.05
+      ]
+     ]
+    },
+    "text-line-height": 1
+   },
+   "paint": {
+    "text-color": "#618141",
+    "text-opacity": 0.9,
+    "text-halo-color": "#f0f4ec",
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Admin0 forest or park/label/Default",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Admin0 forest or park/label",
+   "minzoom": 9,
+   "layout": {
+    "text-max-width": 8.5,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 25,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       8,
+       11
+      ],
+      [
+       12,
+       13
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-letter-spacing": {
+     "stops": [
+      [
+       6,
+       0
+      ],
+      [
+       8,
+       0.05
+      ]
+     ]
+    },
+    "text-line-height": 1
+   },
+   "paint": {
+    "text-color": "#618141",
+    "text-opacity": 0.9,
+    "text-halo-color": "#f0f4ec",
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Airport/label/Airport property",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Airport/label",
+   "minzoom": 9,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       9
+      ],
+      [
+       8,
+       10
+      ],
+      [
+       12,
+       11
+      ]
+     ],
+     "base": 1.2
+    }
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4,
+    "text-opacity": 0.75
+   }
+  },
+  {
+   "id": "Admin2 area/label/small",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Admin2 area/label",
+   "filter": [
+    "==",
+    "_label_class",
+    1
+   ],
+   "minzoom": 9,
+   "maxzoom": 11,
+   "layout": {
+    "text-letter-spacing": 0.2,
+    "text-font": [
+     "Ubuntu Medium"
+    ],
+    "text-size": 9,
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "symbol-avoid-edges": true,
+    "text-transform": "uppercase",
+    "visibility": "none"
+   },
+   "paint": {
+    "text-color": "#656564",
+    "text-halo-color": "#323333",
+    "text-halo-width": 1,
+    "text-halo-blur": 1
+   }
+  },
+  {
+   "id": "Admin2 area/label/large",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Admin2 area/label",
+   "filter": [
+    "==",
+    "_label_class",
+    0
+   ],
+   "minzoom": 9,
+   "maxzoom": 11,
+   "layout": {
+    "text-letter-spacing": 0.2,
+    "text-font": [
+     "Ubuntu Medium"
+    ],
+    "text-size": 10,
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "symbol-avoid-edges": true,
+    "text-transform": "uppercase",
+    "visibility": "none"
+   },
+   "paint": {
+    "text-color": "#656564",
+    "text-halo-color": "#323333",
+    "text-halo-width": 1,
+    "text-halo-blur": 1
+   }
+  },
+  {
+   "id": "Admin1 area/label/x small",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Admin1 area/label",
+   "filter": [
+    "==",
+    "_label_class",
+    5
+   ],
+   "minzoom": 5,
+   "maxzoom": 10,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Bold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       3,
+       8
+      ],
+      [
+       6,
+       20
+      ],
+      [
+       10,
+       30
+      ]
+     ]
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": 0.05
+   },
+   "paint": {
+    "text-color": "rgba(28, 64, 35, 0.39)",
+    "text-halo-width": {
+     "stops": [
+      [
+       6,
+       1
+      ],
+      [
+       10,
+       1.5
+      ]
+     ]
+    },
+    "text-halo-color": "#eaf1eb",
+    "text-opacity": {
+     "stops": [
+      [
+       4,
+       0.75
+      ],
+      [
+       6,
+       1
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Admin1 area/label/small",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Admin1 area/label",
+   "filter": [
+    "==",
+    "_label_class",
+    4
+   ],
+   "minzoom": 5,
+   "maxzoom": 10,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Bold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       3,
+       8
+      ],
+      [
+       6,
+       20
+      ],
+      [
+       10,
+       30
+      ]
+     ]
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": 0.05
+   },
+   "paint": {
+    "text-color": "rgba(28, 64, 35, 0.39)",
+    "text-halo-width": {
+     "stops": [
+      [
+       6,
+       1
+      ],
+      [
+       10,
+       1.5
+      ]
+     ]
+    },
+    "text-halo-color": "#eaf1eb",
+    "text-opacity": {
+     "stops": [
+      [
+       4,
+       0.75
+      ],
+      [
+       6,
+       1
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Admin1 area/label/medium",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Admin1 area/label",
+   "filter": [
+    "==",
+    "_label_class",
+    3
+   ],
+   "minzoom": 5,
+   "maxzoom": 10,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Bold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       3,
+       8
+      ],
+      [
+       6,
+       20
+      ],
+      [
+       10,
+       30
+      ]
+     ]
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": 0.05
+   },
+   "paint": {
+    "text-color": "rgba(28, 64, 35, 0.39)",
+    "text-halo-width": {
+     "stops": [
+      [
+       6,
+       1
+      ],
+      [
+       10,
+       1.5
+      ]
+     ]
+    },
+    "text-halo-color": "#eaf1eb",
+    "text-opacity": {
+     "stops": [
+      [
+       4,
+       0.75
+      ],
+      [
+       6,
+       1
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Admin1 area/label/large",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Admin1 area/label",
+   "filter": [
+    "==",
+    "_label_class",
+    2
+   ],
+   "minzoom": 5,
+   "maxzoom": 10,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Bold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       3,
+       8
+      ],
+      [
+       6,
+       20
+      ],
+      [
+       10,
+       30
+      ]
+     ]
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": 0.05
+   },
+   "paint": {
+    "text-color": "rgba(28, 64, 35, 0.39)",
+    "text-halo-width": {
+     "stops": [
+      [
+       6,
+       1
+      ],
+      [
+       10,
+       1.5
+      ]
+     ]
+    },
+    "text-halo-color": "#eaf1eb",
+    "text-opacity": {
+     "stops": [
+      [
+       4,
+       0.75
+      ],
+      [
+       6,
+       1
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Admin1 area/label/x large",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Admin1 area/label",
+   "filter": [
+    "==",
+    "_label_class",
+    1
+   ],
+   "minzoom": 5,
+   "maxzoom": 10,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Bold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       3,
+       8
+      ],
+      [
+       6,
+       20
+      ],
+      [
+       10,
+       30
+      ]
+     ]
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": 0.05
+   },
+   "paint": {
+    "text-color": "rgba(28, 64, 35, 0.39)",
+    "text-halo-width": {
+     "stops": [
+      [
+       6,
+       1
+      ],
+      [
+       10,
+       1.5
+      ]
+     ]
+    },
+    "text-halo-color": "#eaf1eb",
+    "text-opacity": {
+     "stops": [
+      [
+       4,
+       0.75
+      ],
+      [
+       6,
+       1
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Admin1 area/label/2x large",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Admin1 area/label",
+   "filter": [
+    "==",
+    "_label_class",
+    0
+   ],
+   "minzoom": 5,
+   "maxzoom": 10,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Bold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       3,
+       8
+      ],
+      [
+       6,
+       20
+      ],
+      [
+       10,
+       30
+      ]
+     ]
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": 0.05
+   },
+   "paint": {
+    "text-color": "rgba(28, 64, 35, 0.39)",
+    "text-halo-width": {
+     "stops": [
+      [
+       6,
+       1
+      ],
+      [
+       10,
+       1.5
+      ]
+     ]
+    },
+    "text-halo-color": "#eaf1eb",
+    "text-opacity": {
+     "stops": [
+      [
+       4,
+       0.75
+      ],
+      [
+       6,
+       1
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Point of interest/General",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Point of interest",
+   "filter": [
+    "==",
+    "_label_class",
+    0
+   ],
+   "minzoom": 17,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       9
+      ],
+      [
+       8,
+       10
+      ],
+      [
+       12,
+       11
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-line-height": 0.9
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": {
+     "stops": [
+      [
+       14,
+       "rgba(226, 227, 222, 0.88)"
+      ],
+      [
+       18,
+       "rgba(255, 255, 255, 0.88)"
+      ]
+     ]
+    },
+    "text-halo-blur": 0.25,
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       22,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Point of interest/Bus station",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Point of interest",
+   "filter": [
+    "==",
+    "_symbol",
+    2
+   ],
+   "minzoom": 17,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 5,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       9
+      ],
+      [
+       8,
+       10
+      ],
+      [
+       12,
+       11
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-line-height": 0.9
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": {
+     "stops": [
+      [
+       14,
+       "rgba(226, 227, 222, 0.88)"
+      ],
+      [
+       18,
+       "rgba(255, 255, 255, 0.88)"
+      ]
+     ]
+    },
+    "text-halo-blur": 0.25,
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       22,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Point of interest/Rail station",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Point of interest",
+   "filter": [
+    "==",
+    "_symbol",
+    3
+   ],
+   "minzoom": 17,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 5,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       9
+      ],
+      [
+       8,
+       10
+      ],
+      [
+       12,
+       11
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-line-height": 0.9
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": {
+     "stops": [
+      [
+       14,
+       "rgba(226, 227, 222, 0.88)"
+      ],
+      [
+       18,
+       "rgba(255, 255, 255, 0.88)"
+      ]
+     ]
+    },
+    "text-halo-blur": 0.25,
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       22,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Neighborhood",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Neighborhood",
+   "minzoom": 14,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": {
+     "stops": [
+      [
+       13,
+       20
+      ],
+      [
+       18,
+       2
+      ]
+     ]
+    },
+    "text-font": [
+     "Founders Grotesk Text Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       14,
+       10
+      ],
+      [
+       18,
+       14
+      ]
+     ]
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": 0.1
+   },
+   "paint": {
+    "text-color": "#99a9b2",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#e8f8ef"
+   }
+  },
+  {
+   "id": "Landform/label/Round small",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Landform/label",
+   "filter": [
+    "==",
+    "_label_class",
+    0
+   ],
+   "layout": {
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "text-optional": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       0,
+       8
+      ],
+      [
+       10,
+       12
+      ]
+     ]
+    },
+    "text-line-height": 0.9,
+    "text-transform": "uppercase",
+    "text-letter-spacing": {
+     "stops": [
+      [
+       4,
+       0.12
+      ],
+      [
+       8,
+       0.22
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.3,
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Landform/label/Round medium",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Landform/label",
+   "filter": [
+    "==",
+    "_label_class",
+    1
+   ],
+   "layout": {
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "text-optional": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       0,
+       8
+      ],
+      [
+       4,
+       8.5
+      ],
+      [
+       10,
+       12
+      ]
+     ]
+    },
+    "text-line-height": 0.9,
+    "text-transform": "uppercase",
+    "text-letter-spacing": {
+     "stops": [
+      [
+       4,
+       0.12
+      ],
+      [
+       8,
+       0.22
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.3,
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Landform/label/Round large",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Landform/label",
+   "filter": [
+    "==",
+    "_label_class",
+    2
+   ],
+   "maxzoom": 10,
+   "layout": {
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "text-optional": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       0,
+       8
+      ],
+      [
+       4,
+       9
+      ],
+      [
+       6,
+       13
+      ]
+     ]
+    },
+    "text-line-height": 0.9,
+    "text-transform": "uppercase",
+    "text-letter-spacing": {
+     "stops": [
+      [
+       4,
+       0.12
+      ],
+      [
+       8,
+       0.22
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.3,
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Landform/label/Oblong small",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Landform/label",
+   "filter": [
+    "==",
+    "_label_class",
+    4
+   ],
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 1000,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "text-optional": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       0,
+       8
+      ],
+      [
+       10,
+       12
+      ]
+     ]
+    },
+    "text-line-height": 0.9,
+    "text-transform": "uppercase",
+    "text-letter-spacing": {
+     "stops": [
+      [
+       4,
+       0.2
+      ],
+      [
+       8,
+       0.35
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.3,
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Landform/label/Oblong small point",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Landform/label",
+   "filter": [
+    "==",
+    "_label_class",
+    1004
+   ],
+   "layout": {
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "text-optional": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       0,
+       8
+      ],
+      [
+       10,
+       12
+      ]
+     ]
+    },
+    "text-line-height": 0.9,
+    "text-transform": "uppercase",
+    "text-letter-spacing": {
+     "stops": [
+      [
+       4,
+       0.2
+      ],
+      [
+       8,
+       0.35
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.3,
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Landform/label/Oblong medium",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Landform/label",
+   "filter": [
+    "==",
+    "_label_class",
+    5
+   ],
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 1000,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "text-optional": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       0,
+       8
+      ],
+      [
+       4,
+       8.5
+      ],
+      [
+       10,
+       12
+      ]
+     ]
+    },
+    "text-line-height": 0.9,
+    "text-transform": "uppercase",
+    "text-letter-spacing": {
+     "stops": [
+      [
+       4,
+       0.2
+      ],
+      [
+       8,
+       0.35
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.3,
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Landform/label/Oblong medium point",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Landform/label",
+   "filter": [
+    "==",
+    "_label_class",
+    1005
+   ],
+   "layout": {
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "text-optional": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       0,
+       8
+      ],
+      [
+       4,
+       8.5
+      ],
+      [
+       10,
+       12
+      ]
+     ]
+    },
+    "text-line-height": 0.9,
+    "text-transform": "uppercase",
+    "text-letter-spacing": {
+     "stops": [
+      [
+       4,
+       0.2
+      ],
+      [
+       8,
+       0.35
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.3,
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Landform/label/Oblong large",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Landform/label",
+   "filter": [
+    "==",
+    "_label_class",
+    6
+   ],
+   "maxzoom": 9,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 1000,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "text-optional": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       0,
+       8
+      ],
+      [
+       4,
+       9
+      ],
+      [
+       6,
+       13
+      ]
+     ]
+    },
+    "text-line-height": 0.9,
+    "text-transform": "uppercase",
+    "text-letter-spacing": {
+     "stops": [
+      [
+       4,
+       0.2
+      ],
+      [
+       8,
+       0.35
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.3,
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Landform/label/Oblong large point",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Landform/label",
+   "filter": [
+    "==",
+    "_label_class",
+    1006
+   ],
+   "maxzoom": 10,
+   "layout": {
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "text-optional": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       0,
+       8
+      ],
+      [
+       4,
+       9
+      ],
+      [
+       6,
+       13
+      ]
+     ]
+    },
+    "text-line-height": 0.9,
+    "text-transform": "uppercase",
+    "text-letter-spacing": {
+     "stops": [
+      [
+       4,
+       0.2
+      ],
+      [
+       8,
+       0.35
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.3,
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Landform/label/Round x large",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Landform/label",
+   "filter": [
+    "==",
+    "_label_class",
+    3
+   ],
+   "maxzoom": 7,
+   "layout": {
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "text-optional": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       2,
+       9.5
+      ],
+      [
+       4,
+       13
+      ],
+      [
+       6,
+       20
+      ]
+     ]
+    },
+    "text-line-height": 0.9,
+    "text-transform": "uppercase",
+    "text-letter-spacing": {
+     "stops": [
+      [
+       4,
+       0.12
+      ],
+      [
+       8,
+       0.22
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.3,
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Landform/label/Oblong x large",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Landform/label",
+   "filter": [
+    "==",
+    "_label_class",
+    7
+   ],
+   "maxzoom": 6,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 1000,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "text-optional": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       0,
+       9.5
+      ],
+      [
+       4,
+       13
+      ],
+      [
+       6,
+       17
+      ]
+     ]
+    },
+    "text-line-height": 0.9,
+    "text-transform": "uppercase",
+    "text-letter-spacing": {
+     "stops": [
+      [
+       4,
+       0.2
+      ],
+      [
+       8,
+       0.35
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.3,
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Landform/label/Oblong x large point",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Landform/label",
+   "filter": [
+    "==",
+    "_label_class",
+    1007
+   ],
+   "maxzoom": 6,
+   "layout": {
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "text-optional": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       0,
+       9.5
+      ],
+      [
+       4,
+       13
+      ],
+      [
+       6,
+       17
+      ]
+     ]
+    },
+    "text-line-height": 0.9,
+    "text-transform": "uppercase",
+    "text-letter-spacing": {
+     "stops": [
+      [
+       4,
+       0.2
+      ],
+      [
+       8,
+       0.35
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.3,
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Spot elevation",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Spot elevation",
+   "minzoom": 0,
+   "layout": {
+    "icon-image": "Spotheight",
+    "icon-padding": 40,
+    "icon-allow-overlap": true,
+    "symbol-avoid-edges": true,
+    "text-anchor": "top",
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 40,
+    "text-offset": [
+     0,
+     0.65
+    ],
+    "text-justify": "left",
+    "icon-size": {
+     "stops": [
+      [
+       11,
+       0.8
+      ],
+      [
+       16,
+       1
+      ]
+     ]
+    },
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       8,
+       12
+      ],
+      [
+       12,
+       18
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-line-height": 0.9
+   },
+   "paint": {
+    "text-color": "#4d5c66",
+    "text-opacity": 0.9,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.3,
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "City large scale/town small",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City large scale",
+   "filter": [
+    "==",
+    "_label_class",
+    5
+   ],
+   "minzoom": 10,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 15,
+    "text-font": [
+     "Founders Grotesk Text Bold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       8
+      ],
+      [
+       10,
+       13
+      ],
+      [
+       14,
+       30
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": -0.01
+   },
+   "paint": {
+    "text-color": "#99a9b2",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#e8f8ef"
+   }
+  },
+  {
+   "id": "City large scale/town large",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City large scale",
+   "filter": [
+    "==",
+    "_label_class",
+    4
+   ],
+   "minzoom": 10,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "text-font": [
+     "Founders Grotesk Text Bold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       8
+      ],
+      [
+       10,
+       13
+      ],
+      [
+       14,
+       30
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": -0.01
+   },
+   "paint": {
+    "text-color": "#99a9b2",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#e8f8ef"
+   }
+  },
+  {
+   "id": "City large scale/small",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City large scale",
+   "filter": [
+    "==",
+    "_label_class",
+    3
+   ],
+   "minzoom": 10,
+   "maxzoom": 18,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "text-font": [
+     "Founders Grotesk Text Bold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       8
+      ],
+      [
+       10,
+       13
+      ],
+      [
+       14,
+       30
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": -0.01
+   },
+   "paint": {
+    "text-color": "#99a9b2",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#e8f8ef"
+   }
+  },
+  {
+   "id": "City large scale/medium",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City large scale",
+   "filter": [
+    "==",
+    "_label_class",
+    2
+   ],
+   "minzoom": 10,
+   "maxzoom": 17,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       10,
+       15
+      ],
+      [
+       14,
+       38
+      ]
+     ]
+    },
+    "text-transform": "uppercase"
+   },
+   "paint": {
+    "text-color": "#4c7994",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4,
+    "text-opacity": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       0.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "City large scale/large",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City large scale",
+   "filter": [
+    "==",
+    "_label_class",
+    1
+   ],
+   "minzoom": 10,
+   "maxzoom": 17,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       10,
+       15
+      ],
+      [
+       14,
+       38
+      ]
+     ]
+    },
+    "text-transform": "uppercase"
+   },
+   "paint": {
+    "text-color": "#4c7994",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4,
+    "text-opacity": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       0.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "City large scale/x large",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City large scale",
+   "filter": [
+    "==",
+    "_label_class",
+    0
+   ],
+   "minzoom": 10,
+   "maxzoom": 17,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name_global}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       10,
+       15
+      ],
+      [
+       14,
+       38
+      ]
+     ]
+    },
+    "text-transform": "uppercase"
+   },
+   "paint": {
+    "text-color": "#4c7994",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4,
+    "text-opacity": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       0.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "City small scale/town small non capital",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City small scale",
+   "filter": [
+    "==",
+    "_symbol",
+    17
+   ],
+   "minzoom": 2,
+   "maxzoom": 10,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "text-font": [
+     "Founders Grotesk Text Bold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       8
+      ],
+      [
+       10,
+       13
+      ],
+      [
+       14,
+       30
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": -0.01
+   },
+   "paint": {
+    "text-color": "#99a9b2",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#e8f8ef"
+   }
+  },
+  {
+   "id": "City small scale/town large non capital",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City small scale",
+   "filter": [
+    "==",
+    "_symbol",
+    15
+   ],
+   "minzoom": 2,
+   "maxzoom": 10,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "text-font": [
+     "Founders Grotesk Text Bold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       8
+      ],
+      [
+       10,
+       13
+      ],
+      [
+       14,
+       30
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": -0.01
+   },
+   "paint": {
+    "text-color": "#99a9b2",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#e8f8ef"
+   }
+  },
+  {
+   "id": "City small scale/small non capital",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City small scale",
+   "filter": [
+    "==",
+    "_symbol",
+    12
+   ],
+   "minzoom": 2,
+   "maxzoom": 10,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "text-font": [
+     "Founders Grotesk Text Bold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       8
+      ],
+      [
+       10,
+       13
+      ],
+      [
+       14,
+       30
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": -0.01
+   },
+   "paint": {
+    "text-color": "#99a9b2",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#e8f8ef"
+   }
+  },
+  {
+   "id": "City small scale/medium non capital",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City small scale",
+   "filter": [
+    "==",
+    "_symbol",
+    9
+   ],
+   "minzoom": 2,
+   "maxzoom": 10,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       10,
+       15
+      ],
+      [
+       14,
+       38
+      ]
+     ]
+    },
+    "text-transform": "uppercase"
+   },
+   "paint": {
+    "text-color": "#4c7994",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4,
+    "text-opacity": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       0.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "City small scale/other capital",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City small scale",
+   "filter": [
+    "==",
+    "_symbol",
+    18
+   ],
+   "minzoom": 2,
+   "maxzoom": 10,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       10,
+       15
+      ],
+      [
+       14,
+       38
+      ]
+     ]
+    },
+    "text-transform": "uppercase"
+   },
+   "paint": {
+    "text-color": "#4c7994",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4,
+    "text-opacity": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       0.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "City small scale/town large other capital",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City small scale",
+   "filter": [
+    "==",
+    "_symbol",
+    14
+   ],
+   "minzoom": 2,
+   "maxzoom": 10,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "text-font": [
+     "Founders Grotesk Text Bold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       8
+      ],
+      [
+       10,
+       13
+      ],
+      [
+       14,
+       30
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": -0.01
+   },
+   "paint": {
+    "text-color": "#99a9b2",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#e8f8ef"
+   }
+  },
+  {
+   "id": "City small scale/small other capital",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City small scale",
+   "filter": [
+    "==",
+    "_symbol",
+    11
+   ],
+   "minzoom": 2,
+   "maxzoom": 10,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "text-font": [
+     "Founders Grotesk Text Bold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       8
+      ],
+      [
+       10,
+       13
+      ],
+      [
+       14,
+       30
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": -0.01
+   },
+   "paint": {
+    "text-color": "#99a9b2",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#e8f8ef"
+   }
+  },
+  {
+   "id": "City small scale/medium other capital",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City small scale",
+   "filter": [
+    "==",
+    "_symbol",
+    8
+   ],
+   "minzoom": 2,
+   "maxzoom": 10,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       10,
+       15
+      ],
+      [
+       14,
+       38
+      ]
+     ]
+    },
+    "text-transform": "uppercase"
+   },
+   "paint": {
+    "text-color": "#4c7994",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4,
+    "text-opacity": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       0.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Admin0 point/x small",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Admin0 point",
+   "filter": [
+    "==",
+    "_label_class",
+    5
+   ],
+   "minzoom": 5,
+   "maxzoom": 10,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       3,
+       12
+      ],
+      [
+       6,
+       22
+      ],
+      [
+       10,
+       36
+      ]
+     ]
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": {
+     "stops": [
+      [
+       6,
+       0
+      ],
+      [
+       8,
+       0.15
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": {
+     "stops": [
+      [
+       3,
+       "rgba(86, 138, 97, 0.39)"
+      ],
+      [
+       7,
+       "rgba(21, 55, 28, 0.39)"
+      ]
+     ]
+    },
+    "text-halo-width": 1,
+    "text-halo-color": "#e3e8ed",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "Admin0 point/small",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Admin0 point",
+   "filter": [
+    "==",
+    "_label_class",
+    4
+   ],
+   "minzoom": 4,
+   "maxzoom": 10,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       3,
+       12
+      ],
+      [
+       6,
+       22
+      ],
+      [
+       10,
+       36
+      ]
+     ]
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": {
+     "stops": [
+      [
+       6,
+       0
+      ],
+      [
+       8,
+       0.15
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": {
+     "stops": [
+      [
+       3,
+       "rgba(86, 138, 97, 0.39)"
+      ],
+      [
+       7,
+       "rgba(21, 55, 28, 0.39)"
+      ]
+     ]
+    },
+    "text-halo-width": 1,
+    "text-halo-color": "#e3e8ed",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "Admin0 point/medium",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Admin0 point",
+   "filter": [
+    "==",
+    "_label_class",
+    3
+   ],
+   "minzoom": 2,
+   "maxzoom": 10,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       3,
+       12
+      ],
+      [
+       6,
+       22
+      ],
+      [
+       10,
+       36
+      ]
+     ]
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": {
+     "stops": [
+      [
+       6,
+       0
+      ],
+      [
+       8,
+       0.15
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": {
+     "stops": [
+      [
+       3,
+       "rgba(86, 138, 97, 0.39)"
+      ],
+      [
+       7,
+       "rgba(21, 55, 28, 0.39)"
+      ]
+     ]
+    },
+    "text-halo-width": 1,
+    "text-halo-color": "#e3e8ed",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "Admin0 point/large",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Admin0 point",
+   "filter": [
+    "==",
+    "_label_class",
+    2
+   ],
+   "minzoom": 2,
+   "maxzoom": 10,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       3,
+       12
+      ],
+      [
+       6,
+       22
+      ],
+      [
+       10,
+       36
+      ]
+     ]
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": {
+     "stops": [
+      [
+       6,
+       0
+      ],
+      [
+       8,
+       0.15
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": {
+     "stops": [
+      [
+       3,
+       "rgba(86, 138, 97, 0.39)"
+      ],
+      [
+       7,
+       "rgba(21, 55, 28, 0.39)"
+      ]
+     ]
+    },
+    "text-halo-width": 1,
+    "text-halo-color": "#e3e8ed",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "Admin0 point/x large",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Admin0 point",
+   "filter": [
+    "==",
+    "_label_class",
+    1
+   ],
+   "minzoom": 2,
+   "maxzoom": 8,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "symbol-avoid-edges": true,
+    "text-line-height": 1.5,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       3,
+       12
+      ],
+      [
+       6,
+       22
+      ],
+      [
+       10,
+       36
+      ]
+     ]
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": {
+     "stops": [
+      [
+       6,
+       0
+      ],
+      [
+       8,
+       0.15
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": {
+     "stops": [
+      [
+       3,
+       "rgba(86, 138, 97, 0.39)"
+      ],
+      [
+       7,
+       "rgba(21, 55, 28, 0.39)"
+      ]
+     ]
+    },
+    "text-halo-width": 1,
+    "text-halo-color": "#e3e8ed",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "City small scale/town small admin0 capital",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City small scale",
+   "filter": [
+    "==",
+    "_symbol",
+    16
+   ],
+   "minzoom": 2,
+   "maxzoom": 10,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "text-font": [
+     "Founders Grotesk Text Bold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       8
+      ],
+      [
+       10,
+       13
+      ],
+      [
+       14,
+       30
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": -0.01
+   },
+   "paint": {
+    "text-color": "#99a9b2",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#e8f8ef"
+   }
+  },
+  {
+   "id": "City small scale/town large admin0 capital",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City small scale",
+   "filter": [
+    "==",
+    "_symbol",
+    13
+   ],
+   "minzoom": 2,
+   "maxzoom": 10,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "text-font": [
+     "Founders Grotesk Text Bold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       8
+      ],
+      [
+       10,
+       13
+      ],
+      [
+       14,
+       30
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": -0.01
+   },
+   "paint": {
+    "text-color": "#99a9b2",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#e8f8ef"
+   }
+  },
+  {
+   "id": "City small scale/small admin0 capital",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City small scale",
+   "filter": [
+    "==",
+    "_symbol",
+    10
+   ],
+   "minzoom": 2,
+   "maxzoom": 10,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "text-font": [
+     "Founders Grotesk Text Bold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       8
+      ],
+      [
+       10,
+       13
+      ],
+      [
+       14,
+       30
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": -0.01
+   },
+   "paint": {
+    "text-color": "#99a9b2",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#e8f8ef"
+   }
+  },
+  {
+   "id": "City small scale/medium admin0 capital",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City small scale",
+   "filter": [
+    "==",
+    "_symbol",
+    7
+   ],
+   "minzoom": 2,
+   "maxzoom": 10,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       10,
+       15
+      ],
+      [
+       14,
+       38
+      ]
+     ]
+    },
+    "text-transform": "uppercase"
+   },
+   "paint": {
+    "text-color": "#4c7994",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4,
+    "text-opacity": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       0.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "City small scale/large other capital",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City small scale",
+   "filter": [
+    "==",
+    "_symbol",
+    5
+   ],
+   "minzoom": 2,
+   "maxzoom": 10,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       10,
+       15
+      ],
+      [
+       14,
+       38
+      ]
+     ]
+    },
+    "text-transform": "uppercase"
+   },
+   "paint": {
+    "text-color": "#4c7994",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4,
+    "text-opacity": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       0.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "City small scale/x large admin2 capital",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City small scale",
+   "filter": [
+    "==",
+    "_symbol",
+    2
+   ],
+   "minzoom": 2,
+   "maxzoom": 10,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       10,
+       15
+      ],
+      [
+       14,
+       38
+      ]
+     ]
+    },
+    "text-transform": "uppercase"
+   },
+   "paint": {
+    "text-color": "#4c7994",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4,
+    "text-opacity": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       0.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "City small scale/large non capital",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City small scale",
+   "filter": [
+    "==",
+    "_symbol",
+    6
+   ],
+   "minzoom": 2,
+   "maxzoom": 10,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       10,
+       15
+      ],
+      [
+       14,
+       38
+      ]
+     ]
+    },
+    "text-transform": "uppercase"
+   },
+   "paint": {
+    "text-color": "#4c7994",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4,
+    "text-opacity": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       0.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "City small scale/large admin0 capital",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City small scale",
+   "filter": [
+    "==",
+    "_symbol",
+    4
+   ],
+   "minzoom": 2,
+   "maxzoom": 10,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       10,
+       15
+      ],
+      [
+       14,
+       38
+      ]
+     ]
+    },
+    "text-transform": "uppercase"
+   },
+   "paint": {
+    "text-color": "#4c7994",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4,
+    "text-opacity": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       0.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "City small scale/x large non capital",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City small scale",
+   "filter": [
+    "==",
+    "_symbol",
+    3
+   ],
+   "minzoom": 2,
+   "maxzoom": 10,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       10,
+       15
+      ],
+      [
+       14,
+       38
+      ]
+     ]
+    },
+    "text-transform": "uppercase"
+   },
+   "paint": {
+    "text-color": "#4c7994",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4,
+    "text-opacity": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       0.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "City small scale/x large admin1 capital",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City small scale",
+   "filter": [
+    "==",
+    "_symbol",
+    1
+   ],
+   "minzoom": 2,
+   "maxzoom": 10,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       10,
+       15
+      ],
+      [
+       14,
+       38
+      ]
+     ]
+    },
+    "text-transform": "uppercase"
+   },
+   "paint": {
+    "text-color": "#4c7994",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4,
+    "text-opacity": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       0.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "City small scale/x large admin0 capital",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "City small scale",
+   "filter": [
+    "==",
+    "_symbol",
+    0
+   ],
+   "minzoom": 2,
+   "maxzoom": 10,
+   "layout": {
+    "symbol-avoid-edges": true,
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       10,
+       15
+      ],
+      [
+       14,
+       38
+      ]
+     ]
+    },
+    "text-transform": "uppercase"
+   },
+   "paint": {
+    "text-color": "#4c7994",
+    "text-halo-width": {
+     "stops": [
+      [
+       10,
+       0.75
+      ],
+      [
+       16,
+       1.25
+      ]
+     ]
+    },
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.4,
+    "text-opacity": {
+     "stops": [
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       0.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Admin0 point/2x large",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Admin0 point",
+   "filter": [
+    "==",
+    "_label_class",
+    0
+   ],
+   "minzoom": 2,
+   "maxzoom": 6,
+   "layout": {
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-allow-overlap": false,
+    "text-padding": 1,
+    "symbol-avoid-edges": true,
+    "text-line-height": 1.7,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       3,
+       12
+      ],
+      [
+       6,
+       22
+      ],
+      [
+       10,
+       36
+      ]
+     ]
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": {
+     "stops": [
+      [
+       6,
+       0
+      ],
+      [
+       8,
+       0.15
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": {
+     "stops": [
+      [
+       3,
+       "rgba(86, 138, 97, 0.39)"
+      ],
+      [
+       7,
+       "rgba(21, 55, 28, 0.39)"
+      ]
+     ]
+    },
+    "text-halo-width": 1,
+    "text-halo-color": "#e3e8ed",
+    "text-halo-blur": 0.4
+   }
+  },
+  {
+   "id": "Disputed label point/Island",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Disputed label point",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     1
+    ],
+    [
+     "in",
+     "DisputeID",
+     0
+    ]
+   ],
+   "minzoom": 6,
+   "layout": {
+    "icon-image": "Disputed label point",
+    "icon-allow-overlap": true,
+    "text-anchor": "center",
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "text-optional": true,
+    "text-font": [
+     "Flecha S Medium"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       6,
+       10
+      ],
+      [
+       8,
+       11
+      ],
+      [
+       12,
+       14
+      ]
+     ],
+     "base": 1.2
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": {
+     "stops": [
+      [
+       6,
+       0.05
+      ],
+      [
+       8,
+       0.15
+      ]
+     ]
+    },
+    "text-line-height": 1
+   },
+   "paint": {
+    "text-color": "rgba(8, 43, 15, 0.4)",
+    "text-halo-width": 1,
+    "text-halo-color": {
+     "stops": [
+      [
+       0,
+       "rgba(240, 242, 245, 0.85)"
+      ],
+      [
+       22,
+       "#bfc8d4"
+      ]
+     ]
+    },
+    "text-halo-blur": 0.2
+   }
+  },
+  {
+   "id": "Disputed label point/Waterbody",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Disputed label point",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     0
+    ],
+    [
+     "in",
+     "DisputeID",
+     1006
+    ]
+   ],
+   "minzoom": 2,
+   "maxzoom": 10,
+   "layout": {
+    "icon-image": "Disputed label point",
+    "icon-allow-overlap": true,
+    "text-anchor": "center",
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-optional": true,
+    "text-font": [
+     "Flecha S Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       2,
+       10
+      ],
+      [
+       4,
+       14
+      ],
+      [
+       8,
+       20
+      ]
+     ],
+     "base": 1.2
+    }
+   },
+   "paint": {
+    "text-color": "#1d588b",
+    "text-halo-width": {
+     "stops": [
+      [
+       6,
+       0.65
+      ],
+      [
+       12,
+       1
+      ]
+     ]
+    },
+    "text-halo-color": "#f9fafb",
+    "text-halo-blur": 0.3,
+    "text-opacity": {
+     "stops": [
+      [
+       5,
+       0.5
+      ],
+      [
+       12,
+       0.75
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Disputed label point/Admin0",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Disputed label point",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     2
+    ],
+    [
+     "in",
+     "DisputeID",
+     1021
+    ]
+   ],
+   "minzoom": 2,
+   "layout": {
+    "icon-image": "Disputed label point",
+    "icon-allow-overlap": true,
+    "text-anchor": "center",
+    "text-max-width": 6,
+    "text-field": "{_name}",
+    "text-optional": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       3,
+       12
+      ],
+      [
+       6,
+       22
+      ],
+      [
+       10,
+       36
+      ]
+     ]
+    },
+    "text-transform": "uppercase",
+    "text-letter-spacing": {
+     "stops": [
+      [
+       6,
+       0
+      ],
+      [
+       8,
+       0.15
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": {
+     "stops": [
+      [
+       3,
+       "rgba(86, 138, 97, 0.39)"
+      ],
+      [
+       7,
+       "rgba(21, 55, 28, 0.39)"
+      ]
+     ]
+    },
+    "text-halo-width": 1,
+    "text-halo-color": "#e3e8ed",
+    "text-halo-blur": 0.4
+   }
+  }
+ ]
+}
