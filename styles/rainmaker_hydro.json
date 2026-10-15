@@ -1,0 +1,251 @@
+{
+ "version": 8,
+ "name": "Rainmaker Hydro",
+ "metadata": {
+  "source": "Rebuilt from Mapbox Studio style 'cali terrain v4-copy-copy-copy-copy' on Esri World Basemap v2"
+ },
+ "sources": {
+  "esri": {
+   "type": "vector",
+   "maxzoom": 16,
+   "tiles": [
+    "https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer/tile/{z}/{y}/{x}.pbf"
+   ]
+  }
+ },
+ "sprite": "https://evanapplegate.github.io/rainmaker-basemap/sprites/sprite",
+ "glyphs": "https://evanapplegate.github.io/rainmaker-basemap/glyphs/{fontstack}/{range}.pbf",
+ "layers": [
+  {
+   "id": "Water line small scale",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Water line small scale",
+   "minzoom": 1,
+   "maxzoom": 5,
+   "layout": {
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#d1e3e5",
+    "line-width": {
+     "stops": [
+      [
+       8,
+       0.75
+      ],
+      [
+       12,
+       2.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Water line medium scale",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Water line medium scale",
+   "minzoom": 6,
+   "maxzoom": 7,
+   "layout": {
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#d1e3e5",
+    "line-width": {
+     "stops": [
+      [
+       8,
+       0.75
+      ],
+      [
+       12,
+       2.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Water line large scale",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Water line large scale",
+   "minzoom": 7,
+   "maxzoom": 11,
+   "layout": {
+    "line-cap": "round",
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#d1e3e5",
+    "line-width": {
+     "stops": [
+      [
+       8,
+       0.75
+      ],
+      [
+       12,
+       2.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Water line/Waterfall",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Water line",
+   "filter": [
+    "==",
+    "_symbol",
+    5
+   ],
+   "minzoom": 11,
+   "layout": {
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#d1e3e5",
+    "line-width": {
+     "stops": [
+      [
+       8,
+       0.75
+      ],
+      [
+       12,
+       2.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Water line/Dam or weir",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Water line",
+   "filter": [
+    "==",
+    "_symbol",
+    2
+   ],
+   "minzoom": 11,
+   "layout": {
+    "line-cap": "round",
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#d1e3e5",
+    "line-width": {
+     "stops": [
+      [
+       8,
+       0.75
+      ],
+      [
+       12,
+       2.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Water line/Canal or ditch",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Water line",
+   "filter": [
+    "==",
+    "_symbol",
+    1
+   ],
+   "minzoom": 11,
+   "layout": {
+    "line-cap": "round"
+   },
+   "paint": {
+    "line-color": "#d1e3e5",
+    "line-width": {
+     "stops": [
+      [
+       8,
+       0.75
+      ],
+      [
+       12,
+       2.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Water line/Stream or river intermittent",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Water line",
+   "filter": [
+    "==",
+    "_symbol",
+    4
+   ],
+   "minzoom": 11,
+   "paint": {
+    "line-color": "#d1e3e5",
+    "line-width": {
+     "stops": [
+      [
+       8,
+       0.75
+      ],
+      [
+       12,
+       2.5
+      ]
+     ]
+    },
+    "line-dasharray": [
+     7,
+     3
+    ]
+   }
+  },
+  {
+   "id": "Water line/Stream or river",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Water line",
+   "filter": [
+    "==",
+    "_symbol",
+    0
+   ],
+   "minzoom": 11,
+   "layout": {
+    "line-cap": "round"
+   },
+   "paint": {
+    "line-color": "#d1e3e5",
+    "line-width": {
+     "stops": [
+      [
+       8,
+       0.75
+      ],
+      [
+       12,
+       2.5
+      ]
+     ]
+    }
+   }
+  }
+ ]
+}
