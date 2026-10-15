@@ -1,0 +1,433 @@
+{
+ "version": 8,
+ "name": "Rainmaker Waterbodies",
+ "metadata": {
+  "source": "Rebuilt from Mapbox Studio style 'cali terrain v4-copy-copy-copy-copy' on Esri World Basemap v2"
+ },
+ "sources": {
+  "esri": {
+   "type": "vector",
+   "maxzoom": 16,
+   "tiles": [
+    "https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer/tile/{z}/{y}/{x}.pbf"
+   ]
+  }
+ },
+ "sprite": "https://evanapplegate.github.io/rainmaker-basemap/sprites/sprite",
+ "glyphs": "https://evanapplegate.github.io/rainmaker-basemap/glyphs/{fontstack}/{range}.pbf",
+ "layers": [
+  {
+   "id": "Marine area/bathymetry depth 1",
+   "type": "fill",
+   "source": "esri",
+   "source-layer": "Marine area",
+   "minzoom": 4,
+   "paint": {
+    "fill-color": {
+     "stops": [
+      [
+       6,
+       "#e8f1f2"
+      ],
+      [
+       20,
+       "#d1e3e5"
+      ]
+     ]
+    },
+    "fill-opacity": {
+     "stops": [
+      [
+       8,
+       0.75
+      ],
+      [
+       10,
+       1
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Water area small scale",
+   "type": "fill",
+   "source": "esri",
+   "source-layer": "Water area small scale",
+   "minzoom": 1,
+   "maxzoom": 5,
+   "paint": {
+    "fill-color": {
+     "stops": [
+      [
+       6,
+       "#e8f1f2"
+      ],
+      [
+       20,
+       "#d1e3e5"
+      ]
+     ]
+    },
+    "fill-opacity": {
+     "stops": [
+      [
+       8,
+       0.75
+      ],
+      [
+       10,
+       1
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Water area medium scale/Lake intermittent",
+   "type": "fill",
+   "source": "esri",
+   "source-layer": "Water area medium scale",
+   "filter": [
+    "==",
+    "_symbol",
+    1
+   ],
+   "minzoom": 5,
+   "maxzoom": 7,
+   "paint": {
+    "fill-color": {
+     "stops": [
+      [
+       6,
+       "#e8f1f2"
+      ],
+      [
+       20,
+       "#d1e3e5"
+      ]
+     ]
+    },
+    "fill-opacity": {
+     "stops": [
+      [
+       8,
+       0.375
+      ],
+      [
+       10,
+       0.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Water area medium scale/Lake or river",
+   "type": "fill",
+   "source": "esri",
+   "source-layer": "Water area medium scale",
+   "filter": [
+    "==",
+    "_symbol",
+    0
+   ],
+   "minzoom": 5,
+   "maxzoom": 7,
+   "paint": {
+    "fill-color": {
+     "stops": [
+      [
+       6,
+       "#e8f1f2"
+      ],
+      [
+       20,
+       "#d1e3e5"
+      ]
+     ]
+    },
+    "fill-opacity": {
+     "stops": [
+      [
+       8,
+       0.75
+      ],
+      [
+       10,
+       1
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Water area large scale/Lake intermittent",
+   "type": "fill",
+   "source": "esri",
+   "source-layer": "Water area large scale",
+   "filter": [
+    "==",
+    "_symbol",
+    1
+   ],
+   "minzoom": 7,
+   "maxzoom": 11,
+   "paint": {
+    "fill-color": {
+     "stops": [
+      [
+       6,
+       "#e8f1f2"
+      ],
+      [
+       20,
+       "#d1e3e5"
+      ]
+     ]
+    },
+    "fill-opacity": {
+     "stops": [
+      [
+       8,
+       0.375
+      ],
+      [
+       10,
+       0.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Water area large scale/Lake or river",
+   "type": "fill",
+   "source": "esri",
+   "source-layer": "Water area large scale",
+   "filter": [
+    "==",
+    "_symbol",
+    0
+   ],
+   "minzoom": 7,
+   "maxzoom": 11,
+   "paint": {
+    "fill-color": {
+     "stops": [
+      [
+       6,
+       "#e8f1f2"
+      ],
+      [
+       20,
+       "#d1e3e5"
+      ]
+     ]
+    },
+    "fill-opacity": {
+     "stops": [
+      [
+       8,
+       0.75
+      ],
+      [
+       10,
+       1
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Water area/Lake, river or bay",
+   "type": "fill",
+   "source": "esri",
+   "source-layer": "Water area",
+   "filter": [
+    "==",
+    "_symbol",
+    7
+   ],
+   "minzoom": 11,
+   "paint": {
+    "fill-color": {
+     "stops": [
+      [
+       6,
+       "#e8f1f2"
+      ],
+      [
+       20,
+       "#d1e3e5"
+      ]
+     ]
+    },
+    "fill-opacity": {
+     "stops": [
+      [
+       8,
+       0.75
+      ],
+      [
+       10,
+       1
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Water area/Lake or river intermittent",
+   "type": "fill",
+   "source": "esri",
+   "source-layer": "Water area",
+   "filter": [
+    "==",
+    "_symbol",
+    6
+   ],
+   "minzoom": 11,
+   "paint": {
+    "fill-color": {
+     "stops": [
+      [
+       6,
+       "#e8f1f2"
+      ],
+      [
+       20,
+       "#d1e3e5"
+      ]
+     ]
+    },
+    "fill-opacity": {
+     "stops": [
+      [
+       8,
+       0.375
+      ],
+      [
+       10,
+       0.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Water area/Inundated area",
+   "type": "fill",
+   "source": "esri",
+   "source-layer": "Water area",
+   "filter": [
+    "==",
+    "_symbol",
+    4
+   ],
+   "minzoom": 11,
+   "paint": {
+    "fill-color": {
+     "stops": [
+      [
+       6,
+       "#e8f1f2"
+      ],
+      [
+       20,
+       "#d1e3e5"
+      ]
+     ]
+    },
+    "fill-opacity": {
+     "stops": [
+      [
+       8,
+       0.375
+      ],
+      [
+       10,
+       0.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Water area/Swamp or marsh",
+   "type": "fill",
+   "source": "esri",
+   "source-layer": "Water area",
+   "filter": [
+    "==",
+    "_symbol",
+    3
+   ],
+   "minzoom": 11,
+   "paint": {
+    "fill-color": {
+     "stops": [
+      [
+       6,
+       "#e8f1f2"
+      ],
+      [
+       20,
+       "#d1e3e5"
+      ]
+     ]
+    },
+    "fill-opacity": {
+     "stops": [
+      [
+       8,
+       0.375
+      ],
+      [
+       10,
+       0.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Water area/Dam or weir",
+   "type": "fill",
+   "source": "esri",
+   "source-layer": "Water area",
+   "filter": [
+    "==",
+    "_symbol",
+    5
+   ],
+   "minzoom": 11,
+   "paint": {
+    "fill-color": {
+     "stops": [
+      [
+       6,
+       "#e8f1f2"
+      ],
+      [
+       20,
+       "#d1e3e5"
+      ]
+     ]
+    },
+    "fill-opacity": {
+     "stops": [
+      [
+       8,
+       0.75
+      ],
+      [
+       10,
+       1
+      ]
+     ]
+    }
+   }
+  }
+ ]
+}
