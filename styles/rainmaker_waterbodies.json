@@ -23,18 +23,7 @@
    "source-layer": "Marine area",
    "minzoom": 4,
    "paint": {
-    "fill-color": {
-     "stops": [
-      [
-       6,
-       "#e8f1f2"
-      ],
-      [
-       20,
-       "#d1e3e5"
-      ]
-     ]
-    },
+    "fill-color": "#4a6b82",
     "fill-opacity": {
      "stops": [
       [
@@ -57,18 +46,7 @@
    "minzoom": 1,
    "maxzoom": 5,
    "paint": {
-    "fill-color": {
-     "stops": [
-      [
-       6,
-       "#e8f1f2"
-      ],
-      [
-       20,
-       "#d1e3e5"
-      ]
-     ]
-    },
+    "fill-color": "#4a6b82",
     "fill-opacity": {
      "stops": [
       [
@@ -96,18 +74,7 @@
    "minzoom": 5,
    "maxzoom": 7,
    "paint": {
-    "fill-color": {
-     "stops": [
-      [
-       6,
-       "#e8f1f2"
-      ],
-      [
-       20,
-       "#d1e3e5"
-      ]
-     ]
-    },
+    "fill-color": "#4a6b82",
     "fill-opacity": {
      "stops": [
       [
@@ -135,18 +102,7 @@
    "minzoom": 5,
    "maxzoom": 7,
    "paint": {
-    "fill-color": {
-     "stops": [
-      [
-       6,
-       "#e8f1f2"
-      ],
-      [
-       20,
-       "#d1e3e5"
-      ]
-     ]
-    },
+    "fill-color": "#4a6b82",
     "fill-opacity": {
      "stops": [
       [
@@ -174,18 +130,7 @@
    "minzoom": 7,
    "maxzoom": 11,
    "paint": {
-    "fill-color": {
-     "stops": [
-      [
-       6,
-       "#e8f1f2"
-      ],
-      [
-       20,
-       "#d1e3e5"
-      ]
-     ]
-    },
+    "fill-color": "#4a6b82",
     "fill-opacity": {
      "stops": [
       [
@@ -213,18 +158,7 @@
    "minzoom": 7,
    "maxzoom": 11,
    "paint": {
-    "fill-color": {
-     "stops": [
-      [
-       6,
-       "#e8f1f2"
-      ],
-      [
-       20,
-       "#d1e3e5"
-      ]
-     ]
-    },
+    "fill-color": "#4a6b82",
     "fill-opacity": {
      "stops": [
       [
@@ -251,18 +185,7 @@
    ],
    "minzoom": 11,
    "paint": {
-    "fill-color": {
-     "stops": [
-      [
-       6,
-       "#e8f1f2"
-      ],
-      [
-       20,
-       "#d1e3e5"
-      ]
-     ]
-    },
+    "fill-color": "#4a6b82",
     "fill-opacity": {
      "stops": [
       [
@@ -289,18 +212,7 @@
    ],
    "minzoom": 11,
    "paint": {
-    "fill-color": {
-     "stops": [
-      [
-       6,
-       "#e8f1f2"
-      ],
-      [
-       20,
-       "#d1e3e5"
-      ]
-     ]
-    },
+    "fill-color": "#4a6b82",
     "fill-opacity": {
      "stops": [
       [
@@ -327,18 +239,7 @@
    ],
    "minzoom": 11,
    "paint": {
-    "fill-color": {
-     "stops": [
-      [
-       6,
-       "#e8f1f2"
-      ],
-      [
-       20,
-       "#d1e3e5"
-      ]
-     ]
-    },
+    "fill-color": "#4a6b82",
     "fill-opacity": {
      "stops": [
       [
@@ -365,18 +266,7 @@
    ],
    "minzoom": 11,
    "paint": {
-    "fill-color": {
-     "stops": [
-      [
-       6,
-       "#e8f1f2"
-      ],
-      [
-       20,
-       "#d1e3e5"
-      ]
-     ]
-    },
+    "fill-color": "#4a6b82",
     "fill-opacity": {
      "stops": [
       [
@@ -403,18 +293,7 @@
    ],
    "minzoom": 11,
    "paint": {
-    "fill-color": {
-     "stops": [
-      [
-       6,
-       "#e8f1f2"
-      ],
-      [
-       20,
-       "#d1e3e5"
-      ]
-     ]
-    },
+    "fill-color": "#4a6b82",
     "fill-opacity": {
      "stops": [
       [
