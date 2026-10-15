@@ -13330,11 +13330,11 @@
      "stops": [
       [
        4,
-       0.12
+       0.06
       ],
       [
        8,
-       0.22
+       0.11
       ]
      ]
     }
@@ -13344,7 +13344,7 @@
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
     "text-halo-blur": 0.8,
-    "text-halo-width": 2
+    "text-halo-width": 3.5
    }
   },
   {
@@ -13386,11 +13386,11 @@
      "stops": [
       [
        4,
-       0.12
+       0.06
       ],
       [
        8,
-       0.22
+       0.11
       ]
      ]
     }
@@ -13400,7 +13400,7 @@
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
     "text-halo-blur": 0.8,
-    "text-halo-width": 2
+    "text-halo-width": 3.5
    }
   },
   {
@@ -13443,11 +13443,11 @@
      "stops": [
       [
        4,
-       0.12
+       0.06
       ],
       [
        8,
-       0.22
+       0.11
       ]
      ]
     }
@@ -13457,7 +13457,7 @@
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
     "text-halo-blur": 0.8,
-    "text-halo-width": 2
+    "text-halo-width": 3.5
    }
   },
   {
@@ -13497,11 +13497,11 @@
      "stops": [
       [
        4,
-       0.2
+       0.1
       ],
       [
        8,
-       0.35
+       0.175
       ]
      ]
     }
@@ -13511,7 +13511,7 @@
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
     "text-halo-blur": 0.8,
-    "text-halo-width": 2
+    "text-halo-width": 3.5
    }
   },
   {
@@ -13549,11 +13549,11 @@
      "stops": [
       [
        4,
-       0.2
+       0.1
       ],
       [
        8,
-       0.35
+       0.175
       ]
      ]
     }
@@ -13563,7 +13563,7 @@
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
     "text-halo-blur": 0.8,
-    "text-halo-width": 2
+    "text-halo-width": 3.5
    }
   },
   {
@@ -13607,11 +13607,11 @@
      "stops": [
       [
        4,
-       0.2
+       0.1
       ],
       [
        8,
-       0.35
+       0.175
       ]
      ]
     }
@@ -13621,7 +13621,7 @@
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
     "text-halo-blur": 0.8,
-    "text-halo-width": 2
+    "text-halo-width": 3.5
    }
   },
   {
@@ -13663,11 +13663,11 @@
      "stops": [
       [
        4,
-       0.2
+       0.1
       ],
       [
        8,
-       0.35
+       0.175
       ]
      ]
     }
@@ -13677,7 +13677,7 @@
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
     "text-halo-blur": 0.8,
-    "text-halo-width": 2
+    "text-halo-width": 3.5
    }
   },
   {
@@ -13722,11 +13722,11 @@
      "stops": [
       [
        4,
-       0.2
+       0.1
       ],
       [
        8,
-       0.35
+       0.175
       ]
      ]
     }
@@ -13736,7 +13736,7 @@
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
     "text-halo-blur": 0.8,
-    "text-halo-width": 2
+    "text-halo-width": 3.5
    }
   },
   {
@@ -13779,11 +13779,11 @@
      "stops": [
       [
        4,
-       0.2
+       0.1
       ],
       [
        8,
-       0.35
+       0.175
       ]
      ]
     }
@@ -13793,7 +13793,7 @@
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
     "text-halo-blur": 0.8,
-    "text-halo-width": 2
+    "text-halo-width": 3.5
    }
   },
   {
@@ -13836,11 +13836,11 @@
      "stops": [
       [
        4,
-       0.12
+       0.06
       ],
       [
        8,
-       0.22
+       0.11
       ]
      ]
     }
@@ -13850,7 +13850,7 @@
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
     "text-halo-blur": 0.8,
-    "text-halo-width": 2
+    "text-halo-width": 3.5
    }
   },
   {
@@ -13895,11 +13895,11 @@
      "stops": [
       [
        4,
-       0.2
+       0.1
       ],
       [
        8,
-       0.35
+       0.175
       ]
      ]
     }
@@ -13909,7 +13909,7 @@
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
     "text-halo-blur": 0.8,
-    "text-halo-width": 2
+    "text-halo-width": 3.5
    }
   },
   {
@@ -13952,11 +13952,11 @@
      "stops": [
       [
        4,
-       0.2
+       0.1
       ],
       [
        8,
-       0.35
+       0.175
       ]
      ]
     }
@@ -13966,7 +13966,7 @@
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
     "text-halo-blur": 0.8,
-    "text-halo-width": 2
+    "text-halo-width": 3.5
    }
   },
   {
