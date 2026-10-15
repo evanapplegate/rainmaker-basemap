@@ -7,15 +7,17 @@
  "sources": {
   "esri": {
    "type": "vector",
-   "url": "https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer"
+   "maxzoom": 16,
+   "tiles": [
+    "https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer/tile/{z}/{y}/{x}.pbf"
+   ]
   },
   "hillshade": {
    "type": "vector",
-   "url": "https://basemaps.arcgis.com/arcgis/rest/services/World_Hillshade_v2/VectorTileServer"
-  },
-  "contours": {
-   "type": "vector",
-   "url": "https://basemaps.arcgis.com/arcgis/rest/services/World_Contours_v2/VectorTileServer"
+   "maxzoom": 15,
+   "tiles": [
+    "https://basemaps.arcgis.com/arcgis/rest/services/World_Hillshade_v2/VectorTileServer/tile/{z}/{y}/{x}.pbf"
+   ]
   }
  },
  "sprite": "https://evanapplegate.github.io/rainmaker-basemap/sprites/sprite",
@@ -1692,160 +1694,6 @@
    }
   },
   {
-   "id": "Hillshade/shadow edge",
-   "type": "line",
-   "source": "hillshade",
-   "source-layer": "Hillshade",
-   "filter": [
-    "in",
-    "_symbol",
-    0,
-    1,
-    2,
-    3
-   ],
-   "paint": {
-    "line-color": "#413939",
-    "line-width": 0.5,
-    "line-opacity": 0.1
-   }
-  },
-  {
-   "id": "Contours/Contour_11_main/0",
-   "type": "line",
-   "source": "contours",
-   "source-layer": "Contour",
-   "filter": [
-    "all",
-    [
-     "==",
-     "Index3",
-     1
-    ],
-    [
-     "==",
-     "Index5",
-     1
-    ]
-   ],
-   "minzoom": 11,
-   "maxzoom": 12,
-   "paint": {
-    "line-color": "#5b5757",
-    "line-opacity": {
-     "stops": [
-      [
-       10,
-       0.05
-      ],
-      [
-       14,
-       0.25
-      ]
-     ]
-    }
-   }
-  },
-  {
-   "id": "Contours/Contour_12_main/0",
-   "type": "line",
-   "source": "contours",
-   "source-layer": "Contour",
-   "filter": [
-    "all",
-    [
-     "==",
-     "Index2",
-     1
-    ],
-    [
-     "==",
-     "Index4",
-     1
-    ]
-   ],
-   "minzoom": 12,
-   "maxzoom": 14,
-   "paint": {
-    "line-color": "#5b5757",
-    "line-opacity": {
-     "stops": [
-      [
-       10,
-       0.05
-      ],
-      [
-       14,
-       0.25
-      ]
-     ]
-    }
-   }
-  },
-  {
-   "id": "Contours/Contour_13_main/0",
-   "type": "line",
-   "source": "contours",
-   "source-layer": "Contour",
-   "filter": [
-    "all",
-    [
-     "==",
-     "Index1",
-     1
-    ],
-    [
-     "==",
-     "Index3",
-     1
-    ]
-   ],
-   "minzoom": 14,
-   "maxzoom": 16,
-   "paint": {
-    "line-color": "#5b5757",
-    "line-opacity": {
-     "stops": [
-      [
-       10,
-       0.05
-      ],
-      [
-       14,
-       0.25
-      ]
-     ]
-    }
-   }
-  },
-  {
-   "id": "Contours/Contour_14_main/0",
-   "type": "line",
-   "source": "contours",
-   "source-layer": "Contour",
-   "filter": [
-    "==",
-    "Index2",
-    1
-   ],
-   "minzoom": 16,
-   "paint": {
-    "line-color": "#5b5757",
-    "line-opacity": {
-     "stops": [
-      [
-       10,
-       0.05
-      ],
-      [
-       14,
-       0.25
-      ]
-     ]
-    }
-   }
-  },
-  {
    "id": "Hillshade/extreme dark shadow",
    "type": "fill",
    "source": "hillshade",
@@ -1868,8 +1716,7 @@
        0.7
       ]
      ]
-    },
-    "fill-outline-color": "#2f536a"
+    }
    }
   },
   {

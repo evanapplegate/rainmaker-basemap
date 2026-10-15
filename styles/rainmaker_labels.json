@@ -7,7 +7,10 @@
  "sources": {
   "esri": {
    "type": "vector",
-   "url": "https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer"
+   "maxzoom": 16,
+   "tiles": [
+    "https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer/tile/{z}/{y}/{x}.pbf"
+   ]
   }
  },
  "sprite": "https://evanapplegate.github.io/rainmaker-basemap/sprites/sprite",
@@ -1825,7 +1828,7 @@
    ],
    "minzoom": 9,
    "layout": {
-    "symbol-avoid-edges": true,
+    "symbol-avoid-edges": false,
     "text-anchor": "center",
     "text-max-width": 4,
     "text-field": "{_name_global}",
@@ -1838,15 +1841,21 @@
      "stops": [
       [
        13,
-       12
+       10
       ],
       [
-       16,
-       18
+       15,
+       14
+      ],
+      [
+       17,
+       17
       ]
      ]
     },
-    "text-transform": "uppercase"
+    "text-transform": "none",
+    "text-max-angle": 30,
+    "symbol-spacing": 400
    },
    "paint": {
     "text-color": "rgba(37, 87, 131, 0.83)",
@@ -1867,7 +1876,7 @@
    ],
    "minzoom": 9,
    "layout": {
-    "symbol-avoid-edges": true,
+    "symbol-avoid-edges": false,
     "text-anchor": "center",
     "text-max-width": 4,
     "text-field": "{_name_global}",
@@ -1880,15 +1889,21 @@
      "stops": [
       [
        13,
-       12
+       10
       ],
       [
-       16,
-       18
+       15,
+       14
+      ],
+      [
+       17,
+       17
       ]
      ]
     },
-    "text-transform": "uppercase"
+    "text-transform": "none",
+    "text-max-angle": 30,
+    "symbol-spacing": 400
    },
    "paint": {
     "text-color": "rgba(37, 87, 131, 0.83)",
@@ -1997,16 +2012,16 @@
    "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
-    "symbol-avoid-edges": true,
+    "symbol-avoid-edges": false,
     "text-max-width": 6,
-    "text-max-angle": 18,
+    "text-max-angle": 30,
     "text-field": "{_name_global}",
     "text-padding": 1,
     "text-offset": [
      0,
      -0.5
     ],
-    "symbol-spacing": 800,
+    "symbol-spacing": 400,
     "text-font": [
      "Flecha S Bold"
     ],
@@ -2014,15 +2029,19 @@
      "stops": [
       [
        13,
-       12
+       10
       ],
       [
-       16,
-       18
+       15,
+       14
+      ],
+      [
+       17,
+       17
       ]
      ]
     },
-    "text-transform": "uppercase"
+    "text-transform": "none"
    },
    "paint": {
     "text-color": "rgba(37, 87, 131, 0.83)",
@@ -2187,11 +2206,10 @@
    ],
    "minzoom": 11,
    "layout": {
-    "symbol-placement": "line",
-    "symbol-spacing": 1000,
+    "symbol-placement": "line-center",
     "text-field": "{_name_global}",
     "text-padding": 15,
-    "symbol-avoid-edges": true,
+    "symbol-avoid-edges": false,
     "text-allow-overlap": false,
     "text-max-width": 5,
     "text-font": [
@@ -2201,15 +2219,20 @@
      "stops": [
       [
        13,
-       12
+       10
       ],
       [
-       16,
-       18
+       15,
+       14
+      ],
+      [
+       17,
+       17
       ]
      ]
     },
-    "text-transform": "uppercase"
+    "text-transform": "none",
+    "text-max-angle": 60
    },
    "paint": {
     "text-color": "rgba(37, 87, 131, 0.83)",
@@ -2230,11 +2253,10 @@
    ],
    "minzoom": 11,
    "layout": {
-    "symbol-placement": "line",
-    "symbol-spacing": 1000,
+    "symbol-placement": "line-center",
     "text-field": "{_name_global}",
     "text-padding": 15,
-    "symbol-avoid-edges": true,
+    "symbol-avoid-edges": false,
     "text-allow-overlap": false,
     "text-max-width": 8,
     "text-font": [
@@ -2244,15 +2266,20 @@
      "stops": [
       [
        13,
-       12
+       10
       ],
       [
-       16,
-       18
+       15,
+       14
+      ],
+      [
+       17,
+       17
       ]
      ]
     },
-    "text-transform": "uppercase"
+    "text-transform": "none",
+    "text-max-angle": 60
    },
    "paint": {
     "text-color": "rgba(37, 87, 131, 0.83)",
@@ -2273,11 +2300,10 @@
    ],
    "minzoom": 11,
    "layout": {
-    "symbol-placement": "line",
-    "symbol-spacing": 1000,
+    "symbol-placement": "line-center",
     "text-field": "{_name_global}",
     "text-padding": 15,
-    "symbol-avoid-edges": true,
+    "symbol-avoid-edges": false,
     "text-allow-overlap": false,
     "text-max-width": 8,
     "text-font": [
@@ -2287,15 +2313,20 @@
      "stops": [
       [
        13,
-       12
+       10
       ],
       [
-       16,
-       18
+       15,
+       14
+      ],
+      [
+       17,
+       17
       ]
      ]
     },
-    "text-transform": "uppercase"
+    "text-transform": "none",
+    "text-max-angle": 60
    },
    "paint": {
     "text-color": "rgba(37, 87, 131, 0.83)",
@@ -2573,10 +2604,10 @@
    "maxzoom": 11,
    "layout": {
     "symbol-placement": "line",
-    "symbol-spacing": 1000,
+    "symbol-spacing": 400,
     "text-field": "{_name}",
     "text-padding": 15,
-    "symbol-avoid-edges": true,
+    "symbol-avoid-edges": false,
     "text-allow-overlap": false,
     "text-max-width": 4,
     "text-font": [
@@ -2586,15 +2617,20 @@
      "stops": [
       [
        13,
-       12
+       10
       ],
       [
-       16,
-       18
+       15,
+       14
+      ],
+      [
+       17,
+       17
       ]
      ]
     },
-    "text-transform": "uppercase"
+    "text-transform": "none",
+    "text-max-angle": 30
    },
    "paint": {
     "text-color": "rgba(37, 87, 131, 0.83)",
