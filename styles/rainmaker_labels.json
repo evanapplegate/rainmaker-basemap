@@ -8,279 +8,1588 @@
   "esri": {
    "type": "vector",
    "url": "https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer"
-  },
-  "contours": {
-   "type": "vector",
-   "url": "https://basemaps.arcgis.com/arcgis/rest/services/World_Contours_v2/VectorTileServer"
   }
  },
- "sprite": "https://cdn.arcgis.com/sharing/rest/content/items/659e7c1b1e374f6c8a89eefe17b23380/resources/sprites/sprite",
+ "sprite": "https://evanapplegate.github.io/rainmaker-basemap/sprites/sprite",
  "glyphs": "https://evanapplegate.github.io/rainmaker-basemap/glyphs/{fontstack}/{range}.pbf",
  "layers": [
   {
-   "id": "Contours/Contour_11_main_text",
-   "type": "symbol",
-   "source": "contours",
-   "source-layer": "Contour",
-   "filter": [
-    "all",
-    [
-     "==",
-     "Index3",
-     1
-    ],
-    [
-     "==",
-     "Index5",
-     1
-    ],
-    [
-     "!in",
-     "Contour",
-     0
-    ]
-   ],
-   "minzoom": 11,
-   "maxzoom": 12,
+   "id": "Railroad/2",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Railroad",
+   "minzoom": 12,
    "layout": {
-    "symbol-placement": "line",
-    "symbol-spacing": 700,
-    "text-field": "{Contour} {Unit}",
-    "text-font": [
-     "Flecha S Medium"
-    ],
-    "text-size": {
-     "stops": [
-      [
-       15,
-       11
-      ],
-      [
-       20,
-       13
-      ]
-     ],
-     "base": 1.2
-    },
-    "text-letter-spacing": {
-     "stops": [
-      [
-       6,
-       0
-      ],
-      [
-       8,
-       0.05
-      ]
-     ]
-    },
-    "text-line-height": 1,
-    "text-max-width": 9
+    "line-join": "round"
    },
    "paint": {
-    "text-color": "#6b6b47",
-    "text-opacity": 0.9,
-    "text-halo-color": "#e4e6d5",
-    "text-halo-width": 1,
-    "text-halo-blur": 0.3
+    "line-color": "#cac3ba",
+    "line-width": {
+     "stops": [
+      [
+       11,
+       0.5
+      ],
+      [
+       16,
+       1
+      ]
+     ]
+    }
    }
   },
   {
-   "id": "Contours/Contour_12_main_text",
-   "type": "symbol",
-   "source": "contours",
-   "source-layer": "Contour",
+   "id": "Railroad/1",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Railroad",
+   "minzoom": 12,
+   "layout": {
+    "line-join": "round",
+    "line-cap": "square"
+   },
+   "paint": {
+    "line-color": "#908484",
+    "line-opacity": {
+     "stops": [
+      [
+       10.99,
+       0
+      ],
+      [
+       11,
+       0.3
+      ]
+     ]
+    },
+    "line-dasharray": [
+     0.15,
+     3
+    ],
+    "line-width": {
+     "stops": [
+      [
+       11,
+       0.25
+      ],
+      [
+       16,
+       2
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Ferry/Rail ferry/1",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Ferry",
    "filter": [
     "all",
     [
      "==",
-     "Index2",
-     1
-    ],
-    [
-     "==",
-     "Index4",
+     "_symbol",
      1
     ],
     [
      "!in",
-     "Contour",
-     0
+     "Viz",
+     3
     ]
    ],
    "minzoom": 12,
-   "maxzoom": 14,
    "layout": {
-    "symbol-placement": "line",
-    "symbol-spacing": 700,
-    "text-field": "{Contour} {Unit}",
-    "text-font": [
-     "Flecha S Medium"
-    ],
-    "text-size": {
-     "stops": [
-      [
-       15,
-       11
-      ],
-      [
-       20,
-       13
-      ]
-     ],
-     "base": 1.2
-    },
-    "text-letter-spacing": {
-     "stops": [
-      [
-       6,
-       0
-      ],
-      [
-       8,
-       0.05
-      ]
-     ]
-    },
-    "text-line-height": 1,
-    "text-max-width": 9
+    "line-join": "round"
    },
    "paint": {
-    "text-color": "#6b6b47",
-    "text-opacity": 0.9,
-    "text-halo-color": "#e4e6d5",
-    "text-halo-width": 1,
-    "text-halo-blur": 0.3
+    "line-color": "#c2d8db",
+    "line-dasharray": [
+     4,
+     2
+    ],
+    "line-width": {
+     "stops": [
+      [
+       8,
+       0.75
+      ],
+      [
+       16,
+       1.5
+      ]
+     ]
+    }
    }
   },
   {
-   "id": "Contours/Contour_13_main_text",
-   "type": "symbol",
-   "source": "contours",
-   "source-layer": "Contour",
+   "id": "Trail or path/1",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Trail or path",
+   "minzoom": 15,
+   "layout": {
+    "line-cap": "round",
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#bcb7ae",
+    "line-width": {
+     "stops": [
+      [
+       15,
+       2
+      ],
+      [
+       18,
+       5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road/Pedestrian/1",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road",
    "filter": [
     "all",
     [
      "==",
-     "Index1",
-     1
-    ],
-    [
-     "==",
-     "Index3",
-     1
+     "_symbol",
+     9
     ],
     [
      "!in",
-     "Contour",
-     0
+     "Viz",
+     3
     ]
    ],
-   "minzoom": 14,
-   "maxzoom": 16,
+   "minzoom": 15,
    "layout": {
-    "symbol-placement": "line",
-    "symbol-spacing": 700,
-    "text-field": "{Contour} {Unit}",
-    "text-font": [
-     "Flecha S Medium"
-    ],
-    "text-size": {
+    "line-cap": "round",
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#bcb7ae",
+    "line-width": {
      "stops": [
       [
        15,
-       11
+       2
       ],
       [
-       20,
-       13
-      ]
-     ],
-     "base": 1.2
-    },
-    "text-letter-spacing": {
-     "stops": [
-      [
-       6,
-       0
-      ],
-      [
-       8,
-       0.05
+       18,
+       5
       ]
      ]
-    },
-    "text-line-height": 1,
-    "text-max-width": 9
-   },
-   "paint": {
-    "text-color": "#6b6b47",
-    "text-opacity": 0.9,
-    "text-halo-color": "#e4e6d5",
-    "text-halo-width": 1,
-    "text-halo-blur": 0.3
+    }
    }
   },
   {
-   "id": "Contours/Contour_14_main_text",
-   "type": "symbol",
-   "source": "contours",
-   "source-layer": "Contour",
+   "id": "Road/Major, ramp or traffic circle/1",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road",
    "filter": [
     "all",
     [
      "==",
-     "Index2",
+     "_symbol",
+     4
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 9,
+   "layout": {
+    "line-cap": "square",
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#dad8d8",
+    "line-blur": 0.5,
+    "line-width": {
+     "stops": [
+      [
+       0,
+       2.3
+      ],
+      [
+       16,
+       3.8
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road/Major/1",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     3
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 9,
+   "layout": {
+    "line-cap": "square",
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#dad8d8",
+    "line-blur": 0.5,
+    "line-width": {
+     "stops": [
+      [
+       0,
+       2.3
+      ],
+      [
+       16,
+       3.8
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road/Freeway Motorway, ramp or traffic circle/1",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     2
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 7,
+   "layout": {
+    "line-join": "round",
+    "line-cap": "square"
+   },
+   "paint": {
+    "line-color": "#dad8d8",
+    "line-blur": 0.5,
+    "line-width": {
+     "stops": [
+      [
+       0,
+       2.3
+      ],
+      [
+       16,
+       3.8
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road/Highway/1",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
      1
     ],
     [
      "!in",
-     "Contour",
-     0
+     "Viz",
+     3
     ]
    ],
-   "minzoom": 16,
+   "minzoom": 8,
    "layout": {
-    "symbol-placement": "line",
-    "symbol-spacing": 700,
-    "text-field": "{Contour} {Unit}",
-    "text-font": [
-     "Flecha S Medium"
+    "line-join": "round",
+    "line-cap": "square"
+   },
+   "paint": {
+    "line-color": "#dad8d8",
+    "line-blur": 0.5,
+    "line-width": {
+     "stops": [
+      [
+       0,
+       2.3
+      ],
+      [
+       16,
+       3.8
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road/Freeway Motorway/1",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     0
     ],
-    "text-size": {
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 7,
+   "layout": {
+    "line-join": "round",
+    "line-cap": "square"
+   },
+   "paint": {
+    "line-color": "#dad8d8",
+    "line-blur": 0.5,
+    "line-width": {
+     "stops": [
+      [
+       0,
+       2.3
+      ],
+      [
+       16,
+       3.8
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Trail or path/0",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Trail or path",
+   "minzoom": 15,
+   "layout": {
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#f4efe6",
+    "line-width": {
      "stops": [
       [
        15,
-       11
+       1
       ],
       [
-       20,
-       13
+       18,
+       2.5
       ]
      ],
-     "base": 1.2
+     "base": 1.5
     },
-    "text-letter-spacing": {
+    "line-dasharray": {
      "stops": [
       [
-       6,
-       0
+       0,
+       [
+        1,
+        0
+       ]
       ],
       [
-       8,
-       0.05
+       15,
+       [
+        1.75,
+        1
+       ]
+      ],
+      [
+       16,
+       [
+        1,
+        0.75
+       ]
+      ],
+      [
+       17,
+       [
+        1,
+        0.5
+       ]
       ]
      ]
-    },
-    "text-line-height": 1,
-    "text-max-width": 9
+    }
+   }
+  },
+  {
+   "id": "Road/Pedestrian/0",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     9
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 15,
+   "layout": {
+    "line-join": "round"
    },
    "paint": {
-    "text-color": "#6b6b47",
-    "text-opacity": 0.9,
-    "text-halo-color": "#e4e6d5",
-    "text-halo-width": 1,
-    "text-halo-blur": 0.3
+    "line-color": "#f4efe6",
+    "line-width": {
+     "stops": [
+      [
+       15,
+       1
+      ],
+      [
+       18,
+       2.5
+      ]
+     ],
+     "base": 1.5
+    },
+    "line-dasharray": {
+     "stops": [
+      [
+       0,
+       [
+        1,
+        0
+       ]
+      ],
+      [
+       15,
+       [
+        1.75,
+        1
+       ]
+      ],
+      [
+       16,
+       [
+        1,
+        0.75
+       ]
+      ],
+      [
+       17,
+       [
+        1,
+        0.5
+       ]
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road/4WD/0",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     10
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 13,
+   "layout": {
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#d0cdcd",
+    "line-opacity": {
+     "stops": [
+      [
+       8,
+       0.2
+      ],
+      [
+       12,
+       0.8
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road/Service/0",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     8
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 13,
+   "layout": {
+    "line-cap": "round",
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#d0cdcd",
+    "line-opacity": {
+     "stops": [
+      [
+       8,
+       0.2
+      ],
+      [
+       12,
+       0.8
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road/Local/0",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     7
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 12,
+   "layout": {
+    "line-cap": "round",
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#d0cdcd",
+    "line-opacity": {
+     "stops": [
+      [
+       8,
+       0.2
+      ],
+      [
+       12,
+       0.8
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road/Minor, ramp or traffic circle/0",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     6
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 11,
+   "layout": {
+    "line-cap": "round",
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#f4efe6",
+    "line-width": {
+     "stops": [
+      [
+       8,
+       0.5
+      ],
+      [
+       16,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road/Minor/0",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     5
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 11,
+   "layout": {
+    "line-cap": "round",
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#f4efe6",
+    "line-width": {
+     "stops": [
+      [
+       8,
+       0.5
+      ],
+      [
+       16,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road/Major, ramp or traffic circle/0",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     4
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 9,
+   "layout": {
+    "line-cap": "round",
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#f2f2f2",
+    "line-width": {
+     "stops": [
+      [
+       5,
+       1
+      ],
+      [
+       18,
+       2.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road/Major/0",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     3
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 9,
+   "layout": {
+    "line-cap": "round",
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#f2f2f2",
+    "line-width": {
+     "stops": [
+      [
+       5,
+       1
+      ],
+      [
+       18,
+       2.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road/Freeway Motorway, ramp or traffic circle/0",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     2
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 7,
+   "layout": {
+    "line-join": "round",
+    "line-cap": "round"
+   },
+   "paint": {
+    "line-color": "#f2f2f2",
+    "line-width": {
+     "stops": [
+      [
+       5,
+       1
+      ],
+      [
+       18,
+       2.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road/Highway/0",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     1
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 8,
+   "layout": {
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#f2f2f2",
+    "line-width": {
+     "stops": [
+      [
+       5,
+       1
+      ],
+      [
+       18,
+       2.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road/Freeway Motorway/0",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     0
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 6,
+   "layout": {
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#f2f2f2",
+    "line-width": {
+     "stops": [
+      [
+       5,
+       1
+      ],
+      [
+       18,
+       2.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road tunnel/Pedestrian/1",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road tunnel",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     9
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 15,
+   "layout": {
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#bcb7ae",
+    "line-width": {
+     "stops": [
+      [
+       15,
+       2
+      ],
+      [
+       18,
+       5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road tunnel/Major, ramp or traffic circle/1",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road tunnel",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     4
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 9,
+   "layout": {
+    "line-join": "round",
+    "line-cap": "square"
+   },
+   "paint": {
+    "line-color": "#dad8d8",
+    "line-blur": 0.5,
+    "line-width": {
+     "stops": [
+      [
+       0,
+       2.3
+      ],
+      [
+       16,
+       3.8
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road tunnel/Major/1",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road tunnel",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     3
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 9,
+   "layout": {
+    "line-join": "round",
+    "line-cap": "square"
+   },
+   "paint": {
+    "line-color": "#dad8d8",
+    "line-blur": 0.5,
+    "line-width": {
+     "stops": [
+      [
+       0,
+       2.3
+      ],
+      [
+       16,
+       3.8
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road tunnel/Freeway Motorway, ramp or traffic circle/1",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road tunnel",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     2
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 7,
+   "layout": {
+    "line-join": "round",
+    "line-cap": "square"
+   },
+   "paint": {
+    "line-color": "#dad8d8",
+    "line-blur": 0.5,
+    "line-width": {
+     "stops": [
+      [
+       0,
+       2.3
+      ],
+      [
+       16,
+       3.8
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road tunnel/Highway/1",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road tunnel",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     1
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 8,
+   "layout": {
+    "line-join": "round",
+    "line-cap": "square"
+   },
+   "paint": {
+    "line-color": "#dad8d8",
+    "line-blur": 0.5,
+    "line-width": {
+     "stops": [
+      [
+       0,
+       2.3
+      ],
+      [
+       16,
+       3.8
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road tunnel/Freeway Motorway/1",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road tunnel",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     0
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 7,
+   "layout": {
+    "line-join": "round",
+    "line-cap": "square"
+   },
+   "paint": {
+    "line-color": "#dad8d8",
+    "line-blur": 0.5,
+    "line-width": {
+     "stops": [
+      [
+       0,
+       2.3
+      ],
+      [
+       16,
+       3.8
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road tunnel/Pedestrian/0",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road tunnel",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     9
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 15,
+   "layout": {
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#f4efe6",
+    "line-width": {
+     "stops": [
+      [
+       15,
+       1
+      ],
+      [
+       18,
+       2.5
+      ]
+     ],
+     "base": 1.5
+    },
+    "line-dasharray": {
+     "stops": [
+      [
+       0,
+       [
+        1,
+        0
+       ]
+      ],
+      [
+       15,
+       [
+        1.75,
+        1
+       ]
+      ],
+      [
+       16,
+       [
+        1,
+        0.75
+       ]
+      ],
+      [
+       17,
+       [
+        1,
+        0.5
+       ]
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road tunnel/4WD/0",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road tunnel",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     10
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 13,
+   "layout": {
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#d0cdcd",
+    "line-opacity": {
+     "stops": [
+      [
+       8,
+       0.2
+      ],
+      [
+       12,
+       0.8
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road tunnel/Service/0",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road tunnel",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     8
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 13,
+   "layout": {
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#d0cdcd",
+    "line-opacity": {
+     "stops": [
+      [
+       8,
+       0.2
+      ],
+      [
+       12,
+       0.8
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road tunnel/Local/0",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road tunnel",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     7
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 12,
+   "layout": {
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#d0cdcd",
+    "line-opacity": {
+     "stops": [
+      [
+       8,
+       0.2
+      ],
+      [
+       12,
+       0.8
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road tunnel/Minor, ramp or traffic circle/0",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road tunnel",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     6
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 11,
+   "layout": {
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#f4efe6",
+    "line-width": {
+     "stops": [
+      [
+       8,
+       0.5
+      ],
+      [
+       16,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road tunnel/Minor/0",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road tunnel",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     5
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 11,
+   "layout": {
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#f4efe6",
+    "line-width": {
+     "stops": [
+      [
+       8,
+       0.5
+      ],
+      [
+       16,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road tunnel/Major, ramp or traffic circle/0",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road tunnel",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     4
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 9,
+   "layout": {
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#f2f2f2",
+    "line-width": {
+     "stops": [
+      [
+       5,
+       1
+      ],
+      [
+       18,
+       2.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road tunnel/Major/0",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road tunnel",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     3
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 9,
+   "layout": {
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#f2f2f2",
+    "line-width": {
+     "stops": [
+      [
+       5,
+       1
+      ],
+      [
+       18,
+       2.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road tunnel/Freeway Motorway, ramp or traffic circle/0",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road tunnel",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     2
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 7,
+   "layout": {
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#f2f2f2",
+    "line-width": {
+     "stops": [
+      [
+       5,
+       1
+      ],
+      [
+       18,
+       2.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road tunnel/Highway/0",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road tunnel",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     1
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 8,
+   "layout": {
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#f2f2f2",
+    "line-width": {
+     "stops": [
+      [
+       5,
+       1
+      ],
+      [
+       18,
+       2.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Road tunnel/Freeway Motorway/0",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Road tunnel",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_symbol",
+     0
+    ],
+    [
+     "!in",
+     "Viz",
+     3
+    ]
+   ],
+   "minzoom": 6,
+   "layout": {
+    "line-join": "round"
+   },
+   "paint": {
+    "line-color": "#f2f2f2",
+    "line-width": {
+     "stops": [
+      [
+       5,
+       1
+      ],
+      [
+       18,
+       2.5
+      ]
+     ]
+    }
    }
   },
   {
@@ -303,7 +1612,7 @@
     "text-allow-overlap": false,
     "text-padding": 15,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -328,16 +1637,16 @@
      "stops": [
       [
        6,
-       0.65
+       1.3
       ],
       [
        12,
-       1
+       2
       ]
      ]
     },
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.3,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-opacity": {
      "stops": [
       [
@@ -371,7 +1680,7 @@
     "text-allow-overlap": false,
     "text-padding": 15,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -407,20 +1716,9 @@
    },
    "paint": {
     "text-color": "rgba(8, 43, 15, 0.4)",
-    "text-halo-width": 1,
-    "text-halo-color": {
-     "stops": [
-      [
-       0,
-       "rgba(240, 242, 245, 0.85)"
-      ],
-      [
-       22,
-       "#bfc8d4"
-      ]
-     ]
-    },
-    "text-halo-blur": 0.2
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -442,7 +1740,7 @@
     "text-allow-overlap": false,
     "text-padding": 15,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -460,13 +1758,13 @@
       ]
      ]
     },
-    "text-transform": "lowercase"
+    "text-transform": "none"
    },
    "paint": {
     "text-color": "#1d588b",
-    "text-halo-width": 1,
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -488,7 +1786,7 @@
     "text-allow-overlap": false,
     "text-padding": 15,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -506,13 +1804,13 @@
       ]
      ]
     },
-    "text-transform": "lowercase"
+    "text-transform": "none"
    },
    "paint": {
     "text-color": "#1d588b",
-    "text-halo-width": 1,
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -534,7 +1832,7 @@
     "text-allow-overlap": false,
     "text-padding": 15,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -552,9 +1850,9 @@
    },
    "paint": {
     "text-color": "rgba(37, 87, 131, 0.83)",
-    "text-halo-width": 1,
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -576,7 +1874,7 @@
     "text-allow-overlap": false,
     "text-padding": 15,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -594,9 +1892,9 @@
    },
    "paint": {
     "text-color": "rgba(37, 87, 131, 0.83)",
-    "text-halo-width": 1,
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -618,7 +1916,7 @@
     "text-allow-overlap": false,
     "text-padding": 15,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -636,13 +1934,13 @@
       ]
      ]
     },
-    "text-transform": "lowercase"
+    "text-transform": "none"
    },
    "paint": {
     "text-color": "#1d588b",
-    "text-halo-width": 1,
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -664,7 +1962,7 @@
     "text-allow-overlap": false,
     "text-padding": 15,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -682,13 +1980,13 @@
       ]
      ]
     },
-    "text-transform": "lowercase"
+    "text-transform": "none"
    },
    "paint": {
     "text-color": "#1d588b",
-    "text-halo-width": 1,
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -710,7 +2008,7 @@
     ],
     "symbol-spacing": 800,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -728,9 +2026,9 @@
    },
    "paint": {
     "text-color": "rgba(37, 87, 131, 0.83)",
-    "text-halo-width": 1,
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -746,7 +2044,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -782,8 +2080,9 @@
    "paint": {
     "text-color": "#618141",
     "text-opacity": 0.9,
-    "text-halo-color": "#f0f4ec",
-    "text-halo-width": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -804,7 +2103,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -822,13 +2121,13 @@
       ]
      ]
     },
-    "text-transform": "lowercase"
+    "text-transform": "none"
    },
    "paint": {
     "text-color": "#1d588b",
-    "text-halo-width": 1,
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -849,7 +2148,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -867,13 +2166,13 @@
       ]
      ]
     },
-    "text-transform": "lowercase"
+    "text-transform": "none"
    },
    "paint": {
     "text-color": "#1d588b",
-    "text-halo-width": 1,
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -896,7 +2195,7 @@
     "text-allow-overlap": false,
     "text-max-width": 5,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -914,9 +2213,9 @@
    },
    "paint": {
     "text-color": "rgba(37, 87, 131, 0.83)",
-    "text-halo-width": 1,
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -939,7 +2238,7 @@
     "text-allow-overlap": false,
     "text-max-width": 8,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -957,9 +2256,9 @@
    },
    "paint": {
     "text-color": "rgba(37, 87, 131, 0.83)",
-    "text-halo-width": 1,
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -982,7 +2281,7 @@
     "text-allow-overlap": false,
     "text-max-width": 8,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -1000,9 +2299,9 @@
    },
    "paint": {
     "text-color": "rgba(37, 87, 131, 0.83)",
-    "text-halo-width": 1,
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -1023,7 +2322,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -1041,13 +2340,13 @@
       ]
      ]
     },
-    "text-transform": "lowercase"
+    "text-transform": "none"
    },
    "paint": {
     "text-color": "#1d588b",
-    "text-halo-width": 1,
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -1069,7 +2368,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -1087,13 +2386,13 @@
       ]
      ]
     },
-    "text-transform": "lowercase"
+    "text-transform": "none"
    },
    "paint": {
     "text-color": "#1d588b",
-    "text-halo-width": 1,
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -1115,7 +2414,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -1133,13 +2432,13 @@
       ]
      ]
     },
-    "text-transform": "lowercase"
+    "text-transform": "none"
    },
    "paint": {
     "text-color": "#1d588b",
-    "text-halo-width": 1,
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -1160,7 +2459,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -1196,20 +2495,9 @@
    },
    "paint": {
     "text-color": "rgba(8, 43, 15, 0.4)",
-    "text-halo-width": 1,
-    "text-halo-color": {
-     "stops": [
-      [
-       0,
-       "rgba(240, 242, 245, 0.85)"
-      ],
-      [
-       22,
-       "#bfc8d4"
-      ]
-     ]
-    },
-    "text-halo-blur": 0.2
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -1230,7 +2518,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -1266,20 +2554,9 @@
    },
    "paint": {
     "text-color": "rgba(8, 43, 15, 0.4)",
-    "text-halo-width": 1,
-    "text-halo-color": {
-     "stops": [
-      [
-       0,
-       "rgba(240, 242, 245, 0.85)"
-      ],
-      [
-       22,
-       "#bfc8d4"
-      ]
-     ]
-    },
-    "text-halo-blur": 0.2
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -1303,7 +2580,7 @@
     "text-allow-overlap": false,
     "text-max-width": 4,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -1321,9 +2598,9 @@
    },
    "paint": {
     "text-color": "rgba(37, 87, 131, 0.83)",
-    "text-halo-width": 1,
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -1345,7 +2622,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -1363,13 +2640,13 @@
       ]
      ]
     },
-    "text-transform": "lowercase"
+    "text-transform": "none"
    },
    "paint": {
     "text-color": "#1d588b",
-    "text-halo-width": 1,
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -1386,7 +2663,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -1404,13 +2681,13 @@
       ]
      ]
     },
-    "text-transform": "lowercase"
+    "text-transform": "none"
    },
    "paint": {
     "text-color": "#1d588b",
-    "text-halo-width": 1,
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -1427,7 +2704,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -1445,13 +2722,13 @@
       ]
      ]
     },
-    "text-transform": "lowercase"
+    "text-transform": "none"
    },
    "paint": {
     "text-color": "#1d588b",
-    "text-halo-width": 1,
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -1467,7 +2744,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -1493,16 +2770,16 @@
      "stops": [
       [
        6,
-       0.65
+       1.3
       ],
       [
        12,
-       1
+       2
       ]
      ]
     },
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.3,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-opacity": {
      "stops": [
       [
@@ -1537,7 +2814,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -1563,16 +2840,16 @@
      "stops": [
       [
        6,
-       0.65
+       1.3
       ],
       [
        12,
-       1
+       2
       ]
      ]
     },
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.3,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-opacity": {
      "stops": [
       [
@@ -1607,7 +2884,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -1633,16 +2910,16 @@
      "stops": [
       [
        6,
-       0.65
+       1.3
       ],
       [
        12,
-       1
+       2
       ]
      ]
     },
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.3,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-opacity": {
      "stops": [
       [
@@ -1677,7 +2954,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -1703,16 +2980,16 @@
      "stops": [
       [
        6,
-       0.65
+       1.3
       ],
       [
        12,
-       1
+       2
       ]
      ]
     },
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.3,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-opacity": {
      "stops": [
       [
@@ -1747,7 +3024,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -1772,16 +3049,16 @@
      "stops": [
       [
        6,
-       0.65
+       1.3
       ],
       [
        12,
-       1
+       2
       ]
      ]
     },
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.3,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-opacity": {
      "stops": [
       [
@@ -1816,7 +3093,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -1841,16 +3118,16 @@
      "stops": [
       [
        6,
-       0.65
+       1.3
       ],
       [
        12,
-       1
+       2
       ]
      ]
     },
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.3,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-opacity": {
      "stops": [
       [
@@ -1914,9 +3191,9 @@
    },
    "paint": {
     "text-color": "#808080",
-    "text-halo-color": "rgba(255, 255, 255, 0.75)",
-    "text-halo-width": 1,
-    "text-halo-blur": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 2
    }
   },
   {
@@ -1955,9 +3232,9 @@
    },
    "paint": {
     "text-color": "#808080",
-    "text-halo-color": "rgba(255, 255, 255, 0.75)",
-    "text-halo-width": 1,
-    "text-halo-blur": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 2
    }
   },
   {
@@ -2005,9 +3282,9 @@
    },
    "paint": {
     "text-color": "#808080",
-    "text-halo-color": "rgba(255, 255, 255, 0.75)",
-    "text-halo-width": 1,
-    "text-halo-blur": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 2
    }
   },
   {
@@ -2055,9 +3332,9 @@
    },
    "paint": {
     "text-color": "#808080",
-    "text-halo-color": "rgba(255, 255, 255, 0.75)",
-    "text-halo-width": 1,
-    "text-halo-blur": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 2
    }
   },
   {
@@ -2105,9 +3382,9 @@
    },
    "paint": {
     "text-color": "#808080",
-    "text-halo-color": "rgba(255, 255, 255, 0.75)",
-    "text-halo-width": 1,
-    "text-halo-blur": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 2
    }
   },
   {
@@ -2155,9 +3432,9 @@
    },
    "paint": {
     "text-color": "#595959",
-    "text-halo-color": "rgba(255, 255, 255, 0.75)",
-    "text-halo-width": 1,
-    "text-halo-blur": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 2
    }
   },
   {
@@ -2205,9 +3482,9 @@
    },
    "paint": {
     "text-color": "#595959",
-    "text-halo-color": "rgba(255, 255, 255, 0.75)",
-    "text-halo-width": 1,
-    "text-halo-blur": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 2
    }
   },
   {
@@ -2255,9 +3532,9 @@
    },
    "paint": {
     "text-color": "#595959",
-    "text-halo-color": "rgba(255, 255, 255, 0.75)",
-    "text-halo-width": 1,
-    "text-halo-blur": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 2
    }
   },
   {
@@ -2305,9 +3582,9 @@
    },
    "paint": {
     "text-color": "#595959",
-    "text-halo-color": "rgba(255, 255, 255, 0.75)",
-    "text-halo-width": 1,
-    "text-halo-blur": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 2
    }
   },
   {
@@ -2355,9 +3632,9 @@
    },
    "paint": {
     "text-color": "#595959",
-    "text-halo-color": "rgba(255, 255, 255, 0.75)",
-    "text-halo-width": 1,
-    "text-halo-blur": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 2
    }
   },
   {
@@ -2373,7 +3650,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -2397,28 +3674,17 @@
    "paint": {
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
-    "text-halo-color": {
-     "stops": [
-      [
-       14,
-       "rgba(226, 227, 222, 0.88)"
-      ],
-      [
-       18,
-       "rgba(255, 255, 255, 0.88)"
-      ]
-     ]
-    },
-    "text-halo-blur": 0.25,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-halo-width": {
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        22,
-       1.5
+       3.0
       ]
      ]
     }
@@ -2456,9 +3722,9 @@
    },
    "paint": {
     "text-color": "#808080",
-    "text-halo-color": "rgba(255, 255, 255, 0.75)",
-    "text-halo-width": 1,
-    "text-halo-blur": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 2
    }
   },
   {
@@ -2506,9 +3772,9 @@
    },
    "paint": {
     "text-color": "#808080",
-    "text-halo-color": "rgba(255, 255, 255, 0.75)",
-    "text-halo-width": 1,
-    "text-halo-blur": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 2
    }
   },
   {
@@ -2556,9 +3822,9 @@
    },
    "paint": {
     "text-color": "#808080",
-    "text-halo-color": "rgba(255, 255, 255, 0.75)",
-    "text-halo-width": 1,
-    "text-halo-blur": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 2
    }
   },
   {
@@ -2606,9 +3872,9 @@
    },
    "paint": {
     "text-color": "#808080",
-    "text-halo-color": "rgba(255, 255, 255, 0.75)",
-    "text-halo-width": 1,
-    "text-halo-blur": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 2
    }
   },
   {
@@ -2656,9 +3922,9 @@
    },
    "paint": {
     "text-color": "#595959",
-    "text-halo-color": "rgba(255, 255, 255, 0.75)",
-    "text-halo-width": 1,
-    "text-halo-blur": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 2
    }
   },
   {
@@ -2706,9 +3972,9 @@
    },
    "paint": {
     "text-color": "#595959",
-    "text-halo-color": "rgba(255, 255, 255, 0.75)",
-    "text-halo-width": 1,
-    "text-halo-blur": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 2
    }
   },
   {
@@ -2754,9 +4020,9 @@
    },
    "paint": {
     "text-color": "#595959",
-    "text-halo-color": "rgba(255, 255, 255, 0.75)",
-    "text-halo-width": 1,
-    "text-halo-blur": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 2
    }
   },
   {
@@ -2804,9 +4070,9 @@
    },
    "paint": {
     "text-color": "#595959",
-    "text-halo-color": "rgba(255, 255, 255, 0.75)",
-    "text-halo-width": 1,
-    "text-halo-blur": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 2
    }
   },
   {
@@ -2854,9 +4120,9 @@
    },
    "paint": {
     "text-color": "#595959",
-    "text-halo-color": "rgba(255, 255, 255, 0.75)",
-    "text-halo-width": 1,
-    "text-halo-blur": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 2
    }
   },
   {
@@ -2867,74 +4133,53 @@
    "filter": [
     "all",
     [
-     "in",
+     "==",
      "_label_class",
-     8,
-     10,
-     12,
-     14,
-     16,
-     18,
-     20,
-     22,
-     24,
-     26,
-     28,
-     30,
-     32,
-     34,
-     36,
-     38,
-     40,
-     42,
-     44,
-     46,
-     48,
-     50,
-     52,
-     54,
-     56,
-     58,
-     60,
-     62,
-     64,
-     66,
-     68,
-     70,
-     72,
-     74
+     32
     ],
     [
      "!in",
      "Viz",
-     3
+     2
     ]
    ],
-   "minzoom": 14,
+   "minzoom": 11.0,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
-    "text-max-angle": 25,
     "symbol-avoid-edges": true,
     "text-font": [
      "Founders Grotesk Text Semibold"
     ],
-    "text-size": 10,
-    "text-max-width": 6,
+    "text-size": 9.3,
+    "text-max-width": 8,
     "text-field": "{_name}",
     "icon-image": "Road/Rectangle white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
      0,
-     0.2
+     0
     ],
-    "text-padding": 30
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
    },
    "paint": {
-    "text-color": "#a3a3a1",
-    "text-halo-color": "#404040",
-    "text-halo-width": 1
+    "text-color": "#000000"
    }
   },
   {
@@ -2945,74 +4190,3832 @@
    "filter": [
     "all",
     [
-     "in",
+     "==",
      "_label_class",
-     7,
-     9,
-     11,
-     13,
-     15,
-     17,
-     19,
-     21,
-     23,
-     25,
-     27,
-     29,
-     31,
-     33,
-     35,
-     37,
-     39,
-     41,
-     43,
-     45,
-     47,
-     49,
-     51,
-     53,
-     55,
-     57,
-     59,
-     61,
-     63,
-     65,
-     67,
-     69,
-     71,
-     73
+     31
     ],
     [
      "!in",
      "Viz",
-     3
+     2
     ]
    ],
-   "minzoom": 14,
+   "minzoom": 11.0,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
-    "text-max-angle": 25,
     "symbol-avoid-edges": true,
     "text-font": [
      "Founders Grotesk Text Semibold"
     ],
-    "text-size": 10,
-    "text-max-width": 6,
+    "text-size": 9.3,
+    "text-max-width": 8,
     "text-field": "{_name}",
     "icon-image": "Road/Rectangle white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
      0,
-     0.2
+     0
     ],
-    "text-padding": 30
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
    },
    "paint": {
-    "text-color": "#a3a3a1",
-    "text-halo-color": "#404040",
-    "text-halo-width": 1
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Secondary Hwy red white (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     16
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Secondary Hwy white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Secondary Hwy red white",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     15
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Secondary Hwy white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/U-shaped yellow black (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     24
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-letter-spacing": 0.05,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/U-shaped white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/U-shaped yellow black",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     23
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-letter-spacing": 0.05,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/U-shaped white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/U-shaped red white (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     26
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/U-shaped white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/U-shaped red white",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     25
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/U-shaped white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/U-shaped blue white (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     28
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-letter-spacing": 0.05,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/U-shaped white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/U-shaped blue white",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     27
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-letter-spacing": 0.05,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/U-shaped white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/V-shaped white black (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     30
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/V-shaped white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/V-shaped white black",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     29
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/V-shaped white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/U-shaped white black (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     18
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-letter-spacing": 0.05,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/U-shaped white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/U-shaped white black",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     17
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-letter-spacing": 0.05,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/U-shaped white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/U-shaped white green (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     20
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-letter-spacing": 0.05,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/U-shaped white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/U-shaped white green",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     19
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-letter-spacing": 0.05,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/U-shaped white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/U-shaped green leaf (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     22
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-letter-spacing": 0.05,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/U-shaped white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/U-shaped green leaf",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     21
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-letter-spacing": 0.05,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/U-shaped white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Rectangle yellow black (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     38
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-letter-spacing": 0.05,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Rectangle white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Rectangle yellow black",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     37
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-letter-spacing": 0.05,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Rectangle white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Rectangle red white (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     36
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-letter-spacing": 0.05,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Rectangle white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Rectangle red white",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     35
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-letter-spacing": 0.05,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Rectangle white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Rectangle blue white (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     34
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Rectangle white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Rectangle blue white",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     33
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Rectangle white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Rectangle green white (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     40
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-letter-spacing": 0.05,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Rectangle white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Rectangle green white",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     39
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-letter-spacing": 0.05,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Rectangle white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Rectangle green yellow (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     42
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Rectangle white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Rectangle green yellow",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     41
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Rectangle white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Pentagon inverse white black (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     44
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 9.3,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Pentagon white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Pentagon inverse white black",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     43
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 9.3,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Pentagon white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Pentagon white black (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     46
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Pentagon white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Pentagon white black",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     45
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Pentagon white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Pentagon yellow black (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     50
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Pentagon white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Pentagon yellow black",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     49
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Pentagon white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Pentagon green white",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     51
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Pentagon white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Pentagon green white (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     52
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Pentagon white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Pentagon green yellow",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     53
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Pentagon white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Pentagon green yellow (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     54
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Pentagon white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Pentagon blue white (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     48
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 9.3,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Pentagon white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Pentagon blue white",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     47
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 9.3,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Pentagon white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Hexagon white black (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     56
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Hexagon white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Hexagon white black",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     55
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Hexagon white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Hexagon blue white",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     57
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Hexagon white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Hexagon blue white (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     58
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Hexagon white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Hexagon red white",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     59
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Hexagon white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Hexagon red white (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     60
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Hexagon white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Hexagon green white (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     62
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Hexagon white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Hexagon green white",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     61
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Hexagon white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Hexagon orange black",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     63
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Hexagon white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Hexagon orange black (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     64
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Hexagon white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Rectangle hexagon blue white (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     66
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Rectangle white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Rectangle hexagon blue white",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     65
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Rectangle white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Rectangle hexagon red white (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     68
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Rectangle white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Rectangle hexagon red white",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     67
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Rectangle white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Rectangle hexagon green white (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     70
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Rectangle white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Rectangle hexagon green white",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     69
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Rectangle white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Rectangle hexagon brown white (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     72
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Rectangle white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Rectangle hexagon brown white",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     71
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Rectangle white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Octagon green white (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     74
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Rectangle white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Octagon green white",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     73
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Rectangle white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Shield white black (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     10
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 7,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 9.3,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Shield white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     -0.285
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Shield white black",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     9
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 7,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 9.3,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Shield white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     -0.285
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Secondary Hwy green white (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     14
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 9.3,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Secondary Hwy white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Secondary Hwy green white",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     13
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 9.3,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Secondary Hwy white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Secondary Hwy white black (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     12
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-letter-spacing": 0.05,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Secondary Hwy white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Secondary Hwy white black",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     11
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 11.0,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Secondary Hwy white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     0
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Shield blue white (Alt)",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     8
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 7,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Shield white black (Alt)/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     -0.285
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       12,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
+   }
+  },
+  {
+   "id": "Road/label/Shield blue white",
+   "type": "symbol",
+   "source": "esri",
+   "source-layer": "Road/label",
+   "filter": [
+    "all",
+    [
+     "==",
+     "_label_class",
+     7
+    ],
+    [
+     "!in",
+     "Viz",
+     2
+    ]
+   ],
+   "minzoom": 7,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 800,
+    "symbol-avoid-edges": true,
+    "text-font": [
+     "Founders Grotesk Text Semibold"
+    ],
+    "text-size": 8.5,
+    "text-max-width": 8,
+    "text-field": "{_name}",
+    "icon-image": "Road/Shield white black/{_len}",
+    "icon-rotation-alignment": "viewport",
+    "text-rotation-alignment": "viewport",
+    "text-offset": [
+     0,
+     -0.285
+    ],
+    "text-padding": {
+     "stops": [
+      [
+       7,
+       50
+      ],
+      [
+       10,
+       30
+      ],
+      [
+       11,
+       50
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "#000000"
    }
   },
   {
@@ -3028,7 +8031,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -3064,8 +8067,9 @@
    "paint": {
     "text-color": "#618141",
     "text-opacity": 0.9,
-    "text-halo-color": "#f0f4ec",
-    "text-halo-width": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -3081,7 +8085,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -3105,28 +8109,17 @@
    "paint": {
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
-    "text-halo-color": {
-     "stops": [
-      [
-       14,
-       "rgba(226, 227, 222, 0.88)"
-      ],
-      [
-       18,
-       "rgba(255, 255, 255, 0.88)"
-      ]
-     ]
-    },
-    "text-halo-blur": 0.25,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-halo-width": {
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        22,
-       1.5
+       3.0
       ]
      ]
     }
@@ -3145,7 +8138,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -3169,28 +8162,17 @@
    "paint": {
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
-    "text-halo-color": {
-     "stops": [
-      [
-       14,
-       "rgba(226, 227, 222, 0.88)"
-      ],
-      [
-       18,
-       "rgba(255, 255, 255, 0.88)"
-      ]
-     ]
-    },
-    "text-halo-blur": 0.25,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-halo-width": {
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        22,
-       1.5
+       3.0
       ]
      ]
     }
@@ -3209,7 +8191,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -3233,28 +8215,17 @@
    "paint": {
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
-    "text-halo-color": {
-     "stops": [
-      [
-       14,
-       "rgba(226, 227, 222, 0.88)"
-      ],
-      [
-       18,
-       "rgba(255, 255, 255, 0.88)"
-      ]
-     ]
-    },
-    "text-halo-blur": 0.25,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-halo-width": {
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        22,
-       1.5
+       3.0
       ]
      ]
     }
@@ -3273,7 +8244,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -3297,28 +8268,17 @@
    "paint": {
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
-    "text-halo-color": {
-     "stops": [
-      [
-       14,
-       "rgba(226, 227, 222, 0.88)"
-      ],
-      [
-       18,
-       "rgba(255, 255, 255, 0.88)"
-      ]
-     ]
-    },
-    "text-halo-blur": 0.25,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-halo-width": {
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        22,
-       1.5
+       3.0
       ]
      ]
     }
@@ -3337,7 +8297,7 @@
     "text-allow-overlap": false,
     "text-padding": 15,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -3361,28 +8321,17 @@
    "paint": {
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
-    "text-halo-color": {
-     "stops": [
-      [
-       14,
-       "rgba(226, 227, 222, 0.88)"
-      ],
-      [
-       18,
-       "rgba(255, 255, 255, 0.88)"
-      ]
-     ]
-    },
-    "text-halo-blur": 0.25,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-halo-width": {
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        22,
-       1.5
+       3.0
       ]
      ]
     }
@@ -3401,7 +8350,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -3425,28 +8374,17 @@
    "paint": {
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
-    "text-halo-color": {
-     "stops": [
-      [
-       14,
-       "rgba(226, 227, 222, 0.88)"
-      ],
-      [
-       18,
-       "rgba(255, 255, 255, 0.88)"
-      ]
-     ]
-    },
-    "text-halo-blur": 0.25,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-halo-width": {
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        22,
-       1.5
+       3.0
       ]
      ]
     }
@@ -3465,7 +8403,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -3489,28 +8427,17 @@
    "paint": {
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
-    "text-halo-color": {
-     "stops": [
-      [
-       14,
-       "rgba(226, 227, 222, 0.88)"
-      ],
-      [
-       18,
-       "rgba(255, 255, 255, 0.88)"
-      ]
-     ]
-    },
-    "text-halo-blur": 0.25,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-halo-width": {
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        22,
-       1.5
+       3.0
       ]
      ]
     }
@@ -3529,7 +8456,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -3553,28 +8480,17 @@
    "paint": {
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
-    "text-halo-color": {
-     "stops": [
-      [
-       14,
-       "rgba(226, 227, 222, 0.88)"
-      ],
-      [
-       18,
-       "rgba(255, 255, 255, 0.88)"
-      ]
-     ]
-    },
-    "text-halo-blur": 0.25,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-halo-width": {
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        22,
-       1.5
+       3.0
       ]
      ]
     }
@@ -3593,7 +8509,7 @@
     "text-padding": 25,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -3617,28 +8533,17 @@
    "paint": {
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
-    "text-halo-color": {
-     "stops": [
-      [
-       14,
-       "rgba(226, 227, 222, 0.88)"
-      ],
-      [
-       18,
-       "rgba(255, 255, 255, 0.88)"
-      ]
-     ]
-    },
-    "text-halo-blur": 0.25,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-halo-width": {
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        22,
-       1.5
+       3.0
       ]
      ]
     }
@@ -3657,7 +8562,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -3681,28 +8586,17 @@
    "paint": {
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
-    "text-halo-color": {
-     "stops": [
-      [
-       14,
-       "rgba(226, 227, 222, 0.88)"
-      ],
-      [
-       18,
-       "rgba(255, 255, 255, 0.88)"
-      ]
-     ]
-    },
-    "text-halo-blur": 0.25,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-halo-width": {
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        22,
-       1.5
+       3.0
       ]
      ]
     }
@@ -3721,7 +8615,7 @@
     "text-allow-overlap": false,
     "text-padding": 15,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -3745,28 +8639,17 @@
    "paint": {
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
-    "text-halo-color": {
-     "stops": [
-      [
-       14,
-       "rgba(226, 227, 222, 0.88)"
-      ],
-      [
-       18,
-       "rgba(255, 255, 255, 0.88)"
-      ]
-     ]
-    },
-    "text-halo-blur": 0.25,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-halo-width": {
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        22,
-       1.5
+       3.0
       ]
      ]
     }
@@ -3785,7 +8668,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -3809,28 +8692,17 @@
    "paint": {
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
-    "text-halo-color": {
-     "stops": [
-      [
-       14,
-       "rgba(226, 227, 222, 0.88)"
-      ],
-      [
-       18,
-       "rgba(255, 255, 255, 0.88)"
-      ]
-     ]
-    },
-    "text-halo-blur": 0.25,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-halo-width": {
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        22,
-       1.5
+       3.0
       ]
      ]
     }
@@ -3849,7 +8721,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -3885,8 +8757,9 @@
    "paint": {
     "text-color": "#618141",
     "text-opacity": 0.9,
-    "text-halo-color": "#f0f4ec",
-    "text-halo-width": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -3902,7 +8775,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -3938,8 +8811,9 @@
    "paint": {
     "text-color": "#618141",
     "text-opacity": 0.9,
-    "text-halo-color": "#f0f4ec",
-    "text-halo-width": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -3955,7 +8829,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -3979,28 +8853,17 @@
    "paint": {
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
-    "text-halo-color": {
-     "stops": [
-      [
-       14,
-       "rgba(226, 227, 222, 0.88)"
-      ],
-      [
-       18,
-       "rgba(255, 255, 255, 0.88)"
-      ]
-     ]
-    },
-    "text-halo-blur": 0.25,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-halo-width": {
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        22,
-       1.5
+       3.0
       ]
      ]
     }
@@ -4019,7 +8882,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -4043,28 +8906,17 @@
    "paint": {
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
-    "text-halo-color": {
-     "stops": [
-      [
-       14,
-       "rgba(226, 227, 222, 0.88)"
-      ],
-      [
-       18,
-       "rgba(255, 255, 255, 0.88)"
-      ]
-     ]
-    },
-    "text-halo-blur": 0.25,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-halo-width": {
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        22,
-       1.5
+       3.0
       ]
      ]
     }
@@ -4083,7 +8935,7 @@
     "text-allow-overlap": false,
     "text-padding": 25,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -4119,8 +8971,9 @@
    "paint": {
     "text-color": "#618141",
     "text-opacity": 0.9,
-    "text-halo-color": "#f0f4ec",
-    "text-halo-width": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -4136,7 +8989,7 @@
     "text-allow-overlap": false,
     "text-padding": 25,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -4172,8 +9025,9 @@
    "paint": {
     "text-color": "#618141",
     "text-opacity": 0.9,
-    "text-halo-color": "#f0f4ec",
-    "text-halo-width": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -4194,7 +9048,7 @@
     "text-allow-overlap": false,
     "text-padding": 15,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -4230,8 +9084,9 @@
    "paint": {
     "text-color": "#618141",
     "text-opacity": 0.9,
-    "text-halo-color": "#f0f4ec",
-    "text-halo-width": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -4247,7 +9102,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -4271,28 +9126,17 @@
    "paint": {
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
-    "text-halo-color": {
-     "stops": [
-      [
-       14,
-       "rgba(226, 227, 222, 0.88)"
-      ],
-      [
-       18,
-       "rgba(255, 255, 255, 0.88)"
-      ]
-     ]
-    },
-    "text-halo-blur": 0.25,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-halo-width": {
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        22,
-       1.5
+       3.0
       ]
      ]
     }
@@ -4311,7 +9155,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -4335,28 +9179,17 @@
    "paint": {
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
-    "text-halo-color": {
-     "stops": [
-      [
-       14,
-       "rgba(226, 227, 222, 0.88)"
-      ],
-      [
-       18,
-       "rgba(255, 255, 255, 0.88)"
-      ]
-     ]
-    },
-    "text-halo-blur": 0.25,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-halo-width": {
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        22,
-       1.5
+       3.0
       ]
      ]
     }
@@ -4375,7 +9208,7 @@
     "text-allow-overlap": false,
     "text-padding": 25,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -4411,8 +9244,9 @@
    "paint": {
     "text-color": "#618141",
     "text-opacity": 0.9,
-    "text-halo-color": "#f0f4ec",
-    "text-halo-width": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -4428,7 +9262,7 @@
     "text-padding": 25,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -4464,8 +9298,9 @@
    "paint": {
     "text-color": "#618141",
     "text-opacity": 0.9,
-    "text-halo-color": "#f0f4ec",
-    "text-halo-width": 1
+    "text-halo-color": "#e4e6d5",
+    "text-halo-width": 2,
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -4507,16 +9342,16 @@
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-opacity": 0.75
    }
   },
@@ -4632,15 +9467,15 @@
      "stops": [
       [
        6,
-       1
+       2
       ],
       [
        10,
-       1.5
+       3.0
       ]
      ]
     },
-    "text-halo-color": "#eaf1eb",
+    "text-halo-color": "#e4e6d5",
     "text-opacity": {
      "stops": [
       [
@@ -4652,7 +9487,8 @@
        1
       ]
      ]
-    }
+    },
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -4701,15 +9537,15 @@
      "stops": [
       [
        6,
-       1
+       2
       ],
       [
        10,
-       1.5
+       3.0
       ]
      ]
     },
-    "text-halo-color": "#eaf1eb",
+    "text-halo-color": "#e4e6d5",
     "text-opacity": {
      "stops": [
       [
@@ -4721,7 +9557,8 @@
        1
       ]
      ]
-    }
+    },
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -4770,15 +9607,15 @@
      "stops": [
       [
        6,
-       1
+       2
       ],
       [
        10,
-       1.5
+       3.0
       ]
      ]
     },
-    "text-halo-color": "#eaf1eb",
+    "text-halo-color": "#e4e6d5",
     "text-opacity": {
      "stops": [
       [
@@ -4790,7 +9627,8 @@
        1
       ]
      ]
-    }
+    },
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -4839,15 +9677,15 @@
      "stops": [
       [
        6,
-       1
+       2
       ],
       [
        10,
-       1.5
+       3.0
       ]
      ]
     },
-    "text-halo-color": "#eaf1eb",
+    "text-halo-color": "#e4e6d5",
     "text-opacity": {
      "stops": [
       [
@@ -4859,7 +9697,8 @@
        1
       ]
      ]
-    }
+    },
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -4908,15 +9747,15 @@
      "stops": [
       [
        6,
-       1
+       2
       ],
       [
        10,
-       1.5
+       3.0
       ]
      ]
     },
-    "text-halo-color": "#eaf1eb",
+    "text-halo-color": "#e4e6d5",
     "text-opacity": {
      "stops": [
       [
@@ -4928,7 +9767,8 @@
        1
       ]
      ]
-    }
+    },
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -4977,15 +9817,15 @@
      "stops": [
       [
        6,
-       1
+       2
       ],
       [
        10,
-       1.5
+       3.0
       ]
      ]
     },
-    "text-halo-color": "#eaf1eb",
+    "text-halo-color": "#e4e6d5",
     "text-opacity": {
      "stops": [
       [
@@ -4997,7 +9837,8 @@
        1
       ]
      ]
-    }
+    },
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -5018,7 +9859,7 @@
     "text-allow-overlap": false,
     "text-padding": 15,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -5042,28 +9883,17 @@
    "paint": {
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
-    "text-halo-color": {
-     "stops": [
-      [
-       14,
-       "rgba(226, 227, 222, 0.88)"
-      ],
-      [
-       18,
-       "rgba(255, 255, 255, 0.88)"
-      ]
-     ]
-    },
-    "text-halo-blur": 0.25,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-halo-width": {
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        22,
-       1.5
+       3.0
       ]
      ]
     }
@@ -5087,7 +9917,7 @@
     "text-allow-overlap": false,
     "text-padding": 5,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -5111,28 +9941,17 @@
    "paint": {
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
-    "text-halo-color": {
-     "stops": [
-      [
-       14,
-       "rgba(226, 227, 222, 0.88)"
-      ],
-      [
-       18,
-       "rgba(255, 255, 255, 0.88)"
-      ]
-     ]
-    },
-    "text-halo-blur": 0.25,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-halo-width": {
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        22,
-       1.5
+       3.0
       ]
      ]
     }
@@ -5156,7 +9975,7 @@
     "text-allow-overlap": false,
     "text-padding": 5,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -5180,28 +9999,17 @@
    "paint": {
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
-    "text-halo-color": {
-     "stops": [
-      [
-       14,
-       "rgba(226, 227, 222, 0.88)"
-      ],
-      [
-       18,
-       "rgba(255, 255, 255, 0.88)"
-      ]
-     ]
-    },
-    "text-halo-blur": 0.25,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-halo-width": {
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        22,
-       1.5
+       3.0
       ]
      ]
     }
@@ -5215,6 +10023,22 @@
    "minzoom": 14,
    "layout": {
     "symbol-avoid-edges": true,
+    "text-font": [
+     "Ubuntu Regular"
+    ],
+    "text-size": {
+     "stops": [
+      [
+       10,
+       10
+      ],
+      [
+       16,
+       14
+      ]
+     ]
+    },
+    "text-letter-spacing": 0.08,
     "text-field": "{_name_global}",
     "text-allow-overlap": false,
     "text-padding": {
@@ -5229,39 +10053,13 @@
       ]
      ]
     },
-    "text-font": [
-     "Founders Grotesk Text Regular"
-    ],
-    "text-size": {
-     "stops": [
-      [
-       14,
-       10
-      ],
-      [
-       18,
-       14
-      ]
-     ]
-    },
-    "text-transform": "uppercase",
-    "text-letter-spacing": 0.1
+    "visibility": "none"
    },
    "paint": {
-    "text-color": "#99a9b2",
-    "text-halo-width": {
-     "stops": [
-      [
-       10,
-       1
-      ],
-      [
-       16,
-       1.25
-      ]
-     ]
-    },
-    "text-halo-color": "#e8f8ef"
+    "text-color": "#d6d8d4",
+    "text-halo-color": "#323333",
+    "text-halo-width": 1,
+    "text-halo-blur": 1
    }
   },
   {
@@ -5279,7 +10077,7 @@
     "text-field": "{_name}",
     "text-optional": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -5312,8 +10110,8 @@
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.3,
-    "text-halo-width": 1
+    "text-halo-blur": 0.8,
+    "text-halo-width": 2
    }
   },
   {
@@ -5331,7 +10129,7 @@
     "text-field": "{_name}",
     "text-optional": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -5368,8 +10166,8 @@
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.3,
-    "text-halo-width": 1
+    "text-halo-blur": 0.8,
+    "text-halo-width": 2
    }
   },
   {
@@ -5388,7 +10186,7 @@
     "text-field": "{_name}",
     "text-optional": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -5425,8 +10223,8 @@
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.3,
-    "text-halo-width": 1
+    "text-halo-blur": 0.8,
+    "text-halo-width": 2
    }
   },
   {
@@ -5446,7 +10244,7 @@
     "text-field": "{_name}",
     "text-optional": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -5479,8 +10277,8 @@
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.3,
-    "text-halo-width": 1
+    "text-halo-blur": 0.8,
+    "text-halo-width": 2
    }
   },
   {
@@ -5498,7 +10296,7 @@
     "text-field": "{_name}",
     "text-optional": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -5531,8 +10329,8 @@
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.3,
-    "text-halo-width": 1
+    "text-halo-blur": 0.8,
+    "text-halo-width": 2
    }
   },
   {
@@ -5552,7 +10350,7 @@
     "text-field": "{_name}",
     "text-optional": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -5589,8 +10387,8 @@
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.3,
-    "text-halo-width": 1
+    "text-halo-blur": 0.8,
+    "text-halo-width": 2
    }
   },
   {
@@ -5608,7 +10406,7 @@
     "text-field": "{_name}",
     "text-optional": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -5645,8 +10443,8 @@
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.3,
-    "text-halo-width": 1
+    "text-halo-blur": 0.8,
+    "text-halo-width": 2
    }
   },
   {
@@ -5667,7 +10465,7 @@
     "text-field": "{_name}",
     "text-optional": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -5704,8 +10502,8 @@
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.3,
-    "text-halo-width": 1
+    "text-halo-blur": 0.8,
+    "text-halo-width": 2
    }
   },
   {
@@ -5724,7 +10522,7 @@
     "text-field": "{_name}",
     "text-optional": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -5761,8 +10559,8 @@
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.3,
-    "text-halo-width": 1
+    "text-halo-blur": 0.8,
+    "text-halo-width": 2
    }
   },
   {
@@ -5781,7 +10579,7 @@
     "text-field": "{_name}",
     "text-optional": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -5818,8 +10616,8 @@
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.3,
-    "text-halo-width": 1
+    "text-halo-blur": 0.8,
+    "text-halo-width": 2
    }
   },
   {
@@ -5840,7 +10638,7 @@
     "text-field": "{_name}",
     "text-optional": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -5877,8 +10675,8 @@
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.3,
-    "text-halo-width": 1
+    "text-halo-blur": 0.8,
+    "text-halo-width": 2
    }
   },
   {
@@ -5897,7 +10695,7 @@
     "text-field": "{_name}",
     "text-optional": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -5934,8 +10732,8 @@
     "text-color": "#4d5c66",
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.3,
-    "text-halo-width": 1
+    "text-halo-blur": 0.8,
+    "text-halo-width": 2
    }
   },
   {
@@ -5943,20 +10741,20 @@
    "type": "symbol",
    "source": "esri",
    "source-layer": "Spot elevation",
-   "minzoom": 0,
+   "minzoom": 13,
    "layout": {
     "icon-image": "Spotheight",
     "icon-padding": 40,
     "icon-allow-overlap": true,
     "symbol-avoid-edges": true,
-    "text-anchor": "top",
+    "text-anchor": "bottom-left",
     "text-max-width": 8,
     "text-field": "{_name}",
     "text-allow-overlap": false,
     "text-padding": 40,
     "text-offset": [
-     0,
-     0.65
+     0.25,
+     -0.25
     ],
     "text-justify": "left",
     "icon-size": {
@@ -5972,21 +10770,21 @@
      ]
     },
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
       [
        6,
-       10
+       5
       ],
       [
        8,
-       12
+       6
       ],
       [
        12,
-       18
+       9
       ]
      ],
      "base": 1.2
@@ -5994,11 +10792,11 @@
     "text-line-height": 0.9
    },
    "paint": {
-    "text-color": "#4d5c66",
+    "text-color": "#533d32",
     "text-opacity": 0.9,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.3,
-    "text-halo-width": 1
+    "text-halo-blur": 0.8,
+    "text-halo-width": 2
    }
   },
   {
@@ -6011,13 +10809,13 @@
     "_label_class",
     5
    ],
-   "minzoom": 10,
+   "minzoom": 15,
    "layout": {
     "symbol-avoid-edges": true,
     "text-max-width": 6,
     "text-field": "{_name_global}",
     "text-allow-overlap": false,
-    "text-padding": 15,
+    "text-padding": 6,
     "text-font": [
      "Founders Grotesk Text Bold"
     ],
@@ -6029,14 +10827,13 @@
       ],
       [
        10,
-       13
+       12
       ],
       [
        14,
-       30
+       16
       ]
-     ],
-     "base": 1.2
+     ]
     },
     "text-transform": "uppercase",
     "text-letter-spacing": -0.01
@@ -6047,15 +10844,16 @@
      "stops": [
       [
        10,
-       1
+       2
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#e8f8ef"
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -6074,7 +10872,7 @@
     "text-max-width": 6,
     "text-field": "{_name_global}",
     "text-allow-overlap": false,
-    "text-padding": 1,
+    "text-padding": 6,
     "text-font": [
      "Founders Grotesk Text Bold"
     ],
@@ -6086,14 +10884,13 @@
       ],
       [
        10,
-       13
+       12
       ],
       [
        14,
-       30
+       16
       ]
-     ],
-     "base": 1.2
+     ]
     },
     "text-transform": "uppercase",
     "text-letter-spacing": -0.01
@@ -6104,15 +10901,16 @@
      "stops": [
       [
        10,
-       1
+       2
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#e8f8ef"
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -6132,7 +10930,7 @@
     "text-max-width": 6,
     "text-field": "{_name_global}",
     "text-allow-overlap": false,
-    "text-padding": 1,
+    "text-padding": 6,
     "text-font": [
      "Founders Grotesk Text Bold"
     ],
@@ -6144,14 +10942,13 @@
       ],
       [
        10,
-       13
+       12
       ],
       [
        14,
-       30
+       16
       ]
-     ],
-     "base": 1.2
+     ]
     },
     "text-transform": "uppercase",
     "text-letter-spacing": -0.01
@@ -6162,15 +10959,16 @@
      "stops": [
       [
        10,
-       1
+       2
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#e8f8ef"
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -6190,7 +10988,7 @@
     "text-max-width": 6,
     "text-field": "{_name_global}",
     "text-allow-overlap": false,
-    "text-padding": 1,
+    "text-padding": 4,
     "text-font": [
      "Founders Grotesk Text Semibold"
     ],
@@ -6206,7 +11004,7 @@
       ],
       [
        14,
-       38
+       22
       ]
      ]
     },
@@ -6218,16 +11016,16 @@
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-opacity": {
      "stops": [
       [
@@ -6259,7 +11057,7 @@
     "text-max-width": 6,
     "text-field": "{_name_global}",
     "text-allow-overlap": false,
-    "text-padding": 1,
+    "text-padding": 4,
     "text-font": [
      "Founders Grotesk Text Semibold"
     ],
@@ -6275,7 +11073,7 @@
       ],
       [
        14,
-       38
+       22
       ]
      ]
     },
@@ -6287,16 +11085,16 @@
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-opacity": {
      "stops": [
       [
@@ -6328,7 +11126,7 @@
     "text-max-width": 6,
     "text-field": "{_name_global}",
     "text-allow-overlap": false,
-    "text-padding": 1,
+    "text-padding": 4,
     "text-font": [
      "Founders Grotesk Text Semibold"
     ],
@@ -6344,7 +11142,7 @@
       ],
       [
        14,
-       38
+       22
       ]
      ]
     },
@@ -6356,16 +11154,16 @@
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-opacity": {
      "stops": [
       [
@@ -6397,7 +11195,7 @@
     "text-max-width": 6,
     "text-field": "{_name}",
     "text-allow-overlap": false,
-    "text-padding": 1,
+    "text-padding": 6,
     "text-font": [
      "Founders Grotesk Text Bold"
     ],
@@ -6409,14 +11207,13 @@
       ],
       [
        10,
-       13
+       12
       ],
       [
        14,
-       30
+       16
       ]
-     ],
-     "base": 1.2
+     ]
     },
     "text-transform": "uppercase",
     "text-letter-spacing": -0.01
@@ -6427,15 +11224,16 @@
      "stops": [
       [
        10,
-       1
+       2
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#e8f8ef"
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -6455,7 +11253,7 @@
     "text-max-width": 6,
     "text-field": "{_name}",
     "text-allow-overlap": false,
-    "text-padding": 1,
+    "text-padding": 6,
     "text-font": [
      "Founders Grotesk Text Bold"
     ],
@@ -6467,14 +11265,13 @@
       ],
       [
        10,
-       13
+       12
       ],
       [
        14,
-       30
+       16
       ]
-     ],
-     "base": 1.2
+     ]
     },
     "text-transform": "uppercase",
     "text-letter-spacing": -0.01
@@ -6485,15 +11282,16 @@
      "stops": [
       [
        10,
-       1
+       2
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#e8f8ef"
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -6513,7 +11311,7 @@
     "text-max-width": 6,
     "text-field": "{_name}",
     "text-allow-overlap": false,
-    "text-padding": 1,
+    "text-padding": 6,
     "text-font": [
      "Founders Grotesk Text Bold"
     ],
@@ -6525,14 +11323,13 @@
       ],
       [
        10,
-       13
+       12
       ],
       [
        14,
-       30
+       16
       ]
-     ],
-     "base": 1.2
+     ]
     },
     "text-transform": "uppercase",
     "text-letter-spacing": -0.01
@@ -6543,15 +11340,16 @@
      "stops": [
       [
        10,
-       1
+       2
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#e8f8ef"
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -6571,7 +11369,7 @@
     "text-max-width": 6,
     "text-field": "{_name}",
     "text-allow-overlap": false,
-    "text-padding": 1,
+    "text-padding": 4,
     "text-font": [
      "Founders Grotesk Text Semibold"
     ],
@@ -6587,7 +11385,7 @@
       ],
       [
        14,
-       38
+       22
       ]
      ]
     },
@@ -6599,16 +11397,16 @@
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-opacity": {
      "stops": [
       [
@@ -6640,7 +11438,7 @@
     "text-max-width": 6,
     "text-field": "{_name}",
     "text-allow-overlap": false,
-    "text-padding": 1,
+    "text-padding": 4,
     "text-font": [
      "Founders Grotesk Text Semibold"
     ],
@@ -6656,7 +11454,7 @@
       ],
       [
        14,
-       38
+       22
       ]
      ]
     },
@@ -6668,16 +11466,16 @@
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-opacity": {
      "stops": [
       [
@@ -6709,7 +11507,7 @@
     "text-max-width": 6,
     "text-field": "{_name}",
     "text-allow-overlap": false,
-    "text-padding": 1,
+    "text-padding": 6,
     "text-font": [
      "Founders Grotesk Text Bold"
     ],
@@ -6721,14 +11519,13 @@
       ],
       [
        10,
-       13
+       12
       ],
       [
        14,
-       30
+       16
       ]
-     ],
-     "base": 1.2
+     ]
     },
     "text-transform": "uppercase",
     "text-letter-spacing": -0.01
@@ -6739,15 +11536,16 @@
      "stops": [
       [
        10,
-       1
+       2
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#e8f8ef"
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -6767,7 +11565,7 @@
     "text-max-width": 6,
     "text-field": "{_name}",
     "text-allow-overlap": false,
-    "text-padding": 1,
+    "text-padding": 6,
     "text-font": [
      "Founders Grotesk Text Bold"
     ],
@@ -6779,14 +11577,13 @@
       ],
       [
        10,
-       13
+       12
       ],
       [
        14,
-       30
+       16
       ]
-     ],
-     "base": 1.2
+     ]
     },
     "text-transform": "uppercase",
     "text-letter-spacing": -0.01
@@ -6797,15 +11594,16 @@
      "stops": [
       [
        10,
-       1
+       2
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#e8f8ef"
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -6825,7 +11623,7 @@
     "text-max-width": 6,
     "text-field": "{_name}",
     "text-allow-overlap": false,
-    "text-padding": 1,
+    "text-padding": 4,
     "text-font": [
      "Founders Grotesk Text Semibold"
     ],
@@ -6841,7 +11639,7 @@
       ],
       [
        14,
-       38
+       22
       ]
      ]
     },
@@ -6853,16 +11651,16 @@
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-opacity": {
      "stops": [
       [
@@ -6941,9 +11739,9 @@
       ]
      ]
     },
-    "text-halo-width": 1,
-    "text-halo-color": "#e3e8ed",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -7010,9 +11808,9 @@
       ]
      ]
     },
-    "text-halo-width": 1,
-    "text-halo-color": "#e3e8ed",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -7079,9 +11877,9 @@
       ]
      ]
     },
-    "text-halo-width": 1,
-    "text-halo-color": "#e3e8ed",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -7148,9 +11946,9 @@
       ]
      ]
     },
-    "text-halo-width": 1,
-    "text-halo-color": "#e3e8ed",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -7218,9 +12016,9 @@
       ]
      ]
     },
-    "text-halo-width": 1,
-    "text-halo-color": "#e3e8ed",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -7240,7 +12038,7 @@
     "text-max-width": 6,
     "text-field": "{_name}",
     "text-allow-overlap": false,
-    "text-padding": 1,
+    "text-padding": 6,
     "text-font": [
      "Founders Grotesk Text Bold"
     ],
@@ -7252,14 +12050,13 @@
       ],
       [
        10,
-       13
+       12
       ],
       [
        14,
-       30
+       16
       ]
-     ],
-     "base": 1.2
+     ]
     },
     "text-transform": "uppercase",
     "text-letter-spacing": -0.01
@@ -7270,15 +12067,16 @@
      "stops": [
       [
        10,
-       1
+       2
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#e8f8ef"
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -7298,7 +12096,7 @@
     "text-max-width": 6,
     "text-field": "{_name}",
     "text-allow-overlap": false,
-    "text-padding": 1,
+    "text-padding": 6,
     "text-font": [
      "Founders Grotesk Text Bold"
     ],
@@ -7310,14 +12108,13 @@
       ],
       [
        10,
-       13
+       12
       ],
       [
        14,
-       30
+       16
       ]
-     ],
-     "base": 1.2
+     ]
     },
     "text-transform": "uppercase",
     "text-letter-spacing": -0.01
@@ -7328,15 +12125,16 @@
      "stops": [
       [
        10,
-       1
+       2
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#e8f8ef"
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -7356,7 +12154,7 @@
     "text-max-width": 6,
     "text-field": "{_name}",
     "text-allow-overlap": false,
-    "text-padding": 1,
+    "text-padding": 6,
     "text-font": [
      "Founders Grotesk Text Bold"
     ],
@@ -7368,14 +12166,13 @@
       ],
       [
        10,
-       13
+       12
       ],
       [
        14,
-       30
+       16
       ]
-     ],
-     "base": 1.2
+     ]
     },
     "text-transform": "uppercase",
     "text-letter-spacing": -0.01
@@ -7386,15 +12183,16 @@
      "stops": [
       [
        10,
-       1
+       2
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#e8f8ef"
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -7414,7 +12212,7 @@
     "text-max-width": 6,
     "text-field": "{_name}",
     "text-allow-overlap": false,
-    "text-padding": 1,
+    "text-padding": 4,
     "text-font": [
      "Founders Grotesk Text Semibold"
     ],
@@ -7430,7 +12228,7 @@
       ],
       [
        14,
-       38
+       22
       ]
      ]
     },
@@ -7442,16 +12240,16 @@
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-opacity": {
      "stops": [
       [
@@ -7483,7 +12281,7 @@
     "text-max-width": 6,
     "text-field": "{_name}",
     "text-allow-overlap": false,
-    "text-padding": 1,
+    "text-padding": 4,
     "text-font": [
      "Founders Grotesk Text Semibold"
     ],
@@ -7499,7 +12297,7 @@
       ],
       [
        14,
-       38
+       22
       ]
      ]
     },
@@ -7511,16 +12309,16 @@
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-opacity": {
      "stops": [
       [
@@ -7552,7 +12350,7 @@
     "text-max-width": 6,
     "text-field": "{_name}",
     "text-allow-overlap": false,
-    "text-padding": 1,
+    "text-padding": 4,
     "text-font": [
      "Founders Grotesk Text Semibold"
     ],
@@ -7568,7 +12366,7 @@
       ],
       [
        14,
-       38
+       22
       ]
      ]
     },
@@ -7580,16 +12378,16 @@
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-opacity": {
      "stops": [
       [
@@ -7621,7 +12419,7 @@
     "text-max-width": 6,
     "text-field": "{_name}",
     "text-allow-overlap": false,
-    "text-padding": 1,
+    "text-padding": 4,
     "text-font": [
      "Founders Grotesk Text Semibold"
     ],
@@ -7637,7 +12435,7 @@
       ],
       [
        14,
-       38
+       22
       ]
      ]
     },
@@ -7649,16 +12447,16 @@
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-opacity": {
      "stops": [
       [
@@ -7690,7 +12488,7 @@
     "text-max-width": 6,
     "text-field": "{_name}",
     "text-allow-overlap": false,
-    "text-padding": 1,
+    "text-padding": 4,
     "text-font": [
      "Founders Grotesk Text Semibold"
     ],
@@ -7706,7 +12504,7 @@
       ],
       [
        14,
-       38
+       22
       ]
      ]
     },
@@ -7718,16 +12516,16 @@
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-opacity": {
      "stops": [
       [
@@ -7759,7 +12557,7 @@
     "text-max-width": 6,
     "text-field": "{_name}",
     "text-allow-overlap": false,
-    "text-padding": 1,
+    "text-padding": 4,
     "text-font": [
      "Founders Grotesk Text Semibold"
     ],
@@ -7775,7 +12573,7 @@
       ],
       [
        14,
-       38
+       22
       ]
      ]
     },
@@ -7787,16 +12585,16 @@
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-opacity": {
      "stops": [
       [
@@ -7828,7 +12626,7 @@
     "text-max-width": 6,
     "text-field": "{_name}",
     "text-allow-overlap": false,
-    "text-padding": 1,
+    "text-padding": 4,
     "text-font": [
      "Founders Grotesk Text Semibold"
     ],
@@ -7844,7 +12642,7 @@
       ],
       [
        14,
-       38
+       22
       ]
      ]
     },
@@ -7856,16 +12654,16 @@
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-opacity": {
      "stops": [
       [
@@ -7897,7 +12695,7 @@
     "text-max-width": 6,
     "text-field": "{_name}",
     "text-allow-overlap": false,
-    "text-padding": 1,
+    "text-padding": 4,
     "text-font": [
      "Founders Grotesk Text Semibold"
     ],
@@ -7913,7 +12711,7 @@
       ],
       [
        14,
-       38
+       22
       ]
      ]
     },
@@ -7925,16 +12723,16 @@
      "stops": [
       [
        10,
-       0.75
+       1.5
       ],
       [
        16,
-       1.25
+       2.5
       ]
      ]
     },
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.4,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-opacity": {
      "stops": [
       [
@@ -8014,9 +12812,9 @@
       ]
      ]
     },
-    "text-halo-width": 1,
-    "text-halo-color": "#e3e8ed",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -8046,7 +12844,7 @@
     "text-field": "{_name}",
     "text-optional": true,
     "text-font": [
-     "Flecha S Medium"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -8082,20 +12880,9 @@
    },
    "paint": {
     "text-color": "rgba(8, 43, 15, 0.4)",
-    "text-halo-width": 1,
-    "text-halo-color": {
-     "stops": [
-      [
-       0,
-       "rgba(240, 242, 245, 0.85)"
-      ],
-      [
-       22,
-       "#bfc8d4"
-      ]
-     ]
-    },
-    "text-halo-blur": 0.2
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   },
   {
@@ -8126,7 +12913,7 @@
     "text-field": "{_name}",
     "text-optional": true,
     "text-font": [
-     "Flecha S Regular"
+     "Flecha S Bold"
     ],
     "text-size": {
      "stops": [
@@ -8152,16 +12939,16 @@
      "stops": [
       [
        6,
-       0.65
+       1.3
       ],
       [
        12,
-       1
+       2
       ]
      ]
     },
-    "text-halo-color": "#f9fafb",
-    "text-halo-blur": 0.3,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8,
     "text-opacity": {
      "stops": [
       [
@@ -8248,9 +13035,9 @@
       ]
      ]
     },
-    "text-halo-width": 1,
-    "text-halo-color": "#e3e8ed",
-    "text-halo-blur": 0.4
+    "text-halo-width": 2,
+    "text-halo-color": "#e4e6d5",
+    "text-halo-blur": 0.8
    }
   }
  ]

@@ -18,7 +18,7 @@
    "url": "https://basemaps.arcgis.com/arcgis/rest/services/World_Contours_v2/VectorTileServer"
   }
  },
- "sprite": "https://cdn.arcgis.com/sharing/rest/content/items/659e7c1b1e374f6c8a89eefe17b23380/resources/sprites/sprite",
+ "sprite": "https://evanapplegate.github.io/rainmaker-basemap/sprites/sprite",
  "glyphs": "https://evanapplegate.github.io/rainmaker-basemap/glyphs/{fontstack}/{range}.pbf",
  "layers": [
   {
