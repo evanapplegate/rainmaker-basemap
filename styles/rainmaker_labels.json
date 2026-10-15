@@ -1615,7 +1615,7 @@
     "text-allow-overlap": false,
     "text-padding": 15,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -1649,7 +1649,7 @@
      ]
     },
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8,
+    "text-halo-blur": 0.96,
     "text-opacity": {
      "stops": [
       [
@@ -1743,7 +1743,7 @@
     "text-allow-overlap": false,
     "text-padding": 15,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -1767,7 +1767,7 @@
     "text-color": "#1d588b",
     "text-halo-width": 2,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8
+    "text-halo-blur": 0.96
    }
   },
   {
@@ -1789,7 +1789,7 @@
     "text-allow-overlap": false,
     "text-padding": 15,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -1813,7 +1813,7 @@
     "text-color": "#1d588b",
     "text-halo-width": 2,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8
+    "text-halo-blur": 0.96
    }
   },
   {
@@ -1835,7 +1835,7 @@
     "text-allow-overlap": false,
     "text-padding": 15,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -1861,7 +1861,7 @@
     "text-color": "rgba(37, 87, 131, 0.83)",
     "text-halo-width": 2,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8
+    "text-halo-blur": 0.96
    }
   },
   {
@@ -1883,7 +1883,7 @@
     "text-allow-overlap": false,
     "text-padding": 15,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -1909,7 +1909,7 @@
     "text-color": "rgba(37, 87, 131, 0.83)",
     "text-halo-width": 2,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8
+    "text-halo-blur": 0.96
    }
   },
   {
@@ -1931,7 +1931,7 @@
     "text-allow-overlap": false,
     "text-padding": 15,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -1955,7 +1955,7 @@
     "text-color": "#1d588b",
     "text-halo-width": 2,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8
+    "text-halo-blur": 0.96
    }
   },
   {
@@ -1977,7 +1977,7 @@
     "text-allow-overlap": false,
     "text-padding": 15,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -2001,7 +2001,7 @@
     "text-color": "#1d588b",
     "text-halo-width": 2,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8
+    "text-halo-blur": 0.96
    }
   },
   {
@@ -2023,7 +2023,7 @@
     ],
     "symbol-spacing": 400,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -2047,7 +2047,7 @@
     "text-color": "rgba(37, 87, 131, 0.83)",
     "text-halo-width": 2,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8
+    "text-halo-blur": 0.96
    }
   },
   {
@@ -2122,7 +2122,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -2146,7 +2146,7 @@
     "text-color": "#1d588b",
     "text-halo-width": 2,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8
+    "text-halo-blur": 0.96
    }
   },
   {
@@ -2167,7 +2167,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -2191,7 +2191,7 @@
     "text-color": "#1d588b",
     "text-halo-width": 2,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8
+    "text-halo-blur": 0.96
    }
   },
   {
@@ -2213,7 +2213,7 @@
     "text-allow-overlap": false,
     "text-max-width": 5,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -2238,7 +2238,7 @@
     "text-color": "rgba(37, 87, 131, 0.83)",
     "text-halo-width": 2,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8
+    "text-halo-blur": 0.96
    }
   },
   {
@@ -2260,7 +2260,7 @@
     "text-allow-overlap": false,
     "text-max-width": 8,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -2285,7 +2285,7 @@
     "text-color": "rgba(37, 87, 131, 0.83)",
     "text-halo-width": 2,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8
+    "text-halo-blur": 0.96
    }
   },
   {
@@ -2307,7 +2307,7 @@
     "text-allow-overlap": false,
     "text-max-width": 8,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -2332,7 +2332,7 @@
     "text-color": "rgba(37, 87, 131, 0.83)",
     "text-halo-width": 2,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8
+    "text-halo-blur": 0.96
    }
   },
   {
@@ -2353,7 +2353,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -2377,7 +2377,7 @@
     "text-color": "#1d588b",
     "text-halo-width": 2,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8
+    "text-halo-blur": 0.96
    }
   },
   {
@@ -2399,7 +2399,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -2423,7 +2423,7 @@
     "text-color": "#1d588b",
     "text-halo-width": 2,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8
+    "text-halo-blur": 0.96
    }
   },
   {
@@ -2445,7 +2445,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -2469,7 +2469,7 @@
     "text-color": "#1d588b",
     "text-halo-width": 2,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8
+    "text-halo-blur": 0.96
    }
   },
   {
@@ -2611,7 +2611,7 @@
     "text-allow-overlap": false,
     "text-max-width": 4,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -2636,7 +2636,7 @@
     "text-color": "rgba(37, 87, 131, 0.83)",
     "text-halo-width": 2,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8
+    "text-halo-blur": 0.96
    }
   },
   {
@@ -2658,7 +2658,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -2682,7 +2682,7 @@
     "text-color": "#1d588b",
     "text-halo-width": 2,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8
+    "text-halo-blur": 0.96
    }
   },
   {
@@ -2699,7 +2699,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -2723,7 +2723,7 @@
     "text-color": "#1d588b",
     "text-halo-width": 2,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8
+    "text-halo-blur": 0.96
    }
   },
   {
@@ -2740,7 +2740,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -2764,7 +2764,7 @@
     "text-color": "#1d588b",
     "text-halo-width": 2,
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8
+    "text-halo-blur": 0.96
    }
   },
   {
@@ -2780,7 +2780,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -2815,7 +2815,7 @@
      ]
     },
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8,
+    "text-halo-blur": 0.96,
     "text-opacity": {
      "stops": [
       [
@@ -2850,7 +2850,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -2885,7 +2885,7 @@
      ]
     },
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8,
+    "text-halo-blur": 0.96,
     "text-opacity": {
      "stops": [
       [
@@ -2920,7 +2920,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -2955,7 +2955,7 @@
      ]
     },
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8,
+    "text-halo-blur": 0.96,
     "text-opacity": {
      "stops": [
       [
@@ -2990,7 +2990,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -3025,7 +3025,7 @@
      ]
     },
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8,
+    "text-halo-blur": 0.96,
     "text-opacity": {
      "stops": [
       [
@@ -3060,7 +3060,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -3094,7 +3094,7 @@
      ]
     },
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8,
+    "text-halo-blur": 0.96,
     "text-opacity": {
      "stops": [
       [
@@ -3129,7 +3129,7 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -3163,7 +3163,7 @@
      ]
     },
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8,
+    "text-halo-blur": 0.96,
     "text-opacity": {
      "stops": [
       [
@@ -12949,7 +12949,7 @@
     "text-field": "{_name}",
     "text-optional": true,
     "text-font": [
-     "Flecha S Bold"
+     "Flecha S Bold Italic"
     ],
     "text-size": {
      "stops": [
@@ -12984,7 +12984,7 @@
      ]
     },
     "text-halo-color": "#e4e6d5",
-    "text-halo-blur": 0.8,
+    "text-halo-blur": 0.96,
     "text-opacity": {
      "stops": [
       [
