@@ -1093,8 +1093,8 @@
      ]
     },
     "line-dasharray": [
-     8,
-     8
+     17,
+     11
     ]
    },
    "layout": {
@@ -1104,23 +1104,26 @@
   },
   {
    "id": "Water line/Stream or river intermittent dots",
-   "type": "symbol",
+   "type": "line",
    "source": "esri",
    "source-layer": "Water line",
-   "layout": {
-    "symbol-placement": "line",
-    "symbol-spacing": 7,
-    "icon-image": "Waterdot",
-    "icon-allow-overlap": true,
-    "icon-ignore-placement": true,
-    "icon-padding": 0
-   },
    "filter": [
     "==",
     "_symbol",
     4
    ],
-   "minzoom": 11
+   "minzoom": 11,
+   "paint": {
+    "line-color": "#d1e3e5",
+    "line-width": 2.5,
+    "line-dasharray": [
+     1,
+     2
+    ]
+   },
+   "layout": {
+    "line-cap": "butt"
+   }
   },
   {
    "id": "Water line/Stream or river",
