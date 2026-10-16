@@ -1094,11 +1094,40 @@
     },
     "line-dasharray": [
      5,
-     1.75,
-     1,
-     1.75,
-     1,
-     1.75,
+     10
+    ]
+   },
+   "layout": {
+    "line-cap": "round",
+    "line-join": "round"
+   }
+  },
+  {
+   "id": "Water line/Stream or river intermittent dots",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Water line",
+   "filter": [
+    "==",
+    "_symbol",
+    4
+   ],
+   "minzoom": 11,
+   "paint": {
+    "line-color": "#d1e3e5",
+    "line-width": {
+     "stops": [
+      [
+       8,
+       0.75
+      ],
+      [
+       12,
+       2.5
+      ]
+     ]
+    },
+    "line-dasharray": [
      1,
      1.75
     ]
