@@ -216,8 +216,8 @@
      ]
     },
     "line-dasharray": [
-     5,
-     10
+     8,
+     8
     ]
    },
    "layout": {
@@ -238,21 +238,10 @@
    "minzoom": 11,
    "paint": {
     "line-color": "#5f717d",
-    "line-width": {
-     "stops": [
-      [
-       8,
-       0.75
-      ],
-      [
-       12,
-       2.5
-      ]
-     ]
-    },
+    "line-width": 2.5,
     "line-dasharray": [
-     1,
-     1.75
+     0.4,
+     2
     ]
    },
    "layout": {
