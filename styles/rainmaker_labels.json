@@ -13,7 +13,7 @@
    ]
   }
  },
- "sprite": "https://evanapplegate.github.io/rainmaker-basemap/sprites/sprite",
+ "sprite": "https://evanapplegate.github.io/rainmaker-basemap/sprites/v2/sprite",
  "glyphs": "https://evanapplegate.github.io/rainmaker-basemap/glyphs/{fontstack}/{range}.pbf",
  "layers": [
   {
