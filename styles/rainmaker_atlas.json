@@ -529,7 +529,7 @@
    "source-layer": "Openspace or forest",
    "paint": {
     "line-color": "rgba(9, 48, 3, 0.75)",
-    "line-width": 2,
+    "line-width": 1,
     "line-opacity": {
      "base": 0.86,
      "stops": [
@@ -582,7 +582,7 @@
    "source-layer": "Admin0 forest or park",
    "paint": {
     "line-color": "rgba(9, 48, 3, 0.75)",
-    "line-width": 2,
+    "line-width": 1,
     "line-opacity": {
      "base": 0.86,
      "stops": [
@@ -635,7 +635,7 @@
    "source-layer": "Admin1 forest or park",
    "paint": {
     "line-color": "rgba(9, 48, 3, 0.75)",
-    "line-width": 2,
+    "line-width": 1,
     "line-opacity": {
      "base": 0.86,
      "stops": [
