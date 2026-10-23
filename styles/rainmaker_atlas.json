@@ -9325,13 +9325,13 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 9.3,
     "text-max-width": 8,
@@ -9382,13 +9382,13 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 9.3,
     "text-max-width": 8,
@@ -9439,18 +9439,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Secondary Hwy red white (Alt)/{_len}",
+    "icon-image": "Road/Secondary Hwy white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -9475,7 +9475,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -9496,18 +9496,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Secondary Hwy red white/{_len}",
+    "icon-image": "Road/Secondary Hwy white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -9532,7 +9532,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -9553,19 +9553,19 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-letter-spacing": 0.05,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/U-shaped yellow black (Alt)/{_len}",
+    "icon-image": "Road/U-shaped white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -9611,19 +9611,19 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-letter-spacing": 0.05,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/U-shaped yellow black/{_len}",
+    "icon-image": "Road/U-shaped white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -9669,18 +9669,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/U-shaped red white (Alt)/{_len}",
+    "icon-image": "Road/U-shaped white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -9705,7 +9705,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -9726,18 +9726,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/U-shaped red white/{_len}",
+    "icon-image": "Road/U-shaped white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -9762,7 +9762,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -9783,19 +9783,19 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-letter-spacing": 0.05,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/U-shaped blue white (Alt)/{_len}",
+    "icon-image": "Road/U-shaped white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -9820,7 +9820,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -9841,19 +9841,19 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-letter-spacing": 0.05,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/U-shaped blue white/{_len}",
+    "icon-image": "Road/U-shaped white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -9878,7 +9878,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -9899,13 +9899,13 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
@@ -9956,13 +9956,13 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
@@ -10013,13 +10013,13 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-letter-spacing": 0.05,
@@ -10071,13 +10071,13 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-letter-spacing": 0.05,
@@ -10129,19 +10129,19 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-letter-spacing": 0.05,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/U-shaped white green (Alt)/{_len}",
+    "icon-image": "Road/U-shaped white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -10187,19 +10187,19 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-letter-spacing": 0.05,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/U-shaped white green/{_len}",
+    "icon-image": "Road/U-shaped white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -10245,19 +10245,19 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-letter-spacing": 0.05,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/U-shaped green leaf (Alt)/{_len}",
+    "icon-image": "Road/U-shaped white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -10303,19 +10303,19 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-letter-spacing": 0.05,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/U-shaped green leaf/{_len}",
+    "icon-image": "Road/U-shaped white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -10361,19 +10361,19 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-letter-spacing": 0.05,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Rectangle yellow black (Alt)/{_len}",
+    "icon-image": "Road/Rectangle white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -10419,19 +10419,19 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-letter-spacing": 0.05,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Rectangle yellow black/{_len}",
+    "icon-image": "Road/Rectangle white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -10477,19 +10477,19 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-letter-spacing": 0.05,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Rectangle red white (Alt)/{_len}",
+    "icon-image": "Road/Rectangle white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -10514,7 +10514,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -10535,19 +10535,19 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-letter-spacing": 0.05,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Rectangle red white/{_len}",
+    "icon-image": "Road/Rectangle white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -10572,7 +10572,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -10593,18 +10593,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Rectangle blue white (Alt)/{_len}",
+    "icon-image": "Road/Rectangle white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -10629,7 +10629,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -10650,18 +10650,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Rectangle blue white/{_len}",
+    "icon-image": "Road/Rectangle white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -10686,7 +10686,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -10707,19 +10707,19 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-letter-spacing": 0.05,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Rectangle green white (Alt)/{_len}",
+    "icon-image": "Road/Rectangle white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -10744,7 +10744,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -10765,19 +10765,19 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-letter-spacing": 0.05,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Rectangle green white/{_len}",
+    "icon-image": "Road/Rectangle white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -10802,7 +10802,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -10823,18 +10823,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Rectangle green yellow (Alt)/{_len}",
+    "icon-image": "Road/Rectangle white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -10859,7 +10859,7 @@
     }
    },
    "paint": {
-    "text-color": "#f1dfb7"
+    "text-color": "#000000"
    }
   },
   {
@@ -10880,18 +10880,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Rectangle green yellow/{_len}",
+    "icon-image": "Road/Rectangle white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -10916,7 +10916,7 @@
     }
    },
    "paint": {
-    "text-color": "#f1dfb7"
+    "text-color": "#000000"
    }
   },
   {
@@ -10937,18 +10937,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 9.3,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Pentagon inverse white black/{_len}",
+    "icon-image": "Road/Pentagon white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -10994,18 +10994,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 9.3,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Pentagon inverse white black (Alt)/{_len}",
+    "icon-image": "Road/Pentagon white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -11051,13 +11051,13 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
@@ -11108,13 +11108,13 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
@@ -11165,18 +11165,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Pentagon yellow black (Alt)/{_len}",
+    "icon-image": "Road/Pentagon white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -11222,18 +11222,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Pentagon yellow black/{_len}",
+    "icon-image": "Road/Pentagon white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -11279,18 +11279,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Pentagon green white/{_len}",
+    "icon-image": "Road/Pentagon white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -11315,7 +11315,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -11336,18 +11336,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Pentagon green white (Alt)/{_len}",
+    "icon-image": "Road/Pentagon white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -11372,7 +11372,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -11393,18 +11393,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Pentagon green yellow/{_len}",
+    "icon-image": "Road/Pentagon white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -11429,7 +11429,7 @@
     }
    },
    "paint": {
-    "text-color": "#f1dfb7"
+    "text-color": "#000000"
    }
   },
   {
@@ -11450,18 +11450,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Pentagon green yellow (Alt)/{_len}",
+    "icon-image": "Road/Pentagon white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -11486,7 +11486,7 @@
     }
    },
    "paint": {
-    "text-color": "#f1dfb7"
+    "text-color": "#000000"
    }
   },
   {
@@ -11507,18 +11507,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 9.3,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Pentagon blue white (Alt)/{_len}",
+    "icon-image": "Road/Pentagon white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -11543,7 +11543,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -11564,18 +11564,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 9.3,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Pentagon blue white/{_len}",
+    "icon-image": "Road/Pentagon white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -11600,7 +11600,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -11621,13 +11621,13 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
@@ -11678,13 +11678,13 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
@@ -11735,18 +11735,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Hexagon blue white/{_len}",
+    "icon-image": "Road/Hexagon white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -11771,7 +11771,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -11792,18 +11792,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Hexagon blue white (Alt)/{_len}",
+    "icon-image": "Road/Hexagon white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -11828,7 +11828,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -11849,18 +11849,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Hexagon red white/{_len}",
+    "icon-image": "Road/Hexagon white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -11885,7 +11885,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -11906,18 +11906,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Hexagon red white (Alt)/{_len}",
+    "icon-image": "Road/Hexagon white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -11942,7 +11942,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -11963,18 +11963,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Hexagon green white (Alt)/{_len}",
+    "icon-image": "Road/Hexagon white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -11999,7 +11999,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -12020,18 +12020,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Hexagon green white/{_len}",
+    "icon-image": "Road/Hexagon white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -12056,7 +12056,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -12077,18 +12077,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Hexagon orange black/{_len}",
+    "icon-image": "Road/Hexagon white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -12134,18 +12134,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Hexagon orange black (Alt)/{_len}",
+    "icon-image": "Road/Hexagon white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -12191,18 +12191,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Rectangle hexagon blue white (Alt)/{_len}",
+    "icon-image": "Road/Rectangle white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -12248,18 +12248,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Rectangle hexagon blue white/{_len}",
+    "icon-image": "Road/Rectangle white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -12305,18 +12305,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Rectangle hexagon red white (Alt)/{_len}",
+    "icon-image": "Road/Rectangle white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -12362,18 +12362,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Rectangle hexagon red white/{_len}",
+    "icon-image": "Road/Rectangle white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -12419,18 +12419,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Rectangle hexagon green white (Alt)/{_len}",
+    "icon-image": "Road/Rectangle white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -12476,18 +12476,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Rectangle hexagon green white/{_len}",
+    "icon-image": "Road/Rectangle white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -12533,18 +12533,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Rectangle hexagon brown white (Alt)/{_len}",
+    "icon-image": "Road/Rectangle white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -12590,18 +12590,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Rectangle hexagon brown white/{_len}",
+    "icon-image": "Road/Rectangle white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -12647,18 +12647,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Octagon green white (Alt)/{_len}",
+    "icon-image": "Road/Rectangle white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -12683,7 +12683,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -12704,18 +12704,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Octagon green white/{_len}",
+    "icon-image": "Road/Rectangle white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -12740,7 +12740,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -12761,13 +12761,13 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 9,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 9.3,
     "text-max-width": 8,
@@ -12777,7 +12777,7 @@
     "text-rotation-alignment": "viewport",
     "text-offset": [
      0,
-     0
+     -0.285
     ],
     "text-padding": {
      "stops": [
@@ -12818,13 +12818,13 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 9,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 9.3,
     "text-max-width": 8,
@@ -12834,7 +12834,7 @@
     "text-rotation-alignment": "viewport",
     "text-offset": [
      0,
-     0
+     -0.285
     ],
     "text-padding": {
      "stops": [
@@ -12875,18 +12875,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 9.3,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Secondary Hwy green white (Alt)/{_len}",
+    "icon-image": "Road/Secondary Hwy white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -12911,7 +12911,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -12932,18 +12932,18 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 9.3,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Secondary Hwy green white/{_len}",
+    "icon-image": "Road/Secondary Hwy white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
@@ -12968,7 +12968,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -12989,13 +12989,13 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-letter-spacing": 0.05,
@@ -13047,13 +13047,13 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
@@ -13104,23 +13104,23 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 9,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Shield blue white (Alt)/{_len}",
+    "icon-image": "Road/Shield white black (Alt)/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
      0,
-     0
+     -0.285
     ],
     "text-padding": {
      "stops": [
@@ -13140,7 +13140,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   },
   {
@@ -13161,23 +13161,23 @@
      2
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 9,
    "layout": {
     "symbol-placement": "line",
     "symbol-spacing": 800,
     "symbol-avoid-edges": true,
     "text-font": [
-     "Founders Grotesk Text Medium"
+     "Founders Grotesk Text Semibold"
     ],
     "text-size": 8.5,
     "text-max-width": 8,
     "text-field": "{_name}",
-    "icon-image": "Road/Shield blue white/{_len}",
+    "icon-image": "Road/Shield white black/{_len}",
     "icon-rotation-alignment": "viewport",
     "text-rotation-alignment": "viewport",
     "text-offset": [
      0,
-     0
+     -0.285
     ],
     "text-padding": {
      "stops": [
@@ -13197,7 +13197,7 @@
     }
    },
    "paint": {
-    "text-color": "#ffffff"
+    "text-color": "#000000"
    }
   }
  ]
