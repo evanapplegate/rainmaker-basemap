@@ -1793,20 +1793,20 @@
     "line-cap": "butt"
    },
    "paint": {
-    "line-color": "#828282",
+    "line-color": "#a8a8a8",
     "line-width": {
      "stops": [
       [
        0,
-       0.5
+       0.25
       ],
       [
        8,
-       1
+       0.5
       ],
       [
        20,
-       2
+       1
       ]
      ]
     },
@@ -1835,7 +1835,7 @@
     "line-cap": "butt"
    },
    "paint": {
-    "line-color": "#828282",
+    "line-color": "#a8a8a8",
     "line-width": {
      "stops": [
       [
