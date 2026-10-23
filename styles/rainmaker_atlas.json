@@ -4248,7 +4248,7 @@
    "type": "line",
    "source": "esri",
    "source-layer": "Boundary line",
-   "minzoom": 4,
+   "minzoom": 3,
    "filter": [
     "all",
     [
@@ -4272,11 +4272,11 @@
      "stops": [
       [
        3,
-       0.3
+       0.4
       ],
       [
        12,
-       1.0
+       1.2
       ]
      ]
     },
@@ -4647,7 +4647,7 @@
      3
     ]
    ],
-   "minzoom": 7,
+   "minzoom": 3,
    "layout": {
     "line-join": "round",
     "line-cap": "butt"
@@ -4658,11 +4658,11 @@
      "stops": [
       [
        3,
-       0.3
+       0.4
       ],
       [
        12,
-       1.0
+       1.2
       ]
      ]
     },
@@ -4690,7 +4690,7 @@
      3
     ]
    ],
-   "minzoom": 5,
+   "minzoom": 1,
    "layout": {
     "line-join": "round",
     "line-cap": "butt"
