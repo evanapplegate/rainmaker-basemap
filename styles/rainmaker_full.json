@@ -6462,7 +6462,7 @@
      3
     ]
    ],
-   "minzoom": 16,
+   "minzoom": 14,
    "layout": {
     "symbol-placement": "line",
     "symbol-avoid-edges": true,
@@ -6493,7 +6493,7 @@
    },
    "paint": {
     "text-color": "#808080",
-    "text-halo-color": "#e4e6d5",
+    "text-halo-color": "#ffffff",
     "text-halo-width": 2,
     "text-halo-blur": 2
    }
@@ -6503,7 +6503,7 @@
    "type": "symbol",
    "source": "esri",
    "source-layer": "Railroad/label",
-   "minzoom": 16,
+   "minzoom": 14,
    "layout": {
     "symbol-placement": "line",
     "symbol-avoid-edges": true,
@@ -6534,7 +6534,7 @@
    },
    "paint": {
     "text-color": "#808080",
-    "text-halo-color": "#e4e6d5",
+    "text-halo-color": "#ffffff",
     "text-halo-width": 2,
     "text-halo-blur": 2
    }
@@ -6557,7 +6557,7 @@
      3
     ]
    ],
-   "minzoom": 15,
+   "minzoom": 14,
    "layout": {
     "symbol-placement": "line",
     "symbol-avoid-edges": true,
@@ -6584,7 +6584,7 @@
    },
    "paint": {
     "text-color": "#808080",
-    "text-halo-color": "#e4e6d5",
+    "text-halo-color": "#ffffff",
     "text-halo-width": 2,
     "text-halo-blur": 2
    }
@@ -6607,7 +6607,7 @@
      3
     ]
    ],
-   "minzoom": 15,
+   "minzoom": 14,
    "layout": {
     "symbol-placement": "line",
     "symbol-avoid-edges": true,
@@ -6634,7 +6634,7 @@
    },
    "paint": {
     "text-color": "#808080",
-    "text-halo-color": "#e4e6d5",
+    "text-halo-color": "#ffffff",
     "text-halo-width": 2,
     "text-halo-blur": 2
    }
@@ -6657,7 +6657,7 @@
      3
     ]
    ],
-   "minzoom": 14,
+   "minzoom": 13,
    "layout": {
     "symbol-placement": "line",
     "symbol-avoid-edges": true,
@@ -6684,7 +6684,7 @@
    },
    "paint": {
     "text-color": "#808080",
-    "text-halo-color": "#e4e6d5",
+    "text-halo-color": "#ffffff",
     "text-halo-width": 2,
     "text-halo-blur": 2
    }
@@ -6734,7 +6734,7 @@
    },
    "paint": {
     "text-color": "#595959",
-    "text-halo-color": "#e4e6d5",
+    "text-halo-color": "#ffffff",
     "text-halo-width": 2,
     "text-halo-blur": 2
    }
@@ -6784,7 +6784,7 @@
    },
    "paint": {
     "text-color": "#595959",
-    "text-halo-color": "#e4e6d5",
+    "text-halo-color": "#ffffff",
     "text-halo-width": 2,
     "text-halo-blur": 2
    }
@@ -6834,7 +6834,7 @@
    },
    "paint": {
     "text-color": "#595959",
-    "text-halo-color": "#e4e6d5",
+    "text-halo-color": "#ffffff",
     "text-halo-width": 2,
     "text-halo-blur": 2
    }
@@ -6884,7 +6884,7 @@
    },
    "paint": {
     "text-color": "#595959",
-    "text-halo-color": "#e4e6d5",
+    "text-halo-color": "#ffffff",
     "text-halo-width": 2,
     "text-halo-blur": 2
    }
@@ -6934,7 +6934,7 @@
    },
    "paint": {
     "text-color": "#595959",
-    "text-halo-color": "#e4e6d5",
+    "text-halo-color": "#ffffff",
     "text-halo-width": 2,
     "text-halo-blur": 2
    }
@@ -6997,7 +6997,7 @@
    "type": "symbol",
    "source": "esri",
    "source-layer": "Trail or path/label",
-   "minzoom": 15,
+   "minzoom": 14,
    "layout": {
     "symbol-placement": "line",
     "symbol-avoid-edges": true,
@@ -7024,7 +7024,7 @@
    },
    "paint": {
     "text-color": "#808080",
-    "text-halo-color": "#e4e6d5",
+    "text-halo-color": "#ffffff",
     "text-halo-width": 2,
     "text-halo-blur": 2
    }
@@ -7047,7 +7047,7 @@
      3
     ]
    ],
-   "minzoom": 15,
+   "minzoom": 14,
    "layout": {
     "symbol-placement": "line",
     "symbol-avoid-edges": true,
@@ -7074,7 +7074,7 @@
    },
    "paint": {
     "text-color": "#808080",
-    "text-halo-color": "#e4e6d5",
+    "text-halo-color": "#ffffff",
     "text-halo-width": 2,
     "text-halo-blur": 2
    }
@@ -7097,7 +7097,7 @@
      3
     ]
    ],
-   "minzoom": 15,
+   "minzoom": 14,
    "layout": {
     "symbol-placement": "line",
     "symbol-avoid-edges": true,
@@ -7124,7 +7124,7 @@
    },
    "paint": {
     "text-color": "#808080",
-    "text-halo-color": "#e4e6d5",
+    "text-halo-color": "#ffffff",
     "text-halo-width": 2,
     "text-halo-blur": 2
    }
@@ -7147,7 +7147,7 @@
      3
     ]
    ],
-   "minzoom": 14,
+   "minzoom": 13,
    "layout": {
     "symbol-placement": "line",
     "symbol-avoid-edges": true,
@@ -7174,7 +7174,7 @@
    },
    "paint": {
     "text-color": "#808080",
-    "text-halo-color": "#e4e6d5",
+    "text-halo-color": "#ffffff",
     "text-halo-width": 2,
     "text-halo-blur": 2
    }
@@ -7224,7 +7224,7 @@
    },
    "paint": {
     "text-color": "#595959",
-    "text-halo-color": "#e4e6d5",
+    "text-halo-color": "#ffffff",
     "text-halo-width": 2,
     "text-halo-blur": 2
    }
@@ -7274,7 +7274,7 @@
    },
    "paint": {
     "text-color": "#595959",
-    "text-halo-color": "#e4e6d5",
+    "text-halo-color": "#ffffff",
     "text-halo-width": 2,
     "text-halo-blur": 2
    }
@@ -7322,7 +7322,7 @@
    },
    "paint": {
     "text-color": "#595959",
-    "text-halo-color": "#e4e6d5",
+    "text-halo-color": "#ffffff",
     "text-halo-width": 2,
     "text-halo-blur": 2
    }
@@ -7372,7 +7372,7 @@
    },
    "paint": {
     "text-color": "#595959",
-    "text-halo-color": "#e4e6d5",
+    "text-halo-color": "#ffffff",
     "text-halo-width": 2,
     "text-halo-blur": 2
    }
@@ -7422,7 +7422,7 @@
    },
    "paint": {
     "text-color": "#595959",
-    "text-halo-color": "#e4e6d5",
+    "text-halo-color": "#ffffff",
     "text-halo-width": 2,
     "text-halo-blur": 2
    }
