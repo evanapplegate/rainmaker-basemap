@@ -1,0 +1,4 @@
+jobs/
+data_cache/
+__pycache__/
+.venv/
