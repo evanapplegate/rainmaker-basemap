@@ -367,114 +367,6 @@
    }
   },
   {
-   "id": "Hillshade/atlas 0",
-   "type": "fill",
-   "source": "hillshade",
-   "source-layer": "Hillshade",
-   "filter": [
-    "==",
-    "_symbol",
-    0
-   ],
-   "maxzoom": 16,
-   "paint": {
-    "fill-color": "#5e5c54",
-    "fill-opacity": {
-     "stops": [
-      [
-       4,
-       0
-      ],
-      [
-       6,
-       0.16
-      ]
-     ]
-    }
-   }
-  },
-  {
-   "id": "Hillshade/atlas 1",
-   "type": "fill",
-   "source": "hillshade",
-   "source-layer": "Hillshade",
-   "filter": [
-    "==",
-    "_symbol",
-    1
-   ],
-   "maxzoom": 16,
-   "paint": {
-    "fill-color": "#5e5c54",
-    "fill-opacity": {
-     "stops": [
-      [
-       4,
-       0
-      ],
-      [
-       6,
-       0.11
-      ]
-     ]
-    }
-   }
-  },
-  {
-   "id": "Hillshade/atlas 2",
-   "type": "fill",
-   "source": "hillshade",
-   "source-layer": "Hillshade",
-   "filter": [
-    "==",
-    "_symbol",
-    2
-   ],
-   "maxzoom": 16,
-   "paint": {
-    "fill-color": "#5e5c54",
-    "fill-opacity": {
-     "stops": [
-      [
-       4,
-       0
-      ],
-      [
-       6,
-       0.06
-      ]
-     ]
-    }
-   }
-  },
-  {
-   "id": "Hillshade/atlas 3",
-   "type": "fill",
-   "source": "hillshade",
-   "source-layer": "Hillshade",
-   "filter": [
-    "==",
-    "_symbol",
-    3
-   ],
-   "maxzoom": 16,
-   "paint": {
-    "fill-color": "#5e5c54",
-    "fill-opacity": {
-     "stops": [
-      [
-       4,
-       0
-      ],
-      [
-       6,
-       0.035
-      ]
-     ]
-    }
-   }
-  },
-  {
    "id": "Urban area",
    "type": "fill",
    "source": "esri",
@@ -1000,6 +892,202 @@
    },
    "paint": {
     "fill-pattern": "Special area of interest/Rock or gravel"
+   }
+  },
+  {
+   "id": "Hillshade/atlas 6",
+   "type": "fill",
+   "source": "hillshade",
+   "source-layer": "Hillshade",
+   "filter": [
+    "==",
+    "_symbol",
+    6
+   ],
+   "maxzoom": 16,
+   "paint": {
+    "fill-color": "#dcd9d1",
+    "fill-antialias": false,
+    "fill-opacity": {
+     "stops": [
+      [
+       4,
+       0
+      ],
+      [
+       6,
+       0.42
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Hillshade/atlas 5",
+   "type": "fill",
+   "source": "hillshade",
+   "source-layer": "Hillshade",
+   "filter": [
+    "==",
+    "_symbol",
+    5
+   ],
+   "maxzoom": 16,
+   "paint": {
+    "fill-color": "#f2f0ea",
+    "fill-antialias": false,
+    "fill-opacity": {
+     "stops": [
+      [
+       4,
+       0
+      ],
+      [
+       6,
+       0.42
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Hillshade/atlas 4",
+   "type": "fill",
+   "source": "hillshade",
+   "source-layer": "Hillshade",
+   "filter": [
+    "==",
+    "_symbol",
+    4
+   ],
+   "maxzoom": 16,
+   "paint": {
+    "fill-color": "#ffffff",
+    "fill-antialias": false,
+    "fill-opacity": {
+     "stops": [
+      [
+       4,
+       0
+      ],
+      [
+       6,
+       0.42
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Hillshade/atlas 3",
+   "type": "fill",
+   "source": "hillshade",
+   "source-layer": "Hillshade",
+   "filter": [
+    "==",
+    "_symbol",
+    3
+   ],
+   "maxzoom": 16,
+   "paint": {
+    "fill-color": "#c9c5bc",
+    "fill-antialias": false,
+    "fill-opacity": {
+     "stops": [
+      [
+       4,
+       0
+      ],
+      [
+       6,
+       0.42
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Hillshade/atlas 2",
+   "type": "fill",
+   "source": "hillshade",
+   "source-layer": "Hillshade",
+   "filter": [
+    "==",
+    "_symbol",
+    2
+   ],
+   "maxzoom": 16,
+   "paint": {
+    "fill-color": "#a8a49b",
+    "fill-antialias": false,
+    "fill-opacity": {
+     "stops": [
+      [
+       4,
+       0
+      ],
+      [
+       6,
+       0.42
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Hillshade/atlas 1",
+   "type": "fill",
+   "source": "hillshade",
+   "source-layer": "Hillshade",
+   "filter": [
+    "==",
+    "_symbol",
+    1
+   ],
+   "maxzoom": 16,
+   "paint": {
+    "fill-color": "#8e8a81",
+    "fill-antialias": false,
+    "fill-opacity": {
+     "stops": [
+      [
+       4,
+       0
+      ],
+      [
+       6,
+       0.42
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Hillshade/atlas 0",
+   "type": "fill",
+   "source": "hillshade",
+   "source-layer": "Hillshade",
+   "filter": [
+    "==",
+    "_symbol",
+    0
+   ],
+   "maxzoom": 16,
+   "paint": {
+    "fill-color": "#76726a",
+    "fill-antialias": false,
+    "fill-opacity": {
+     "stops": [
+      [
+       4,
+       0
+      ],
+      [
+       6,
+       0.42
+      ]
+     ]
+    }
    }
   },
   {
