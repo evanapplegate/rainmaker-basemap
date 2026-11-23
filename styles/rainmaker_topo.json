@@ -414,602 +414,6 @@
    }
   },
   {
-   "id": "Hillshade/topo 0",
-   "type": "fill",
-   "source": "hillshade",
-   "source-layer": "Hillshade",
-   "filter": [
-    "==",
-    "_symbol",
-    0
-   ],
-   "maxzoom": 16,
-   "paint": {
-    "fill-color": "hsl(0, 0%, 35%)",
-    "fill-opacity": {
-     "stops": [
-      [
-       3,
-       0
-      ],
-      [
-       6,
-       0.18
-      ]
-     ]
-    }
-   }
-  },
-  {
-   "id": "Hillshade/topo 1",
-   "type": "fill",
-   "source": "hillshade",
-   "source-layer": "Hillshade",
-   "filter": [
-    "==",
-    "_symbol",
-    1
-   ],
-   "maxzoom": 16,
-   "paint": {
-    "fill-color": "hsl(0, 0%, 35%)",
-    "fill-opacity": {
-     "stops": [
-      [
-       3,
-       0
-      ],
-      [
-       6,
-       0.12
-      ]
-     ]
-    }
-   }
-  },
-  {
-   "id": "Hillshade/topo 2",
-   "type": "fill",
-   "source": "hillshade",
-   "source-layer": "Hillshade",
-   "filter": [
-    "==",
-    "_symbol",
-    2
-   ],
-   "maxzoom": 16,
-   "paint": {
-    "fill-color": "hsl(0, 0%, 35%)",
-    "fill-opacity": {
-     "stops": [
-      [
-       3,
-       0
-      ],
-      [
-       6,
-       0.07
-      ]
-     ]
-    }
-   }
-  },
-  {
-   "id": "Hillshade/topo 3",
-   "type": "fill",
-   "source": "hillshade",
-   "source-layer": "Hillshade",
-   "filter": [
-    "==",
-    "_symbol",
-    3
-   ],
-   "maxzoom": 16,
-   "paint": {
-    "fill-color": "hsl(0, 0%, 35%)",
-    "fill-opacity": {
-     "stops": [
-      [
-       3,
-       0
-      ],
-      [
-       6,
-       0.04
-      ]
-     ]
-    }
-   }
-  },
-  {
-   "id": "Contours/Contour_11_main/0",
-   "type": "line",
-   "source": "contours",
-   "source-layer": "Contour",
-   "filter": [
-    "all",
-    [
-     "==",
-     "Index3",
-     1
-    ],
-    [
-     "==",
-     "Index5",
-     1
-    ]
-   ],
-   "minzoom": 11,
-   "maxzoom": 12,
-   "paint": {
-    "line-color": "hsl(22, 35%, 55%)",
-    "line-opacity": 0.55,
-    "line-width": {
-     "base": 1.2,
-     "stops": [
-      [
-       11,
-       1
-      ],
-      [
-       19,
-       2.5
-      ]
-     ]
-    }
-   }
-  },
-  {
-   "id": "Contours/Contour_11/0",
-   "type": "line",
-   "source": "contours",
-   "source-layer": "Contour",
-   "filter": [
-    "all",
-    [
-     "==",
-     "Index3",
-     1
-    ],
-    [
-     "==",
-     "Index5",
-     0
-    ]
-   ],
-   "minzoom": 11,
-   "maxzoom": 12,
-   "paint": {
-    "line-color": "hsla(22, 35%, 55%, 0.75)",
-    "line-opacity": 0.4,
-    "line-width": {
-     "base": 1.2,
-     "stops": [
-      [
-       11,
-       0.7
-      ],
-      [
-       19,
-       1.3
-      ]
-     ]
-    }
-   }
-  },
-  {
-   "id": "Contours/Contour_12_main/0",
-   "type": "line",
-   "source": "contours",
-   "source-layer": "Contour",
-   "filter": [
-    "all",
-    [
-     "==",
-     "Index2",
-     1
-    ],
-    [
-     "==",
-     "Index4",
-     1
-    ]
-   ],
-   "minzoom": 12,
-   "maxzoom": 14,
-   "paint": {
-    "line-color": "hsl(22, 35%, 55%)",
-    "line-opacity": 0.55,
-    "line-width": {
-     "base": 1.2,
-     "stops": [
-      [
-       11,
-       1
-      ],
-      [
-       19,
-       2.5
-      ]
-     ]
-    }
-   }
-  },
-  {
-   "id": "Contours/Contour_12/0",
-   "type": "line",
-   "source": "contours",
-   "source-layer": "Contour",
-   "filter": [
-    "all",
-    [
-     "==",
-     "Index2",
-     1
-    ],
-    [
-     "==",
-     "Index4",
-     0
-    ]
-   ],
-   "minzoom": 12,
-   "maxzoom": 14,
-   "paint": {
-    "line-color": "hsla(22, 35%, 55%, 0.75)",
-    "line-opacity": 0.4,
-    "line-width": {
-     "base": 1.2,
-     "stops": [
-      [
-       11,
-       0.7
-      ],
-      [
-       19,
-       1.3
-      ]
-     ]
-    }
-   }
-  },
-  {
-   "id": "Contours/Contour_13_main/0",
-   "type": "line",
-   "source": "contours",
-   "source-layer": "Contour",
-   "filter": [
-    "all",
-    [
-     "==",
-     "Index1",
-     1
-    ],
-    [
-     "==",
-     "Index3",
-     1
-    ]
-   ],
-   "minzoom": 14,
-   "maxzoom": 16,
-   "paint": {
-    "line-color": "hsl(22, 35%, 55%)",
-    "line-opacity": 0.55,
-    "line-width": {
-     "base": 1.2,
-     "stops": [
-      [
-       11,
-       1
-      ],
-      [
-       19,
-       2.5
-      ]
-     ]
-    }
-   }
-  },
-  {
-   "id": "Contours/Contour_13/0",
-   "type": "line",
-   "source": "contours",
-   "source-layer": "Contour",
-   "filter": [
-    "all",
-    [
-     "==",
-     "Index1",
-     1
-    ],
-    [
-     "==",
-     "Index3",
-     0
-    ]
-   ],
-   "minzoom": 14,
-   "maxzoom": 16,
-   "paint": {
-    "line-color": "hsla(22, 35%, 55%, 0.75)",
-    "line-opacity": 0.4,
-    "line-width": {
-     "base": 1.2,
-     "stops": [
-      [
-       11,
-       0.7
-      ],
-      [
-       19,
-       1.3
-      ]
-     ]
-    }
-   }
-  },
-  {
-   "id": "Contours/Contour_14_main/0",
-   "type": "line",
-   "source": "contours",
-   "source-layer": "Contour",
-   "filter": [
-    "==",
-    "Index2",
-    1
-   ],
-   "minzoom": 16,
-   "paint": {
-    "line-color": "hsl(22, 35%, 55%)",
-    "line-opacity": 0.55,
-    "line-width": {
-     "base": 1.2,
-     "stops": [
-      [
-       11,
-       1
-      ],
-      [
-       19,
-       2.5
-      ]
-     ]
-    }
-   }
-  },
-  {
-   "id": "Contours/Contour_14/0",
-   "type": "line",
-   "source": "contours",
-   "source-layer": "Contour",
-   "filter": [
-    "==",
-    "Index2",
-    0
-   ],
-   "minzoom": 16,
-   "paint": {
-    "line-color": "hsla(22, 35%, 55%, 0.75)",
-    "line-opacity": 0.4,
-    "line-width": {
-     "base": 1.2,
-     "stops": [
-      [
-       11,
-       0.7
-      ],
-      [
-       19,
-       1.3
-      ]
-     ]
-    }
-   }
-  },
-  {
-   "id": "Contours/Contour_11_main_text",
-   "type": "symbol",
-   "source": "contours",
-   "source-layer": "Contour",
-   "filter": [
-    "all",
-    [
-     "==",
-     "Index3",
-     1
-    ],
-    [
-     "==",
-     "Index5",
-     1
-    ],
-    [
-     "!in",
-     "Contour",
-     0
-    ]
-   ],
-   "minzoom": 11,
-   "maxzoom": 12,
-   "layout": {
-    "symbol-placement": "line",
-    "symbol-spacing": 700,
-    "text-letter-spacing": 0.1,
-    "text-font": [
-     "Founders Grotesk Text Regular"
-    ],
-    "text-field": "{Contour} {Unit}",
-    "text-size": {
-     "stops": [
-      [
-       11,
-       9.5
-      ],
-      [
-       16,
-       10.5
-      ]
-     ]
-    }
-   },
-   "paint": {
-    "text-color": "hsl(20, 28%, 32%)",
-    "text-halo-color": "#ffffff",
-    "text-halo-width": 1
-   }
-  },
-  {
-   "id": "Contours/Contour_12_main_text",
-   "type": "symbol",
-   "source": "contours",
-   "source-layer": "Contour",
-   "filter": [
-    "all",
-    [
-     "==",
-     "Index2",
-     1
-    ],
-    [
-     "==",
-     "Index4",
-     1
-    ],
-    [
-     "!in",
-     "Contour",
-     0
-    ]
-   ],
-   "minzoom": 12,
-   "maxzoom": 14,
-   "layout": {
-    "symbol-placement": "line",
-    "symbol-spacing": 700,
-    "text-letter-spacing": 0.1,
-    "text-font": [
-     "Founders Grotesk Text Regular"
-    ],
-    "text-field": "{Contour} {Unit}",
-    "text-size": {
-     "stops": [
-      [
-       11,
-       9.5
-      ],
-      [
-       16,
-       10.5
-      ]
-     ]
-    }
-   },
-   "paint": {
-    "text-color": "hsl(20, 28%, 32%)",
-    "text-halo-color": "#ffffff",
-    "text-halo-width": 1
-   }
-  },
-  {
-   "id": "Contours/Contour_13_main_text",
-   "type": "symbol",
-   "source": "contours",
-   "source-layer": "Contour",
-   "filter": [
-    "all",
-    [
-     "==",
-     "Index1",
-     1
-    ],
-    [
-     "==",
-     "Index3",
-     1
-    ],
-    [
-     "!in",
-     "Contour",
-     0
-    ]
-   ],
-   "minzoom": 14,
-   "maxzoom": 16,
-   "layout": {
-    "symbol-placement": "line",
-    "symbol-spacing": 700,
-    "text-letter-spacing": 0.1,
-    "text-font": [
-     "Founders Grotesk Text Regular"
-    ],
-    "text-field": "{Contour} {Unit}",
-    "text-size": {
-     "stops": [
-      [
-       11,
-       9.5
-      ],
-      [
-       16,
-       10.5
-      ]
-     ]
-    }
-   },
-   "paint": {
-    "text-color": "hsl(20, 28%, 32%)",
-    "text-halo-color": "#ffffff",
-    "text-halo-width": 1
-   }
-  },
-  {
-   "id": "Contours/Contour_14_main_text",
-   "type": "symbol",
-   "source": "contours",
-   "source-layer": "Contour",
-   "filter": [
-    "all",
-    [
-     "==",
-     "Index2",
-     1
-    ],
-    [
-     "!in",
-     "Contour",
-     0
-    ]
-   ],
-   "minzoom": 16,
-   "layout": {
-    "symbol-placement": "line",
-    "symbol-spacing": 700,
-    "text-letter-spacing": 0.1,
-    "text-font": [
-     "Founders Grotesk Text Regular"
-    ],
-    "text-field": "{Contour} {Unit}",
-    "text-size": {
-     "stops": [
-      [
-       11,
-       9.5
-      ],
-      [
-       16,
-       10.5
-      ]
-     ]
-    }
-   },
-   "paint": {
-    "text-color": "hsl(20, 28%, 32%)",
-    "text-halo-color": "#ffffff",
-    "text-halo-width": 1
-   }
-  },
-  {
    "id": "Urban area",
    "type": "fill",
    "source": "esri",
@@ -1039,7 +443,7 @@
    "source-layer": "Openspace or forest",
    "minzoom": 12,
    "paint": {
-    "fill-color": "hsl(79, 35%, 81%)",
+    "fill-color": "hsl(105, 32%, 84%)",
     "fill-opacity": {
      "stops": [
       [
@@ -1048,10 +452,82 @@
       ],
       [
        8,
-       0.6
+       0.75
       ]
      ]
     }
+   }
+  },
+  {
+   "id": "Openspace or forest/band",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Openspace or forest",
+   "paint": {
+    "line-color": "hsla(108, 45%, 35%, 0.5)",
+    "line-width": {
+     "stops": [
+      [
+       8,
+       2.5
+      ],
+      [
+       14,
+       6
+      ]
+     ]
+    },
+    "line-opacity": {
+     "stops": [
+      [
+       7,
+       0
+      ],
+      [
+       9,
+       0.25
+      ]
+     ]
+    }
+   },
+   "layout": {
+    "line-join": "round"
+   }
+  },
+  {
+   "id": "Openspace or forest/stroke",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Openspace or forest",
+   "paint": {
+    "line-color": "hsla(108, 45%, 35%, 0.5)",
+    "line-width": {
+     "stops": [
+      [
+       8,
+       0.7
+      ],
+      [
+       14,
+       1.2
+      ]
+     ]
+    },
+    "line-opacity": {
+     "stops": [
+      [
+       7,
+       0
+      ],
+      [
+       9,
+       0.9
+      ]
+     ]
+    }
+   },
+   "layout": {
+    "line-join": "round"
    }
   },
   {
@@ -1061,7 +537,7 @@
    "source-layer": "Admin0 forest or park",
    "minzoom": 7,
    "paint": {
-    "fill-color": "hsl(79, 35%, 81%)",
+    "fill-color": "hsl(105, 32%, 84%)",
     "fill-opacity": {
      "stops": [
       [
@@ -1070,10 +546,82 @@
       ],
       [
        8,
-       0.6
+       0.75
       ]
      ]
     }
+   }
+  },
+  {
+   "id": "Admin0 forest or park/band",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Admin0 forest or park",
+   "paint": {
+    "line-color": "hsla(108, 45%, 35%, 0.5)",
+    "line-width": {
+     "stops": [
+      [
+       8,
+       2.5
+      ],
+      [
+       14,
+       6
+      ]
+     ]
+    },
+    "line-opacity": {
+     "stops": [
+      [
+       7,
+       0
+      ],
+      [
+       9,
+       0.25
+      ]
+     ]
+    }
+   },
+   "layout": {
+    "line-join": "round"
+   }
+  },
+  {
+   "id": "Admin0 forest or park/stroke",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Admin0 forest or park",
+   "paint": {
+    "line-color": "hsla(108, 45%, 35%, 0.5)",
+    "line-width": {
+     "stops": [
+      [
+       8,
+       0.7
+      ],
+      [
+       14,
+       1.2
+      ]
+     ]
+    },
+    "line-opacity": {
+     "stops": [
+      [
+       7,
+       0
+      ],
+      [
+       9,
+       0.9
+      ]
+     ]
+    }
+   },
+   "layout": {
+    "line-join": "round"
    }
   },
   {
@@ -1083,7 +631,7 @@
    "source-layer": "Admin1 forest or park",
    "minzoom": 8,
    "paint": {
-    "fill-color": "hsl(79, 35%, 81%)",
+    "fill-color": "hsl(105, 32%, 84%)",
     "fill-opacity": {
      "stops": [
       [
@@ -1092,10 +640,82 @@
       ],
       [
        8,
-       0.6
+       0.75
       ]
      ]
     }
+   }
+  },
+  {
+   "id": "Admin1 forest or park/band",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Admin1 forest or park",
+   "paint": {
+    "line-color": "hsla(108, 45%, 35%, 0.5)",
+    "line-width": {
+     "stops": [
+      [
+       8,
+       2.5
+      ],
+      [
+       14,
+       6
+      ]
+     ]
+    },
+    "line-opacity": {
+     "stops": [
+      [
+       7,
+       0
+      ],
+      [
+       9,
+       0.25
+      ]
+     ]
+    }
+   },
+   "layout": {
+    "line-join": "round"
+   }
+  },
+  {
+   "id": "Admin1 forest or park/stroke",
+   "type": "line",
+   "source": "esri",
+   "source-layer": "Admin1 forest or park",
+   "paint": {
+    "line-color": "hsla(108, 45%, 35%, 0.5)",
+    "line-width": {
+     "stops": [
+      [
+       8,
+       0.7
+      ],
+      [
+       14,
+       1.2
+      ]
+     ]
+    },
+    "line-opacity": {
+     "stops": [
+      [
+       7,
+       0
+      ],
+      [
+       9,
+       0.9
+      ]
+     ]
+    }
+   },
+   "layout": {
+    "line-join": "round"
    }
   },
   {
@@ -1105,7 +725,7 @@
    "source-layer": "Zoo",
    "minzoom": 12,
    "paint": {
-    "fill-color": "hsl(79, 35%, 81%)",
+    "fill-color": "hsl(105, 32%, 84%)",
     "fill-opacity": {
      "stops": [
       [
@@ -1114,7 +734,7 @@
       ],
       [
        8,
-       0.6
+       0.75
       ]
      ]
     }
@@ -1438,6 +1058,690 @@
    },
    "paint": {
     "fill-pattern": "Special area of interest/Rock or gravel"
+   }
+  },
+  {
+   "id": "Hillshade/topo 6",
+   "type": "fill",
+   "source": "hillshade",
+   "source-layer": "Hillshade",
+   "filter": [
+    "==",
+    "_symbol",
+    6
+   ],
+   "maxzoom": 16,
+   "paint": {
+    "fill-color": "#dbd9cd",
+    "fill-antialias": false,
+    "fill-opacity": {
+     "stops": [
+      [
+       4,
+       0
+      ],
+      [
+       6,
+       0.45
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Hillshade/topo 5",
+   "type": "fill",
+   "source": "hillshade",
+   "source-layer": "Hillshade",
+   "filter": [
+    "==",
+    "_symbol",
+    5
+   ],
+   "maxzoom": 16,
+   "paint": {
+    "fill-color": "#f1efe3",
+    "fill-antialias": false,
+    "fill-opacity": {
+     "stops": [
+      [
+       4,
+       0
+      ],
+      [
+       6,
+       0.45
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Hillshade/topo 4",
+   "type": "fill",
+   "source": "hillshade",
+   "source-layer": "Hillshade",
+   "filter": [
+    "==",
+    "_symbol",
+    4
+   ],
+   "maxzoom": 16,
+   "paint": {
+    "fill-color": "#fdfcf5",
+    "fill-antialias": false,
+    "fill-opacity": {
+     "stops": [
+      [
+       4,
+       0
+      ],
+      [
+       6,
+       0.45
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Hillshade/topo 3",
+   "type": "fill",
+   "source": "hillshade",
+   "source-layer": "Hillshade",
+   "filter": [
+    "==",
+    "_symbol",
+    3
+   ],
+   "maxzoom": 16,
+   "paint": {
+    "fill-color": "#c6c2b8",
+    "fill-antialias": false,
+    "fill-opacity": {
+     "stops": [
+      [
+       4,
+       0
+      ],
+      [
+       6,
+       0.45
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Hillshade/topo 2",
+   "type": "fill",
+   "source": "hillshade",
+   "source-layer": "Hillshade",
+   "filter": [
+    "==",
+    "_symbol",
+    2
+   ],
+   "maxzoom": 16,
+   "paint": {
+    "fill-color": "#a3a096",
+    "fill-antialias": false,
+    "fill-opacity": {
+     "stops": [
+      [
+       4,
+       0
+      ],
+      [
+       6,
+       0.45
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Hillshade/topo 1",
+   "type": "fill",
+   "source": "hillshade",
+   "source-layer": "Hillshade",
+   "filter": [
+    "==",
+    "_symbol",
+    1
+   ],
+   "maxzoom": 16,
+   "paint": {
+    "fill-color": "#88847b",
+    "fill-antialias": false,
+    "fill-opacity": {
+     "stops": [
+      [
+       4,
+       0
+      ],
+      [
+       6,
+       0.45
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Hillshade/topo 0",
+   "type": "fill",
+   "source": "hillshade",
+   "source-layer": "Hillshade",
+   "filter": [
+    "==",
+    "_symbol",
+    0
+   ],
+   "maxzoom": 16,
+   "paint": {
+    "fill-color": "#6e6a62",
+    "fill-antialias": false,
+    "fill-opacity": {
+     "stops": [
+      [
+       4,
+       0
+      ],
+      [
+       6,
+       0.45
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Contours/Contour_11_main/0",
+   "type": "line",
+   "source": "contours",
+   "source-layer": "Contour",
+   "filter": [
+    "all",
+    [
+     "==",
+     "Index3",
+     1
+    ],
+    [
+     "==",
+     "Index5",
+     1
+    ]
+   ],
+   "minzoom": 11,
+   "maxzoom": 12,
+   "paint": {
+    "line-color": "hsla(22, 35%, 45%, 0.9)",
+    "line-opacity": 1.0,
+    "line-width": {
+     "base": 1.2,
+     "stops": [
+      [
+       11,
+       1
+      ],
+      [
+       19,
+       2.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Contours/Contour_11/0",
+   "type": "line",
+   "source": "contours",
+   "source-layer": "Contour",
+   "filter": [
+    "all",
+    [
+     "==",
+     "Index3",
+     1
+    ],
+    [
+     "==",
+     "Index5",
+     0
+    ]
+   ],
+   "minzoom": 11,
+   "maxzoom": 12,
+   "paint": {
+    "line-color": "hsla(22, 35%, 55%, 0.75)",
+    "line-opacity": 1.0,
+    "line-width": {
+     "base": 1.2,
+     "stops": [
+      [
+       11,
+       0.7
+      ],
+      [
+       19,
+       1.3
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Contours/Contour_12_main/0",
+   "type": "line",
+   "source": "contours",
+   "source-layer": "Contour",
+   "filter": [
+    "all",
+    [
+     "==",
+     "Index2",
+     1
+    ],
+    [
+     "==",
+     "Index4",
+     1
+    ]
+   ],
+   "minzoom": 12,
+   "maxzoom": 14,
+   "paint": {
+    "line-color": "hsla(22, 35%, 45%, 0.9)",
+    "line-opacity": 1.0,
+    "line-width": {
+     "base": 1.2,
+     "stops": [
+      [
+       11,
+       1
+      ],
+      [
+       19,
+       2.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Contours/Contour_12/0",
+   "type": "line",
+   "source": "contours",
+   "source-layer": "Contour",
+   "filter": [
+    "all",
+    [
+     "==",
+     "Index2",
+     1
+    ],
+    [
+     "==",
+     "Index4",
+     0
+    ]
+   ],
+   "minzoom": 12,
+   "maxzoom": 14,
+   "paint": {
+    "line-color": "hsla(22, 35%, 55%, 0.75)",
+    "line-opacity": 1.0,
+    "line-width": {
+     "base": 1.2,
+     "stops": [
+      [
+       11,
+       0.7
+      ],
+      [
+       19,
+       1.3
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Contours/Contour_13_main/0",
+   "type": "line",
+   "source": "contours",
+   "source-layer": "Contour",
+   "filter": [
+    "all",
+    [
+     "==",
+     "Index1",
+     1
+    ],
+    [
+     "==",
+     "Index3",
+     1
+    ]
+   ],
+   "minzoom": 14,
+   "maxzoom": 16,
+   "paint": {
+    "line-color": "hsla(22, 35%, 45%, 0.9)",
+    "line-opacity": 1.0,
+    "line-width": {
+     "base": 1.2,
+     "stops": [
+      [
+       11,
+       1
+      ],
+      [
+       19,
+       2.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Contours/Contour_13/0",
+   "type": "line",
+   "source": "contours",
+   "source-layer": "Contour",
+   "filter": [
+    "all",
+    [
+     "==",
+     "Index1",
+     1
+    ],
+    [
+     "==",
+     "Index3",
+     0
+    ]
+   ],
+   "minzoom": 14,
+   "maxzoom": 16,
+   "paint": {
+    "line-color": "hsla(22, 35%, 55%, 0.75)",
+    "line-opacity": 1.0,
+    "line-width": {
+     "base": 1.2,
+     "stops": [
+      [
+       11,
+       0.7
+      ],
+      [
+       19,
+       1.3
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Contours/Contour_14_main/0",
+   "type": "line",
+   "source": "contours",
+   "source-layer": "Contour",
+   "filter": [
+    "==",
+    "Index2",
+    1
+   ],
+   "minzoom": 16,
+   "paint": {
+    "line-color": "hsla(22, 35%, 45%, 0.9)",
+    "line-opacity": 1.0,
+    "line-width": {
+     "base": 1.2,
+     "stops": [
+      [
+       11,
+       1
+      ],
+      [
+       19,
+       2.5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Contours/Contour_14/0",
+   "type": "line",
+   "source": "contours",
+   "source-layer": "Contour",
+   "filter": [
+    "==",
+    "Index2",
+    0
+   ],
+   "minzoom": 16,
+   "paint": {
+    "line-color": "hsla(22, 35%, 55%, 0.75)",
+    "line-opacity": 1.0,
+    "line-width": {
+     "base": 1.2,
+     "stops": [
+      [
+       11,
+       0.7
+      ],
+      [
+       19,
+       1.3
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "id": "Contours/Contour_11_main_text",
+   "type": "symbol",
+   "source": "contours",
+   "source-layer": "Contour",
+   "filter": [
+    "all",
+    [
+     "==",
+     "Index3",
+     1
+    ],
+    [
+     "==",
+     "Index5",
+     1
+    ],
+    [
+     "!in",
+     "Contour",
+     0
+    ]
+   ],
+   "minzoom": 11,
+   "maxzoom": 12,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 700,
+    "text-letter-spacing": 0.1,
+    "text-font": [
+     "Founders Grotesk Text Regular"
+    ],
+    "text-field": "{Contour} {Unit}",
+    "text-size": {
+     "stops": [
+      [
+       11,
+       9.5
+      ],
+      [
+       16,
+       10.5
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "hsl(20, 28%, 32%)",
+    "text-halo-color": "#ffffff",
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Contours/Contour_12_main_text",
+   "type": "symbol",
+   "source": "contours",
+   "source-layer": "Contour",
+   "filter": [
+    "all",
+    [
+     "==",
+     "Index2",
+     1
+    ],
+    [
+     "==",
+     "Index4",
+     1
+    ],
+    [
+     "!in",
+     "Contour",
+     0
+    ]
+   ],
+   "minzoom": 12,
+   "maxzoom": 14,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 700,
+    "text-letter-spacing": 0.1,
+    "text-font": [
+     "Founders Grotesk Text Regular"
+    ],
+    "text-field": "{Contour} {Unit}",
+    "text-size": {
+     "stops": [
+      [
+       11,
+       9.5
+      ],
+      [
+       16,
+       10.5
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "hsl(20, 28%, 32%)",
+    "text-halo-color": "#ffffff",
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Contours/Contour_13_main_text",
+   "type": "symbol",
+   "source": "contours",
+   "source-layer": "Contour",
+   "filter": [
+    "all",
+    [
+     "==",
+     "Index1",
+     1
+    ],
+    [
+     "==",
+     "Index3",
+     1
+    ],
+    [
+     "!in",
+     "Contour",
+     0
+    ]
+   ],
+   "minzoom": 14,
+   "maxzoom": 16,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 700,
+    "text-letter-spacing": 0.1,
+    "text-font": [
+     "Founders Grotesk Text Regular"
+    ],
+    "text-field": "{Contour} {Unit}",
+    "text-size": {
+     "stops": [
+      [
+       11,
+       9.5
+      ],
+      [
+       16,
+       10.5
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "hsl(20, 28%, 32%)",
+    "text-halo-color": "#ffffff",
+    "text-halo-width": 1
+   }
+  },
+  {
+   "id": "Contours/Contour_14_main_text",
+   "type": "symbol",
+   "source": "contours",
+   "source-layer": "Contour",
+   "filter": [
+    "all",
+    [
+     "==",
+     "Index2",
+     1
+    ],
+    [
+     "!in",
+     "Contour",
+     0
+    ]
+   ],
+   "minzoom": 16,
+   "layout": {
+    "symbol-placement": "line",
+    "symbol-spacing": 700,
+    "text-letter-spacing": 0.1,
+    "text-font": [
+     "Founders Grotesk Text Regular"
+    ],
+    "text-field": "{Contour} {Unit}",
+    "text-size": {
+     "stops": [
+      [
+       11,
+       9.5
+      ],
+      [
+       16,
+       10.5
+      ]
+     ]
+    }
+   },
+   "paint": {
+    "text-color": "hsl(20, 28%, 32%)",
+    "text-halo-color": "#ffffff",
+    "text-halo-width": 1
    }
   },
   {
@@ -5091,7 +5395,9 @@
     "text-max-width": 4,
     "text-field": "{_name_global}",
     "text-allow-overlap": false,
-    "text-padding": 15
+    "text-padding": 15,
+    "text-max-angle": 45,
+    "symbol-spacing": 400
    },
    "paint": {
     "text-color": "hsl(206, 30%, 32%)",
@@ -5133,7 +5439,9 @@
     "text-max-width": 4,
     "text-field": "{_name_global}",
     "text-allow-overlap": false,
-    "text-padding": 15
+    "text-padding": 15,
+    "text-max-angle": 45,
+    "symbol-spacing": 400
    },
    "paint": {
     "text-color": "hsl(207, 31%, 28%)",
@@ -5175,7 +5483,9 @@
     "text-max-width": 4,
     "text-field": "{_name_global}",
     "text-allow-overlap": false,
-    "text-padding": 15
+    "text-padding": 15,
+    "text-max-angle": 45,
+    "symbol-spacing": 400
    },
    "paint": {
     "text-color": "hsl(207, 31%, 28%)",
@@ -5217,7 +5527,9 @@
     "text-max-width": 4,
     "text-field": "{_name_global}",
     "text-allow-overlap": false,
-    "text-padding": 15
+    "text-padding": 15,
+    "text-max-angle": 45,
+    "symbol-spacing": 400
    },
    "paint": {
     "text-color": "hsl(207, 31%, 28%)",
@@ -5259,7 +5571,9 @@
     "text-max-width": 4,
     "text-field": "{_name_global}",
     "text-allow-overlap": false,
-    "text-padding": 15
+    "text-padding": 15,
+    "text-max-angle": 45,
+    "symbol-spacing": 400
    },
    "paint": {
     "text-color": "hsl(207, 31%, 28%)",
@@ -5301,7 +5615,9 @@
     "text-max-width": 4,
     "text-field": "{_name_global}",
     "text-allow-overlap": false,
-    "text-padding": 15
+    "text-padding": 15,
+    "text-max-angle": 45,
+    "symbol-spacing": 400
    },
    "paint": {
     "text-color": "hsl(207, 31%, 28%)",
@@ -5343,7 +5659,9 @@
     "text-max-width": 4,
     "text-field": "{_name_global}",
     "text-allow-overlap": false,
-    "text-padding": 15
+    "text-padding": 15,
+    "text-max-angle": 45,
+    "symbol-spacing": 400
    },
    "paint": {
     "text-color": "hsl(207, 31%, 28%)",
@@ -5385,7 +5703,9 @@
     "text-max-width": 4,
     "text-field": "{_name_global}",
     "text-allow-overlap": false,
-    "text-padding": 15
+    "text-padding": 15,
+    "text-max-angle": 45,
+    "symbol-spacing": 400
    },
    "paint": {
     "text-color": "hsl(207, 31%, 28%)",
@@ -5409,14 +5729,14 @@
     "text-size": 9,
     "text-letter-spacing": 0.07,
     "text-max-width": 6,
-    "text-max-angle": 18,
+    "text-max-angle": 45,
     "text-field": "{_name_global}",
     "text-padding": 1,
     "text-offset": [
      0,
      -0.5
     ],
-    "symbol-spacing": 800
+    "symbol-spacing": 400
    },
    "paint": {
     "text-color": "hsl(207, 31%, 28%)",
@@ -5471,7 +5791,9 @@
     "text-field": "{_name_global}",
     "text-allow-overlap": false,
     "text-padding": 15,
-    "symbol-avoid-edges": true
+    "symbol-avoid-edges": true,
+    "text-max-angle": 45,
+    "symbol-spacing": 400
    },
    "paint": {
     "text-color": "hsl(207, 31%, 28%)",
@@ -5501,7 +5823,9 @@
     "text-field": "{_name_global}",
     "text-allow-overlap": false,
     "text-padding": 15,
-    "symbol-avoid-edges": true
+    "symbol-avoid-edges": true,
+    "text-max-angle": 45,
+    "symbol-spacing": 400
    },
    "paint": {
     "text-color": "hsl(207, 31%, 28%)",
@@ -5523,7 +5847,7 @@
    "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
-    "symbol-spacing": 1000,
+    "symbol-spacing": 400,
     "text-font": [
      "Flecha S Bold Italic"
     ],
@@ -5533,7 +5857,8 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-allow-overlap": false,
-    "text-max-width": 5
+    "text-max-width": 5,
+    "text-max-angle": 45
    },
    "paint": {
     "text-color": "hsl(207, 31%, 28%)",
@@ -5555,7 +5880,7 @@
    "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
-    "symbol-spacing": 1000,
+    "symbol-spacing": 400,
     "text-font": [
      "Flecha S Bold Italic"
     ],
@@ -5565,7 +5890,8 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-allow-overlap": false,
-    "text-max-width": 8
+    "text-max-width": 8,
+    "text-max-angle": 45
    },
    "paint": {
     "text-color": "hsl(207, 31%, 28%)",
@@ -5587,7 +5913,7 @@
    "minzoom": 11,
    "layout": {
     "symbol-placement": "line",
-    "symbol-spacing": 1000,
+    "symbol-spacing": 400,
     "text-font": [
      "Flecha S Bold Italic"
     ],
@@ -5597,7 +5923,8 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-allow-overlap": false,
-    "text-max-width": 8
+    "text-max-width": 8,
+    "text-max-angle": 45
    },
    "paint": {
     "text-color": "hsl(207, 31%, 28%)",
@@ -5627,7 +5954,9 @@
     "text-field": "{_name_global}",
     "text-allow-overlap": false,
     "text-padding": 15,
-    "symbol-avoid-edges": true
+    "symbol-avoid-edges": true,
+    "text-max-angle": 45,
+    "symbol-spacing": 400
    },
    "paint": {
     "text-color": "hsl(207, 31%, 28%)",
@@ -5658,7 +5987,9 @@
     "text-field": "{_name_global}",
     "text-allow-overlap": false,
     "text-padding": 15,
-    "symbol-avoid-edges": true
+    "symbol-avoid-edges": true,
+    "text-max-angle": 45,
+    "symbol-spacing": 400
    },
    "paint": {
     "text-color": "hsl(207, 31%, 28%)",
@@ -5689,7 +6020,9 @@
     "text-field": "{_name_global}",
     "text-allow-overlap": false,
     "text-padding": 15,
-    "symbol-avoid-edges": true
+    "symbol-avoid-edges": true,
+    "text-max-angle": 45,
+    "symbol-spacing": 400
    },
    "paint": {
     "text-color": "hsl(207, 31%, 28%)",
@@ -5719,7 +6052,9 @@
     "symbol-avoid-edges": true,
     "text-font": [
      "Flecha S Bold Italic"
-    ]
+    ],
+    "text-max-angle": 45,
+    "symbol-spacing": 400
    },
    "paint": {
     "text-color": "hsl(207, 31%, 28%)",
@@ -5749,7 +6084,9 @@
     "symbol-avoid-edges": true,
     "text-font": [
      "Flecha S Bold Italic"
-    ]
+    ],
+    "text-max-angle": 45,
+    "symbol-spacing": 400
    },
    "paint": {
     "text-color": "hsl(207, 31%, 28%)",
@@ -5772,7 +6109,7 @@
    "maxzoom": 11,
    "layout": {
     "symbol-placement": "line",
-    "symbol-spacing": 1000,
+    "symbol-spacing": 400,
     "text-font": [
      "Flecha S Bold Italic"
     ],
@@ -5782,7 +6119,8 @@
     "text-padding": 15,
     "symbol-avoid-edges": true,
     "text-allow-overlap": false,
-    "text-max-width": 4
+    "text-max-width": 4,
+    "text-max-angle": 45
    },
    "paint": {
     "text-color": "hsl(207, 31%, 28%)",
@@ -5813,7 +6151,9 @@
     "text-field": "{_name}",
     "text-allow-overlap": false,
     "text-padding": 15,
-    "symbol-avoid-edges": true
+    "symbol-avoid-edges": true,
+    "text-max-angle": 45,
+    "symbol-spacing": 400
    },
    "paint": {
     "text-color": "hsl(207, 31%, 28%)",
@@ -5839,7 +6179,9 @@
     "text-font": [
      "Flecha S Bold Italic"
     ],
-    "text-size": 9
+    "text-size": 9,
+    "text-max-angle": 45,
+    "symbol-spacing": 400
    },
    "paint": {
     "text-color": "hsl(207, 31%, 28%)",
@@ -5865,7 +6207,9 @@
     "text-field": "{_name}",
     "text-allow-overlap": false,
     "text-padding": 15,
-    "symbol-avoid-edges": true
+    "symbol-avoid-edges": true,
+    "text-max-angle": 45,
+    "symbol-spacing": 400
    },
    "paint": {
     "text-color": "hsl(207, 31%, 28%)",
