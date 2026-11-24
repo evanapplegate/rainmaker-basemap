@@ -7,6 +7,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/4.7.1/maplibre-gl.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/4.7.1/maplibre-gl.css" rel="stylesheet">
 <style>
+@font-face { font-family: "Classico"; src: url("webfonts/URWClassico-Regular.otf"); }
+@font-face { font-family: "Classico"; font-weight: bold;
+  src: url("webfonts/URWClassico-Bold.otf"); }
 :root { --tan: #e8e0cc; --ink: #3f3a33; }
 html, body { margin: 0; height: 100%; }
 #grid { display: grid; height: 100%;
@@ -15,8 +18,9 @@ html, body { margin: 0; height: 100%; }
 .pane { position: relative; background: var(--tan); }
 .tag { position: absolute; z-index: 5; top: 8px; left: 8px;
   background: rgba(63, 58, 51, 0.82); color: #e8e0cc;
-  font: 600 11px/1 Optima, "Gill Sans", "Segoe UI", sans-serif;
-  letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 9px; }
+  font: bold 11px/1.35 Classico, Optima, "Gill Sans", "Segoe UI", sans-serif;
+  letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 9px;
+  max-width: 46%; }
 #blank { display: flex; align-items: center; justify-content: center; }
 .maplibregl-ctrl-attrib { font-size: 10px; }
 @media (max-width: 700px) { #grid { grid-template-columns: 1fr;
@@ -25,9 +29,9 @@ html, body { margin: 0; height: 100%; }
 </head>
 <body>
 <div id="grid">
-  <div class="pane"><div class="tag">Graphite hillshade (toolbox bake)</div><div id="m1" style="position:absolute;inset:0"></div></div>
-  <div class="pane"><div class="tag">Rainmaker Hiking Relief</div><div id="m2" style="position:absolute;inset:0"></div></div>
-  <div class="pane"><div class="tag">Rainmaker Topo Relief</div><div id="m3" style="position:absolute;inset:0"></div></div>
+  <div class="pane"><div id="m1" style="position:absolute;inset:0"></div><div class="tag">ArcGIS Toolbox-output hillshade: most detail, but have to generate for specific viewports</div></div>
+  <div class="pane"><div id="m2" style="position:absolute;inset:0"></div><div class="tag">ArcGIS Online Map Style A</div></div>
+  <div class="pane"><div id="m3" style="position:absolute;inset:0"></div><div class="tag">ArcGIS Online Map Style B</div></div>
   <div class="pane" id="blank"></div>
 </div>
 <script>
