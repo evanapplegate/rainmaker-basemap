@@ -35,40 +35,55 @@ const HOST = location.origin + location.pathname.replace(/[^/]*$/, "");
 const START = { center: [-111.78, 40.55], zoom: 11 };
 const GRAPHITE_BOUNDS = [-112.1557, 40.183, -111.4732, 40.834];
 
-const m1 = new maplibregl.Map({
-  container: "m1", center: START.center, zoom: START.zoom, attributionControl: false,
-  style: { version: 8, sources: { g: { type: "raster",
-      tiles: [HOST + "tiles/graphite/{z}/{x}/{y}.png"], tileSize: 256,
-      minzoom: 9, maxzoom: 13, bounds: GRAPHITE_BOUNDS } },
-    layers: [{ id: "bg", type: "background", paint: { "background-color": "#e8e0cc" } },
-             { id: "g", type: "raster", source: "g" }] }
-});
+// graphite pane: baked raster underlay + the LIVE Rainmaker Labels vector
+// style (roads, shields, every label) rendered on top
+const m1ready = fetch(HOST + "styles/rainmaker_labels.json")
+  .then(r => r.json())
+  .then(ls => {
+    const style = {
+      version: 8, glyphs: ls.glyphs, sprite: ls.sprite,
+      sources: Object.assign({
+        g: { type: "raster", tiles: [HOST + "tiles/graphite/{z}/{x}/{y}.png"],
+             tileSize: 256, minzoom: 9, maxzoom: 13, bounds: GRAPHITE_BOUNDS }
+      }, ls.sources),
+      layers: [
+        { id: "bg", type: "background", paint: { "background-color": "#e8e0cc" } },
+        { id: "g", type: "raster", source: "g" },
+        ...ls.layers
+      ]
+    };
+    const m = new maplibregl.Map({ container: "m1", center: START.center,
+      zoom: START.zoom, attributionControl: false, style });
+    m.addControl(new maplibregl.AttributionControl({ compact: true,
+      customAttribution: "Esri World Imagery, USGS 3DEP, Esri Community Maps" }));
+    m.addControl(new maplibregl.NavigationControl({ showCompass: false }));
+    return m;
+  });
 const m2 = new maplibregl.Map({ container: "m2", center: START.center,
   zoom: START.zoom, attributionControl: false,
   style: HOST + "styles/rainmaker_hiking_relief_test.json" });
 const m3 = new maplibregl.Map({ container: "m3", center: START.center,
   zoom: START.zoom, attributionControl: false,
   style: HOST + "styles/rainmaker_topo_relief_test.json" });
-m1.addControl(new maplibregl.AttributionControl({ compact: true,
-  customAttribution: "Esri World Imagery, USGS 3DEP" }));
 m2.addControl(new maplibregl.AttributionControl({ compact: true,
   customAttribution: "Esri, USGS" }));
 m3.addControl(new maplibregl.AttributionControl({ compact: true,
   customAttribution: "Esri, USGS" }));
-m1.addControl(new maplibregl.NavigationControl({ showCompass: false }));
 
 // pan/zoom link
-const maps = [m1, m2, m3];
-let lock = false;
-maps.forEach(src => {
-  src.on("move", () => {
-    if (lock) return;
-    lock = true;
-    const c = src.getCenter(), z = src.getZoom(), b = src.getBearing(), p = src.getPitch();
-    maps.forEach(dst => {
-      if (dst !== src) dst.jumpTo({ center: c, zoom: z, bearing: b, pitch: p });
+m1ready.then(m1 => {
+  const maps = [m1, m2, m3];
+  let lock = false;
+  maps.forEach(src => {
+    src.on("move", () => {
+      if (lock) return;
+      lock = true;
+      const c = src.getCenter(), z = src.getZoom(), b = src.getBearing(), p = src.getPitch();
+      maps.forEach(dst => {
+        if (dst !== src) dst.jumpTo({ center: c, zoom: z, bearing: b, pitch: p });
+      });
+      lock = false;
     });
-    lock = false;
   });
 });
 </script>
