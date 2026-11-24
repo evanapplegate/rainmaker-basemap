@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rainmaker terrain panes</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/4.7.1/maplibre-gl.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/4.7.1/maplibre-gl.css" rel="stylesheet">
+<style>
+:root { --tan: #e8e0cc; --ink: #3f3a33; }
+html, body { margin: 0; height: 100%; }
+#grid { display: grid; height: 100%;
+  grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 2px;
+  background: var(--ink); }
+.pane { position: relative; background: var(--tan); }
+.tag { position: absolute; z-index: 5; top: 8px; left: 8px;
+  background: rgba(63, 58, 51, 0.82); color: #e8e0cc;
+  font: 600 11px/1 Optima, "Gill Sans", "Segoe UI", sans-serif;
+  letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 9px; }
+#blank { display: flex; align-items: center; justify-content: center; }
+.maplibregl-ctrl-attrib { font-size: 10px; }
+@media (max-width: 700px) { #grid { grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr); } }
+</style>
+</head>
+<body>
+<div id="grid">
+  <div class="pane"><div class="tag">Graphite hillshade (toolbox bake)</div><div id="m1" style="position:absolute;inset:0"></div></div>
+  <div class="pane"><div class="tag">Rainmaker Hiking Relief</div><div id="m2" style="position:absolute;inset:0"></div></div>
+  <div class="pane"><div class="tag">Rainmaker Topo Relief</div><div id="m3" style="position:absolute;inset:0"></div></div>
+  <div class="pane" id="blank"></div>
+</div>
+<script>
+const HOST = location.origin + location.pathname.replace(/[^/]*$/, "");
+const START = { center: [-111.78, 40.55], zoom: 11 };
+const GRAPHITE_BOUNDS = [-112.1557, 40.183, -111.4732, 40.834];
+
+const m1 = new maplibregl.Map({
+  container: "m1", center: START.center, zoom: START.zoom, attributionControl: false,
+  style: { version: 8, sources: { g: { type: "raster",
+      tiles: [HOST + "tiles/graphite/{z}/{x}/{y}.png"], tileSize: 256,
+      minzoom: 9, maxzoom: 13, bounds: GRAPHITE_BOUNDS } },
+    layers: [{ id: "bg", type: "background", paint: { "background-color": "#e8e0cc" } },
+             { id: "g", type: "raster", source: "g" }] }
+});
+const m2 = new maplibregl.Map({ container: "m2", center: START.center,
+  zoom: START.zoom, attributionControl: false,
+  style: HOST + "styles/rainmaker_hiking_relief_test.json" });
+const m3 = new maplibregl.Map({ container: "m3", center: START.center,
+  zoom: START.zoom, attributionControl: false,
+  style: HOST + "styles/rainmaker_topo_relief_test.json" });
+m1.addControl(new maplibregl.AttributionControl({ compact: true,
+  customAttribution: "Esri World Imagery, USGS 3DEP" }));
+m2.addControl(new maplibregl.AttributionControl({ compact: true,
+  customAttribution: "Esri, USGS" }));
+m3.addControl(new maplibregl.AttributionControl({ compact: true,
+  customAttribution: "Esri, USGS" }));
+m1.addControl(new maplibregl.NavigationControl({ showCompass: false }));
+
+// pan/zoom link
+const maps = [m1, m2, m3];
+let lock = false;
+maps.forEach(src => {
+  src.on("move", () => {
+    if (lock) return;
+    lock = true;
+    const c = src.getCenter(), z = src.getZoom(), b = src.getBearing(), p = src.getPitch();
+    maps.forEach(dst => {
+      if (dst !== src) dst.jumpTo({ center: c, zoom: z, bearing: b, pitch: p });
+    });
+    lock = false;
+  });
+});
+</script>
+</body>
+</html>
