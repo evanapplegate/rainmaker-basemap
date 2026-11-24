@@ -1556,7 +1556,7 @@
    ],
    "minzoom": 15,
    "paint": {
-    "fill-color": "hsl(199, 44%, 59%)"
+    "fill-color": "#7fb7e2"
    }
   },
   {
@@ -1571,7 +1571,7 @@
     "line-cap": "round"
    },
    "paint": {
-    "line-color": "hsl(199, 44%, 59%)",
+    "line-color": "#7fb7e2",
     "line-width": {
      "stops": [
       [
@@ -1602,7 +1602,7 @@
     "line-cap": "round"
    },
    "paint": {
-    "line-color": "hsl(199, 44%, 59%)",
+    "line-color": "#7fb7e2",
     "line-width": {
      "stops": [
       [
@@ -1633,7 +1633,7 @@
     "line-join": "round"
    },
    "paint": {
-    "line-color": "hsl(199, 44%, 59%)",
+    "line-color": "#7fb7e2",
     "line-width": {
      "stops": [
       [
@@ -1668,7 +1668,7 @@
     "line-cap": "round"
    },
    "paint": {
-    "line-color": "hsl(199, 44%, 59%)",
+    "line-color": "#7fb7e2",
     "line-width": {
      "stops": [
       [
@@ -1703,7 +1703,7 @@
     "line-join": "round"
    },
    "paint": {
-    "line-color": "hsl(199, 44%, 59%)",
+    "line-color": "#7fb7e2",
     "line-width": {
      "stops": [
       [
@@ -1797,7 +1797,7 @@
     "line-join": "round"
    },
    "paint": {
-    "line-color": "hsl(199, 44%, 59%)",
+    "line-color": "#7fb7e2",
     "line-width": {
      "stops": [
       [
@@ -1832,7 +1832,7 @@
     "line-join": "round"
    },
    "paint": {
-    "line-color": "hsl(199, 44%, 70%)",
+    "line-color": "#7fb7e2",
     "line-width": {
      "stops": [
       [
@@ -1871,7 +1871,7 @@
     "line-join": "round"
    },
    "paint": {
-    "line-color": "hsl(199, 44%, 59%)",
+    "line-color": "#7fb7e2",
     "line-width": {
      "stops": [
       [
@@ -1897,7 +1897,7 @@
    "source-layer": "Marine area",
    "minzoom": 4,
    "paint": {
-    "fill-color": "hsl(199, 44%, 59%)"
+    "fill-color": "#7fb7e2"
    }
   },
   {
@@ -1908,7 +1908,7 @@
    "minzoom": 1,
    "maxzoom": 5,
    "paint": {
-    "fill-color": "hsl(199, 44%, 59%)"
+    "fill-color": "#7fb7e2"
    }
   },
   {
@@ -1924,7 +1924,7 @@
    "minzoom": 5,
    "maxzoom": 7,
    "paint": {
-    "fill-color": "hsl(199, 44%, 70%)"
+    "fill-color": "#7fb7e2"
    }
   },
   {
@@ -1940,7 +1940,7 @@
    "minzoom": 5,
    "maxzoom": 7,
    "paint": {
-    "fill-color": "hsl(199, 44%, 59%)"
+    "fill-color": "#7fb7e2"
    }
   },
   {
@@ -1956,7 +1956,7 @@
    "minzoom": 7,
    "maxzoom": 11,
    "paint": {
-    "fill-color": "hsl(199, 44%, 70%)"
+    "fill-color": "#7fb7e2"
    }
   },
   {
@@ -1972,7 +1972,7 @@
    "minzoom": 7,
    "maxzoom": 11,
    "paint": {
-    "fill-color": "hsl(199, 44%, 59%)"
+    "fill-color": "#7fb7e2"
    }
   },
   {
@@ -1987,7 +1987,7 @@
    ],
    "minzoom": 11,
    "paint": {
-    "fill-color": "hsl(199, 44%, 59%)"
+    "fill-color": "#7fb7e2"
    }
   },
   {
@@ -2002,7 +2002,7 @@
    ],
    "minzoom": 11,
    "paint": {
-    "fill-color": "hsl(199, 44%, 70%)"
+    "fill-color": "#7fb7e2"
    }
   },
   {
@@ -2065,7 +2065,7 @@
    ],
    "minzoom": 11,
    "paint": {
-    "fill-color": "hsl(199, 44%, 59%)"
+    "fill-color": "#7fb7e2"
    }
   },
   {
