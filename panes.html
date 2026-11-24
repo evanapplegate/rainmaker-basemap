@@ -10,14 +10,14 @@
 @font-face { font-family: "Classico"; src: url("webfonts/URWClassico-Regular.otf"); }
 @font-face { font-family: "Classico"; font-weight: bold;
   src: url("webfonts/URWClassico-Bold.otf"); }
-:root { --tan: #e8e0cc; --ink: #3f3a33; }
+:root { --forest: #1C2C26; --pine: #103D1D; --mist: #F5F5F1; --grain: #FFF1CF; }
 html, body { margin: 0; height: 100%; }
 #grid { display: grid; height: 100%;
   grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 2px;
-  background: var(--ink); }
-.pane { position: relative; background: var(--tan); }
+  background: var(--forest); }
+.pane { position: relative; background: var(--mist); }
 .tag { position: absolute; z-index: 5; top: 8px; left: 8px;
-  background: rgba(63, 58, 51, 0.82); color: #e8e0cc;
+  background: rgba(28, 44, 38, 0.92); color: var(--mist);
   font: bold 12px/1.35 Classico, Optima, "Gill Sans", "Segoe UI", sans-serif;
   letter-spacing: 0.02em; padding: 6px 9px; max-width: 46%; }
 #blank { display: flex; align-items: center; justify-content: center; }
@@ -50,7 +50,7 @@ const m1ready = fetch(HOST + "styles/rainmaker_labels.json")
              tileSize: 256, minzoom: 9, maxzoom: 13, bounds: GRAPHITE_BOUNDS }
       }, ls.sources),
       layers: [
-        { id: "bg", type: "background", paint: { "background-color": "#e8e0cc" } },
+        { id: "bg", type: "background", paint: { "background-color": "#F5F5F1" } },
         { id: "g", type: "raster", source: "g" },
         ...ls.layers
       ]
